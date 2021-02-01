@@ -1,15 +1,11 @@
 --
 
-title: GitHub twtsession
+title: GitHub TWT Session
 
 --
 
-<<<<<<< HEAD
-
-# {{page.title}} 
-=======
 # {{page.title}}
->>>>>>> 140418d2a50508d02625121119cd7891d52e70bb
+
 
 # Learning How to Format Using Markdown
 
