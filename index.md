@@ -12,4 +12,4 @@ Click here to access the [Readme Page](README.md)
 
 For more information on the Markdown language, see [Google](https://www.google.com)
 
-Unable to install git on a MacBook, follow these instructions. 
+> Unable to install git on MacOS, follow these [instructions](download_and_install_git_bash.md). 
