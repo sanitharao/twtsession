@@ -8,7 +8,7 @@ Here is the procedure:
     The downloaded file will have a `.dmg` extension.
 2. Double click the `.dmg`file, and you will get the `PKG`file, a `README.txt` file, and a version file.
 
-3. Double click the `PKG` file, the following error message is displays:
+3. Double click the `PKG` file and the following error message displays:
 > `"macOS cannot verify the developer of “git-2.15.0-intel-universal-mavericks.pkg”. Are you sure you want to open it?" Click Open and this should then work.
 "git-2.23.0-intel-universal-mavericks.pkg" cannot be opened because it is from an unidentified developer.`
 >
