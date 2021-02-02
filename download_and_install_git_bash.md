@@ -13,12 +13,12 @@ Here is the procedure:
 "git-2.23.0-intel-universal-mavericks.pkg" cannot be opened because it is from an unidentified developer.`
 >
 
-    Click OK to dismiss this message.
+4. Click OK to dismiss this error message.
 
-4. Right click the `PKG` file, and select Òpen With -> Installer (default)' option. 
+5. Right click the `PKG` file, and select Òpen With -> Installer (default)' option. 
 
 The error message appear again but now an addtional button `Open` is displayed.
 
-5. Click 'Open` to open the Installation wizarad. 
+6. Click 'Open` to open the Installation wizarad. 
 
-6. Complete the onscreen instructions in the Installation wizard to complete the git bash client installation.
+7. Complete the onscreen instructions in the Installation wizard to complete the git bash client installation.
