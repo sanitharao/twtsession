@@ -1,7 +1,5 @@
 ---
-
 title: GitHub TWT Session
-
 ---
 
 #{{page.title}}
