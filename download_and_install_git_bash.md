@@ -6,7 +6,7 @@ Here is the procedure:
 
 1. Download the git bash client package for MacOS from [https://git-scm.com/downloads](https://git-scm.com/downloads). 
     The downloaded file will have a `.dmg` extension.
-2. Double click the `.dmg`file, and you will get the `PKG`file, a README.txt file, and a version file.
+2. Double click the `.dmg`file, and you will get the `PKG`file, a `README.txt` file, and a version file.
 
 3. Double click the `PKG` file, the following error message is displays:
 > `"macOS cannot verify the developer of “git-2.15.0-intel-universal-mavericks.pkg”. Are you sure you want to open it?" Click Open and this should then work.
