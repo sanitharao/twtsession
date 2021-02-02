@@ -1,10 +1,10 @@
---
+---
 
 title: GitHub TWT Session
 
---
+---
 
-{{page.title}}
+#{{page.title}}
 
 
 # Learning How to Format Using Markdown
