@@ -15,7 +15,7 @@ Here is the procedure:
 
 4. Click OK to dismiss this error message.
 
-5. Right click the `PKG` file, and select `Open With -> Installer (default)' option. 
+5. Right click the `PKG` file, and select `Open With -> Installer (default)` option. 
 
     The error message appears again but now an addtional `Open` button is displayed.
 
