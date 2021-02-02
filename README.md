@@ -22,4 +22,4 @@ This is a sample text to practice the following formatting in Markdown language:
 2. List item  2
 3. List item 3
 
-For more information on the Markdown language, see [Google] (https://www.google.com)
+For more information on the Markdown language, see [Google](https://www.google.com)
