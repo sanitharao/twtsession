@@ -12,7 +12,8 @@ Here is the procedure:
 > `"macOS cannot verify the developer of “git-2.15.0-intel-universal-mavericks.pkg”. Are you sure you want to open it?" Click Open and this should then work.
 "git-2.23.0-intel-universal-mavericks.pkg" cannot be opened because it is from an unidentified developer.`
 >
-Click OK to dismiss this message.
+
+    Click OK to dismiss this message.
 
 4. Right click the `PKG` file, and select Òpen With -> Installer (default)' option. 
 
