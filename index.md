@@ -14,7 +14,7 @@ Changes done to check git bash client
 
 Click here to access the [Demo Page](topics/demo.md)
 
-Click here to access the [Readme Page](topics/README.md)
+Click here to access the [Readme Page](README.md)
 
 For more information on the Markdown language, see [Google](https://www.google.com)
 
