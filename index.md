@@ -12,6 +12,6 @@ Click here to access the [Readme Page](README.md)
 
 For more information on the Markdown language, see [Google](https://www.google.com)
 
-```This is a code block.
+``` This is a code block.
 
 > Unable to install git bash client on MacOS, follow these [instructions](download_and_install_git_bash.md).
