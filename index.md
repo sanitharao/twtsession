@@ -1,7 +1,4 @@
----
-layout : template_file
 
----
 
 
 # Understanding GitHub and GitBash
