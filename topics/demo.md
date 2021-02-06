@@ -1,7 +1,6 @@
 ---
 layout: template_file
 title: Rising Sun
-
 ---
 
 # {{ page.title }}
