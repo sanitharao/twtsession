@@ -10,6 +10,8 @@ title: Rising Sun
 
 This is a new file that will be linked from the Index file.
 
+show the name {{ site.name }}
+
 show the time: {{ site.when }}
 
 Data File contents:
