@@ -22,4 +22,4 @@ The country of {{ item.name }} was created in {{ item.date }} and its flag is {{
 
 {% endfor %}
 
-{{ include common2.txt}}
+{% include common2.txt %}
