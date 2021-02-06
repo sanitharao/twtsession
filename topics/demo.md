@@ -11,3 +11,11 @@ title: Rising Sun
 This is a new file that will be linked from the Index file.
 
 show the time: {{ site.when }}
+
+Data File contents:
+
+{% for item in site.data.demo %}
+
+The country of {{ item.name }} was created in {{ item.year }} and its flag is {{ item.flag }}
+
+{% endfor %}
