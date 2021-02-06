@@ -21,3 +21,5 @@ Data File contents:
 The country of {{ item.name }} was created in {{ item.date }} and its flag is {{ item.flag }}
 
 {% endfor %}
+
+{{ include common2.txt}}

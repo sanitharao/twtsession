@@ -1,0 +1,9 @@
+-  name: India
+   date: 1947
+   flag: a tricolor flag
+-  name: abc
+   date: 123
+   flag: xx xx xx
+-  name: ced
+   date: 456
+   flag: this is a sample flag
