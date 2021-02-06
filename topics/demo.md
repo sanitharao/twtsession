@@ -16,6 +16,6 @@ Data File contents:
 
 {% for item in site.data.demo %}
 
-The country of {{ item.name }} was created in {{ item.year }} and its flag is {{ item.flag }}
+The country of {{ item.name }} was created in {{ item.date }} and its flag is {{ item.flag }}
 
 {% endfor %}
