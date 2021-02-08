@@ -1,4 +1,6 @@
-
+---
+layout: template_file
+---
 
 
 # What are Markdown, Jekyll, and GitHub?  
