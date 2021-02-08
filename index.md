@@ -1,6 +1,10 @@
+
 ---
+
 layout: template_file
+
 title: Understanding Markdown, GitHub, and Jekyll
+
 ---
 
 

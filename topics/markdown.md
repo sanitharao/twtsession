@@ -5,17 +5,11 @@ For more information on Markdown, see [The Markdown Guide](hOps://www.markdowngu
 ## Markdown Editors
 
 | Markdown Editor | Supported On |
-|----------------| ---------------|
-| row text | row text |
-| row text | |
-
-   -  For Windows OS:
-      - (Notepad++)[https://notepad-plus-plus.org/downloads/]
-   - Online Editor:
-     - (Dillinger)[https://dillinger.io/]
-     - (Markable)[http://markable.in/]
-     - (StackEdit)[https://stackedit.io/editor]
-   - For macOS:
-     - (Atom)[https://atom.io/]
-     - (Ulysses)[https://ulysses.app/]
-     - (Mou) [http://25.io/mou/]
+|----------------  | ---------------  |
+| [Notepad++](https://notepad-plus-plus.org/downloads/) | Windows OS |
+| (Dillinger)[https://dillinger.io/] | Online |
+| (Markable)[http://markable.in/] | Online |
+| (StackEdit)[https://stackedit.io/editor] |  |
+| (Atom)[https://atom.io/] | macOS |
+| (Ulysses)[https://ulysses.app/] | macOS |
+| (Mou) [http://25.io/mou/] | macOS |
