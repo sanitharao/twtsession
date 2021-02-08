@@ -17,7 +17,9 @@ Before you can start working on github and create a Markdown file:
 - Setup your Github account and repository. [For details, [see](topics/github))
 - Setup a git bash client on your system.
 
-> *If you are unable to install git bash client on macOS, follow these [instructions](topics download_and_install_git_bash.md).*
+```
+If you are unable to install git bash client on macOS, follow these [instructions](topics download_and_install_git_bash.md).
+```
 
 ## For GitHub
 
