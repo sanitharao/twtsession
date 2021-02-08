@@ -13,12 +13,5 @@ This document briefly explains about the Markdown language, the editors that you
 Complete these installation and setup before you can start working on creating Markdown files on GitHub:
 
 - [Install a Markdown editor](topics/markdown.md))
-- [Setup your Github account and repository](topics/github))
-- [Setup a git bash client on your system](topics download_and_install_git_bash.md)
-
-
-
-
-Click here to access the sample [Demo Page](topics/demo.md).
-
-Click here to access the [Readme Page](README.md)
+- [Setup your Github account and repository](topics/github.md)
+- [Setup a git bash client on your system](topics/download_and_install_git_bash.md)
