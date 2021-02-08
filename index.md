@@ -1,5 +1,8 @@
 
+---
+layout: template_file
 
+---
 
 # What are Markdown, Jekyll, and GitHub?  
 
@@ -27,6 +30,6 @@ Before you can start working on github and create a Markdown file:
 4. Create a pull request.
 
 
-Click here to access the sample [Demo Page](topics/demo.md). 
+Click here to access the sample [Demo Page](topics/demo.md).
 
 Click here to access the [Readme Page](README.md)
