@@ -9,3 +9,14 @@ hr {
   border-width: 1px;
   border-color: lightblue;
 }
+
+
+header {
+  font-family: Papyrus, Lucida Handwriting, cursive, Trebuchet MS;
+  font-size: 12px;
+}
+
+footer {
+  font-family: serif;
+  font-size: 12px;
+}
