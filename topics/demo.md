@@ -3,6 +3,8 @@ layout: template_file
 title: Rising Sun
 ---
 
+<hr></hr>
+
 # {{ page.title }}
 
 # New File for Demo
