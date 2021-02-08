@@ -8,7 +8,7 @@ While installing the git bash client on Windows OS is simple, performing the sam
 
 Here is the procedure:
 
-1. Download the git bash client package for MacOS from [https://git-scm.com/downloads](https://git-scm.com/downloads).
+1. Download the git bash client package for macOS from [https://git-scm.com/downloads](https://git-scm.com/downloads).
     The downloaded file will have a `.dmg` extension.
 2. Double click the `.dmg`file, and you will get the `PKG`file, a `README.txt` file, and a version file.
 
