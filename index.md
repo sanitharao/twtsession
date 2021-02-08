@@ -18,7 +18,7 @@ This document briefly explains about the Markdown language, the editors that you
 
 Before you can start working on github and create a Markdown file:
 
-- Install a Markdown editor. (For details (see)[topics/markdown.md])
+- Install a Markdown editor. (For details (see)[/topics/markdown.md])
 - Setup your Github account and repository (s)
 
 > If you are unable to install git bash client on macOS, follow these [instructions](topics/download_and_install_git_bash.md).
