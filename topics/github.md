@@ -1,3 +1,7 @@
+---
+layout: template_file
+---
+
 # Setting up GitHub
 
 To set up GitHub and to start working on Markdown files:

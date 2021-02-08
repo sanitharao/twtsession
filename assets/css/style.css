@@ -1,5 +1,5 @@
 body  {padding-left: 50px;
-      font-family: Verdana, Helvatica;
+      font-family: Verdana;
       line-height: 190%
       background-color: white;
 }
@@ -13,10 +13,19 @@ hr {
 
 header {
   font-family:serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 footer {
   font-family: serif;
   font-size: 12px;
+}
+
+
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: #f1f1f1;
+  padding: 2px;
+  color: crimson;
 }

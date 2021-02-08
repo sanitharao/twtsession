@@ -14,3 +14,5 @@ Complete these installation and setup before you can start working on creating M
 - [Install a Markdown editor](topics/markdown.md)
 - [Setup your Github account and repository](topics/github.md)
 - [Setup a git bash client on your system](topics/download_and_install_git_bash.md)
+
+For information on Jekyll, see [Understanding Jekyll](topics/jekyll.md).
