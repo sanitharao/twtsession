@@ -21,14 +21,14 @@ This table lists the Markdown editors that you can choose to install.
 
 | Markdown Editor | Supported On |
 |----------------  | ---------------  |
-|----------------  | ---------------  |
+|  |   |
 | [Notepad++](https://notepad-plus-plus.org/downloads/) | Windows OS |
 |  |  |
 | [Dillinger](https://dillinger.io/) | Online |
 |  |  |
 | [Markable](http://markable.in/) | Online |
 |  |  |
-| [StackEdit](https://stackedit.io/editor) |  |
+| [StackEdit](https://stackedit.io/editor) | Online |
 |  |  |
 | [Atom](https://atom.io/) | macOS |
 |  |  |
