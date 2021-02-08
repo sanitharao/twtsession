@@ -1,3 +1,7 @@
+---
+layout: template_file
+---
+
 # Download and Install git Bash Client on macOS
 
 While installing the git bash client on Windows OS is simple, performing the same on a macOS requires an additional step to allow the package file to be installed.

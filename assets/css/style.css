@@ -20,10 +20,3 @@ footer {
   font-family: serif;
   font-size: 12px;
 }
-
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 2px;
-  font-family:serif;
-}
