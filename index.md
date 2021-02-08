@@ -2,12 +2,7 @@
 
 layout: template_file
 
----
-
-# What is all the buzz about Markdown?
-
-Before I attended the course [Docs-as-code Certificate Course: Markdown, Git, Jekyll, and You](https://techwriterstribe.com/course/docs-as-code-jekyll/) conducted by [TechWriters Tribe](https://techwriterstribe.com/), the term `Markdown` sounded complex, and gave me a feeling that it must be an invention of the 20th century. Well, Google says that Markdown was created in 2004 and I was correct to that extent.   
-
+---   
 
 
 # What are Markdown, Jekyll, and GitHub?  
