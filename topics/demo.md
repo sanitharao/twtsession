@@ -1,9 +1,11 @@
 ---
 layout: template_file
+
 title: Rising Sun
+
 ---
 
-<hr></hr>
+<hr>
 
 # {{ page.title }}
 
@@ -16,7 +18,9 @@ title: Rising Sun
 
 `inline code`
 
-``` code block
+```
+code block
+```
 
 [] checkbox cleared
 
@@ -39,3 +43,4 @@ The country of {{ item.name }} was created in {{ item.date }} and its flag is {{
 {% endfor %}
 
 {% include common2.txt %}
+<hr/>
