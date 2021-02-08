@@ -21,11 +21,17 @@ footer {
   font-size: 12px;
 }
 
+table{
+  border: 1px solid black;
+}
+
+tr {
+  border: 1px solid black;
+}
 
 th {
   border: 1px solid black;
   border-collapse: collapse;
   background-color: #f1f1f1;
-  padding: 2px;
-  color: crimson;
+  padding: 0px;
 }
