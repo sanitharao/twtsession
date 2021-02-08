@@ -1,5 +1,5 @@
 ---
-layout: template_file
+layout: template_fileIndex
 ---
 
 
