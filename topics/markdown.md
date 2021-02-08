@@ -5,7 +5,7 @@ layout: template_file
 
 # Understanding Markdown
 
-For more information on Markdown, see [The Markdown Guide](hOps://www.markdownguide.org/)
+For more information on Markdown, see [The Markdown Guide](https://www.markdownguide.org/)
 
 ## Markdown Editors
 
