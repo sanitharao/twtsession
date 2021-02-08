@@ -1,4 +1,11 @@
-body  {padding-left: 2em;
-      font-family: serif;
+body  {padding-left: 50px;
+      font-family: Verdana, Helvatica;
+      line-height: 190%
       background-color: white;
+}
+
+hr {
+  display: block;
+  border-width: 1px;
+  border-color: lightblue;
 }
