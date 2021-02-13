@@ -6,7 +6,7 @@ layout: template_file
 
 # {{ page.title }}
 
-If you are a writer working on a project that needs you to collaborate with multiple writers who are working and making changes to the same document, you may have faced multiple issues such as merging the changes, maintaining different versions of the same document, storing files in a location easily accessible to everyone in the team. You may have noticed that Software developers work in a similar setup and face similar challenges but the problem of maintaining their code was not as daunting task as it seemed to be for documents. You would hate to disagree if I told that you can use the same solution that developers use to ease your life in managing your content by using utilities such as Git/GitLab for collaboration and Markdown as your authoring language.
+If you are a writer working on a project that needs you to collaborate with multiple writers who are working and making changes to the same document, you may have faced multiple issues such as merging the changes, maintaining different versions of the same document, storing files in a location easily accessible to everyone in the team. You may have noticed that Software developers work in a similar setup and face similar challenges but the problem of maintaining their code was not as daunting task as it seemed to be for documents. You would hate to agree if I told that you can use the same solution that developers use to ease your life in managing your content by using utilities such as Git/GitLab for collaboration and Markdown as your authoring language.
 In this article, let us try to understand what these utilities have to offer!
 
 ## Version Control Is Not Only for Code
