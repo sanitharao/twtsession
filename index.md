@@ -19,4 +19,4 @@ Complete these installation and setup before you can start working on creating M
 
 For information on Jekyll, see [Understanding Jekyll](topics/jekyll.md).
 
-See [Managing Content with Git and GitLab](twt-article.md)
+See [Managing Content with Git and GitLab](topics/twt-article.md)
