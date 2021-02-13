@@ -18,3 +18,5 @@ Complete these installation and setup before you can start working on creating M
 - [Setup a git bash client on your system](topics/download_and_install_git_bash.md)
 
 For information on Jekyll, see [Understanding Jekyll](topics/jekyll.md).
+
+See [Managing Content with Git and GitLab](twt-article.md)
