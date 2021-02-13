@@ -1,5 +1,6 @@
 ---
 title: Managing Content with Git and GitLab
+layout: template_file
 ---
 
 
@@ -12,7 +13,7 @@ In this article, let us try to understand what these utilities have to offer!
 
 Before getting into the specifics of Git and GitLab, let us understand that, in a project, everything needs to be tracked irrespective of whether it is software code, a document or any other type of content. Therefore, you will be happy to know that writers can harness the benefits of a version control system just like the developers do. And, utilities such a Git, GitLab, and authoring language such as Markdown enable you to do so.
 
-## What is Version Control System?
+## What is a Version Control System?
 
 A version control system helps in maintaining a record of all documents and changes made to those documents, in a single location. Users can extract a specific version of the document, if need be.  A version control system can use a local model (users using same file system), client-server model (users using same shared repository), or distributed model (separate repository created for each user).
 
