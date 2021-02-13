@@ -12,17 +12,15 @@ In this article, let us try to understand what these utilities have to offer!
 
 Before getting into the specifics of Git and GitLab, let us understand that, in a project, everything needs to be tracked irrespective of whether it is software code, a document or any other type of content. Therefore, you will be happy to know that writers can harness the benefits of a version control system just like the developers do. And, utilities such a Git, GitLab, and authoring language such as Markdown enable you to do so.
 
-# What is Version Control System?
+## What is Version Control System?
 
 A version control system helps in maintaining a record of all documents and changes made to those documents, in a single location. Users can extract a specific version of the document, if need be.  A version control system can use a local model (users using same file system), client-server model (users using same shared repository), or distributed model (separate repository created for each user).
 
-# Git
+## Git
 
 Git is a collaboration tool designed and developed by Linus Torvalds who led the Linux kernel project. Ever since its inception in 2005, Git has been the most popular version control system, and has dominated the version control space.
 
 Git is version control system that follows the distributed version control model. Git is not only targeted at developers who want to store/track their code but non-technical users can also reap the same benefits.
-
-which means it manages changes to a project without overwriting any part of that project.
 
 Git helps in tracking and managing documentation changes such that reverting to any previous change is simple and easy. This way changes are not lost and a document is not overwritten with any changes.
 
@@ -30,6 +28,12 @@ In Git, your documents are stored under a repository (repo) that is equivalent t
 
 Though Git is a version control system, it can also be considered as a source code management system and a revision control system. It is like a one stop solution to manage/maintain your content.
 
-## Work Offline as Seamlessly as Working Online
+### Work Offline as Seamlessly as Working Online
 
 As writers, inspiration strikes us anywhere and we would want to pen them down irrespective of whether we are hooked to the Internet or not. This means that we do not want our work to be disrupted whether we are online or offline. Git provides the facility to work on your local system while you are on the move by allowing you to commit, browse, merge, or create branches. The next instance you are connected to the Internet, you can instruct Git to push these changes to the main branch.
+
+### Why Use Something Like Git?
+
+Using Git to manage your next writing project gives you the ability to view multiple drafts at the same time, see differences between those drafts, and even roll back to a previous version. And if you’re comfortable doing so, you can then share your work with others on GitHub or other central Git repositories.
+
+For instance, two writers in the same project are updating the same page for a document. If the first writer makes changes to the document and uploads the changed document while the second writer has also uploaded a changed document. In an ideal situation, one of the writers will loose their changes but with Git that does not happen. Though both writers upload the same document with their changes, Git maintains separate copies of each document. Anyone can later decide to merge changes in both the documents or later, even decide to revert to the previous version of the document as Git has anyways stored a snapshot of each change made to a document.  
