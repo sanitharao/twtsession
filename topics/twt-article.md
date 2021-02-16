@@ -1,5 +1,5 @@
 ---
-title: Managing Web Content Using Git, GitHub, and Markdown
+title: Creating and Managing Web Content Using Git, GitHub, and Markdown
 layout: template_file
 ---
 
