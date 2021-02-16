@@ -37,4 +37,26 @@ As writers, inspiration strikes us anywhere and we would want to pen them down i
 
 Using Git to manage your next writing project gives you the ability to view multiple drafts at the same time, see differences between those drafts, and even roll back to a previous version. And if you’re comfortable doing so, you can then share your work with others on GitHub or other central Git repositories.
 
-For instance, two writers in the same project are updating the same page for a document. If the first writer makes changes to the document and uploads the changed document while the second writer has also uploaded a changed document. In an ideal situation, one of the writers will loose their changes but with Git that does not happen. Though both writers upload the same document with their changes, Git maintains separate copies of each document. Anyone can later decide to merge changes in both the documents or later, even decide to revert to the previous version of the document as Git has anyways stored a snapshot of each change made to a document.  
+For instance, consider two writers in the same project are updating the same page for a document. If the first writer makes changes to the document and uploads the changed document while the second writer has also uploaded a changed document. In an ideal situation, one of the writers will loose their changes but with Git that does not happen. Though both writers upload the same document with their changes, Git maintains separate copies of each document. Anyone can later decide to merge changes in both the documents or later, even decide to revert to the previous version of the document as Git has anyways stored a snapshot of each change made to a document.  
+
+## Markdown – The Popular Text-Based Authoring Format
+
+In 2004, John Gruber and Aaron Swartz created the Markdown language with an intention to provide a language that was easy to write and read. The Markdown format was developed in such a way that the format did not appear as if it was marked up with tags to depict formatting styles like in an HTML file.
+
+Due to the widespread popularity of Markdown, several implementations were developed such as the GitHub Flavoured Markdown (GFM) developed by GitHub in 2017. GFM is the markdown format that documents use when stored in a GitHub repository unless you override the formatting by defining your own template and stylesheet.
+
+Markdown is a plain text formatting language and also a tool to convert this plain text to a valid HTML file. Markdown provides several simple tags that you can use to define formatting such as bold, underline, italics, lists, and so on. However, the presence of these tags does not interfere with the readability of the document and you can read a Markdown document with the same ease as you would read the same document when it is converted to HTML.
+
+If you want to author a document in Markdown, many editors compatible with Markdown authoring are freely available on the Web for the Windows and Mac Operating systems. If you do not want to install a Markdown editor on your system, you can work on an online editor, such as Dillinger that provides a HTML preview of your Markdown document in the left pane of the editor.
+
+One of the advantages of using Markdown formatted files in GitHub is that it is easy to compare files for changes because Markdown is a plain text file, like a developer’s code. This makes merging documentation changes also easy, a feature that is prevalent in the coding world!
+
+### Is Markdown Good for Writers?
+
+Markdown is a great format for Web content. Off late many writers wish to maintain a blog of their own and Markdown is the best format to use. To create a blog of your own, create a document and save it with .md or .Markdown, the Markdown extension. Further, create a repository on a cloud-based version control system, such as GitLab, and copy your .md file in that repository. GitLab provides a personalized URL when the .md file is hosted in HTML format. This way you can focus your energy in writing quality content and leave the HTML rendering nuances to GitHub.
+
+Markdown is platform agnostic in the sense that you need not be associated to the format of your editor. For instance, to create a .md file, you can use any editor installed on your system or use a version control system like GitHub as it provides an inbuilt Markdown editor.
+
+As Markdown is a lightweight plain text format, the learning curve is not much, and anybody can start using it quickly.
+
+While advantages of Markdown are manifold, a probable disadvantage may be that you need to remember different Markdown tags as there is no button that you can click to get the required formatting.
