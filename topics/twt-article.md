@@ -41,13 +41,13 @@ For instance, consider two writers in the same project are updating the same pag
 
 ## Using GitHub to Enhance Your Git Experience
 
-GitHub is a cloud-based version control service that incorporates Git’s version control features. While Git is a distributed version control software that you can install locally on your system, GitHub is a web-based utility where files are stored on a GitHub Web server. Unlike Git which is a command-line utility, GitHub provides a graphical user interface to view and manage files placed under a repository. If you are a writer authoring content in text-based authoring formats, such as Markdown and HTML, you can avail the additional benefit that GitHub offers, that is of a Web publishing engine. GitHub has an integrated publishing engine that renders your content on the Web, and provides a unique URL to access it too. This way, GitHub is not just a revision control repository but also a Web publishing engine.  
+GitHub is a cloud-based version control service that incorporates Git’s version control features. While Git is a distributed version control software that you can install locally on your system, GitHub is a web-based utility where files are stored on a GitHub Web server. Unlike Git which is a command-line utility, GitHub provides a graphical user interface to view and manage files placed under a repository. If you are a writer authoring content in text-based authoring formats, such as Markdown or HTML, you can avail the additional benefit that GitHub offers, that is of a Web publishing engine. GitHub has an integrated publishing engine that renders your content on the Web, and provides a unique URL to access it too. This way, GitHub is not just a revision control repository but also a Web publishing engine.  
 
-With GitHub, you can either configure a repository to be private to you or to the team, or you can also configure the repository as public that allowing anyone to download the repository and make changes. However, these changes will need to be sent as change requests and you can decide whether to accept and merge these changes to your file.
+With GitHub, you can either configure a repository to be private to you or you can configure the repository as public, thus allowing anyone on the Web to download and make changes to the repository. However, these changes will need to be sent as change requests and you can decide whether to accept and merge the changes into your file.
 
 ### Git and GitHub – Are They Same or Different?
 
-The answer is no. As discussed previously, Git and GitHub are similar to the extent that both provide version control services but GitHub is much more than that. In addition to the version control feature, GitHub provides several security and collaboration features like, Wikis, and task management tools for each project. If your intention is only to work locally, then Git is your best option, but if you want to collaborate with multiple writers, then GitHub is the solution for you.
+The answer is no. As discussed previously, Git and GitHub are similar to the extent that both provide version control services, but GitHub is much more than that. In addition to the version control feature, GitHub provides several security and collaboration features like, Wikis, and task management tools for each project. If your intention is only to work locally, then Git is your best option, but if you want to collaborate with multiple writers globally, then GitHub is the solution for you.
 
 
 ## Markdown – The Popular Text-Based Authoring Format
@@ -65,10 +65,15 @@ One of the advantages of using Markdown formatted files in GitHub is that it is 
 
 ### Is Markdown Good for Writers?
 
-Markdown is a great format for Web content. Off late many writers wish to maintain a blog of their own and Markdown is the best format to use. To create a blog of your own, create a document and save it with .md or .Markdown, the Markdown extension. Further, create a repository on a cloud-based version control system, such as GitHub, and copy your .md file in that repository. GitHub provides a personalized URL when the .md file is hosted in HTML format. This way you can focus your energy in writing quality content and leave the HTML rendering nuances to GitHub.
+Off late many writers wish to maintain a blog of their own and Markdown is the best format to use for creating Web content. To create a blog of your own, create a document and save it with .md or .Markdown, which is the Markdown extension. Further, create a repository on a cloud-based version control system, such as GitHub, and copy your .md file into that repository. GitHub provides a personalized URL when the .md file is hosted in HTML format. This way you can focus your energy in writing quality content and leave the HTML rendering nuances to GitHub.
 
-Markdown is platform agnostic in the sense that you need not be associated to the format of your editor. For instance, to create a .md file, you can use any editor installed on your system or use a version control system like GitHub as it provides an inbuilt Markdown editor.
+Markdown is platform agnostic in the sense that you need not be forced to use the format of your editor. For instance, to create a .md file, you can use any editor installed on your system or use a version control system like GitHub as it provides an inbuilt Markdown editor.
 
 As Markdown is a lightweight plain text format, the learning curve is not much, and anybody can start using it quickly.
 
 While advantages of Markdown are manifold, a probable disadvantage may be that you need to remember different Markdown tags as there is no button that you can click to get the required formatting.
+
+
+## Final Thoughts
+
+Up until now, we have understood what Git, GitLab and Markdown are, and how these utilities are useful to writers as much as they are for developers. As discussed previously, if you want to use these utilities to maintain your documents and effortlessly post them in HTML format to the Web, you can use Git for the version control purposes, and use GitLab for hosting your .md documents to the Web. Alternatively, you can use GitLab for both version control and Web hosting activities. While GitLab enables you to create and edit Markdown files, it is better to edit the .md files locally on your system. Therefore, install a Markdown editor (such as Notepad++ or Atom) on your system so that you can edit the .md files locally. To push the locally edited files into the GitLab repository, you will need the Git bash client. This utility is installed when you install Git on your system. For detailed instructions on Git and Git Bash Client, see the Git documentation at https://git-scm.com/book/en/v2.
