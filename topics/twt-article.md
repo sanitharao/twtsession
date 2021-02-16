@@ -1,17 +1,17 @@
 ---
-title: Managing Web Content Using Git, GitLab, and Markdown
+title: Managing Web Content Using Git, GitHub, and Markdown
 layout: template_file
 ---
 
 
 # {{ page.title }}
 
-If you are a writer working on a project that needs you to collaborate with multiple writers who are working and making changes to the same document, you may have faced multiple issues such as merging the changes, maintaining different versions of the same document, storing files in a location easily accessible to everyone in the team. You may have noticed that Software developers work in a similar setup and face similar challenges but the problem of maintaining their code was not as daunting task as it seemed to be for documents. You would hate to agree if I told that you can use the same solution that developers use to ease your life in managing your content by using utilities such as Git/GitLab for collaboration and Markdown as your authoring language.
+If you are a writer working on a project that needs you to collaborate with multiple writers who are working and making changes to the same document, you may have faced multiple issues such as merging the changes, maintaining different versions of the same document, storing files in a location easily accessible to everyone in the team. You may have noticed that Software developers work in a similar setup and face similar challenges but the problem of maintaining their code was not as daunting task as it seemed to be for documents. You would hate to agree if I told that you can use the same solution that developers use to ease your life in managing your content by using utilities such as Git/GitHub for collaboration and Markdown as your authoring language.
 In this article, let us try to understand what these utilities have to offer!
 
 ## Version Control Is Not Only for Code
 
-Before getting into the specifics of Git, GitLab and Markdown, let us understand that, in a project, everything needs to be tracked irrespective of whether it is software code, a document or any other type of content. Therefore, you will be happy to know that writers can harness the benefits of a version control system just like the developers do. And, utilities such a Git, GitLab, and authoring language such as Markdown enable you to do so.
+Before getting into the specifics of Git, GitHub and Markdown, let us understand that, in a project, everything needs to be tracked irrespective of whether it is software code, a document or any other type of content. Therefore, you will be happy to know that writers can harness the benefits of a version control system just like the developers do. And, utilities such a Git, GitHub, and authoring language such as Markdown enable you to do so.
 
 ## What is a Version Control System?
 
@@ -41,13 +41,13 @@ For instance, consider two writers in the same project are updating the same pag
 
 ## Using GitHub to Enhance Your Git Experience
 
-GitLab is a cloud-based version control service that incorporates Git’s version control features. While Git is a distributed version control software that you can install locally on your system, GitLab is a web-based utility where files are stored on a GitHub Web server. Unlike Git which is a command-line utility, GitLab provides a graphical user interface to view and manage files placed under a repository. If you are a writer authoring content in text-based authoring formats, such as Markdown and HTML, you can avail the additional benefit that GitLab offers, that is of a Web publishing engine. GitLab has an integrated publishing engine that renders your content on the Web, and provides a unique URL to access it too. This way, GitLab is not just a revision control repository but also a Web publishing engine.  
+GitHub is a cloud-based version control service that incorporates Git’s version control features. While Git is a distributed version control software that you can install locally on your system, GitHub is a web-based utility where files are stored on a GitHub Web server. Unlike Git which is a command-line utility, GitHub provides a graphical user interface to view and manage files placed under a repository. If you are a writer authoring content in text-based authoring formats, such as Markdown and HTML, you can avail the additional benefit that GitHub offers, that is of a Web publishing engine. GitHub has an integrated publishing engine that renders your content on the Web, and provides a unique URL to access it too. This way, GitHub is not just a revision control repository but also a Web publishing engine.  
 
-With GitLab, you can either configure a repository to be private to you or to the team, or you can also configure the repository as public that allowing anyone to download the repository and make changes. However, these changes will need to be sent as change requests and you can decide whether to accept and merge these changes to your file.
+With GitHub, you can either configure a repository to be private to you or to the team, or you can also configure the repository as public that allowing anyone to download the repository and make changes. However, these changes will need to be sent as change requests and you can decide whether to accept and merge these changes to your file.
 
-### Git and GitLab – Are They Same or Different?
+### Git and GitHub – Are They Same or Different?
 
-The answer is no. As discussed previously, Git and GitLab are similar to the extent that both provide version control services but GitLab is much more than that. In addition to the version control feature, GitLab provides several security and collaboration features like, Wikis, and task management tools for each project. If your intention is only to work locally, then Git is your best option, but if you want to collaborate with multiple writers, then GitLab is the solution for you.
+The answer is no. As discussed previously, Git and GitHub are similar to the extent that both provide version control services but GitHub is much more than that. In addition to the version control feature, GitHub provides several security and collaboration features like, Wikis, and task management tools for each project. If your intention is only to work locally, then Git is your best option, but if you want to collaborate with multiple writers, then GitHub is the solution for you.
 
 
 ## Markdown – The Popular Text-Based Authoring Format
@@ -65,7 +65,7 @@ One of the advantages of using Markdown formatted files in GitHub is that it is 
 
 ### Is Markdown Good for Writers?
 
-Markdown is a great format for Web content. Off late many writers wish to maintain a blog of their own and Markdown is the best format to use. To create a blog of your own, create a document and save it with .md or .Markdown, the Markdown extension. Further, create a repository on a cloud-based version control system, such as GitLab, and copy your .md file in that repository. GitLab provides a personalized URL when the .md file is hosted in HTML format. This way you can focus your energy in writing quality content and leave the HTML rendering nuances to GitHub.
+Markdown is a great format for Web content. Off late many writers wish to maintain a blog of their own and Markdown is the best format to use. To create a blog of your own, create a document and save it with .md or .Markdown, the Markdown extension. Further, create a repository on a cloud-based version control system, such as GitHub, and copy your .md file in that repository. GitHub provides a personalized URL when the .md file is hosted in HTML format. This way you can focus your energy in writing quality content and leave the HTML rendering nuances to GitHub.
 
 Markdown is platform agnostic in the sense that you need not be associated to the format of your editor. For instance, to create a .md file, you can use any editor installed on your system or use a version control system like GitHub as it provides an inbuilt Markdown editor.
 
