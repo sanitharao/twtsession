@@ -19,7 +19,7 @@ A version control system helps in maintaining a record of all documents and chan
 
 ## Git – The Distributed Version Control System
 
-![](git.png)
+![git](git.png)
 
 Git is a collaboration tool designed and developed by Linus Torvalds who led the Linux kernel project. Ever since its inception in 2005, Git has been the most popular version control system, and has dominated the version control space.
 
@@ -43,6 +43,8 @@ For instance, consider two writers in the same project are updating the same pag
 
 ## Using GitHub to Enhance Your Git Experience
 
+![GitHub](github.png)
+
 GitHub is a cloud-based version control service that incorporates Git’s version control features. While Git is a distributed version control software that you can install locally on your system, GitHub is a web-based utility where files are stored on a GitHub Web server. Unlike Git which is a command-line utility, GitHub provides a graphical user interface to view and manage files placed under a repository. If you are a writer authoring content in text-based authoring formats, such as Markdown or HTML, you can avail the additional benefit that GitHub offers, that is of a Web publishing engine. GitHub has an integrated publishing engine that renders your content on the Web, and provides a unique URL to access it too. This way, GitHub is not just a revision control repository but also a Web publishing engine.  
 
 With GitHub, you can either configure a repository to be private to you or you can configure the repository as public, thus allowing anyone on the Web to download and make changes to the repository. However, these changes will need to be sent as change requests and you can decide whether to accept and merge the changes into your file.
@@ -53,6 +55,8 @@ The answer is no. As discussed previously, Git and GitHub are similar to the ext
 
 
 ## Markdown – The Popular Text-Based Authoring Format
+
+![Markdown](markdown.png)
 
 In 2004, John Gruber and Aaron Swartz created the Markdown language with an intention to provide a language that was easy to write and read. Markdown was developed in such a way that it did not appear as if the Markdown file was marked up with tags to depict formatting styles like in an HTML file.
 
