@@ -64,6 +64,8 @@ Markdown is a plain text formatting language and also a tool to convert this pla
 
 If you want to author a document in Markdown, text editors compatible with Markdown authoring are freely available on the Web for the Windows and Mac Operating systems. If you do not want to install a Markdown editor on your system, you can work on an online editor, such as Dillinger that provides a HTML preview of your Markdown document in the left pane of the editor.
 
+![Dillinger Editor](dillinger_screenshot.png)
+
 Due to the widespread popularity of Markdown, several implementations were developed such as the GitHub Flavoured Markdown (GFM) developed by GitHub in 2017. GFM is the default markdown format used for documents stored in a GitHub repository unless you override the formatting by defining your own template and stylesheet.
 
 One of the advantages of using Markdown formatted files in GitHub is that it is easy to compare files for changes because Markdown is a plain text file, like a developer’s code. This makes merging documentation changes also easy, a feature that is prevalent in the coding world!
