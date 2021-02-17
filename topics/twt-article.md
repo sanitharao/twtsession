@@ -19,6 +19,8 @@ A version control system helps in maintaining a record of all documents and chan
 
 ## Git – The Distributed Version Control System
 
+![](git.png)
+
 Git is a collaboration tool designed and developed by Linus Torvalds who led the Linux kernel project. Ever since its inception in 2005, Git has been the most popular version control system, and has dominated the version control space.
 
 Git is version control system that follows the distributed version control model in which your documents are stored under a repository (repo) that is equivalent to a folder on your Windows/Mac system. Unlike certain word processors, Git does not periodically save updated versions of your documents. Instead, Git will save changes only if you specifically instruct Git to do so.
