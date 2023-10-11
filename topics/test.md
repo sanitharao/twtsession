@@ -66,17 +66,19 @@ The following architectural diagram provides a visual depiction of the major har
 
 ![Garrison Network](Garrison_Network.png)
 
-# Garrison Network
- 
-9.	System Environment
+# System Environment
 DICE is a custom environment composed of Windows Operating Systems with a list of approved hardware components, software components, and networking components. An up-to-date list of approved components may be found in the CCMC repository. 
-Approval List	Description	File Location
-Hardware Components	CSV file containing the list of endpoints and servers that are authorized to join DICE	It-admin/CMMC/environment/hardware-components.csv
-Networking Components	CSV file containing the list of networking hardware that is authorized to join DICE	It-admin/CMMC/environment/networking-components.csv
-Software Components	CSV file containing the list of software that is approved for installation on DICE hardware	It-admin/CMMC/environment/software-components.csv
-10.	System Interconnection / Information Sharing
+
+| Approval List | Description | File Location | 
+|:--- |:--- |:---|
+| Hardware Components | CSV file containing the list of endpoints and servers that are authorized to join DICE | `It-admin/CMMC/environment/hardware-components.csv` | 
+| Networking Components | CSV file containing the list of networking hardware that is authorized to join DICE | `It-admin/CMMC/environment/networking-components.csv` |
+| Software Components | CSV file containing the list of software that is approved for installation on DICE hardware | `It-admin/CMMC/environment/software-components.csv` |
+
+# System Interconnection / Information Sharing
 The DICE infrastructure does not participate in any system interconnections where there is a direct connection between two or more IT systems for the purpose of sharing information resources.
-11.	Laws, Regulations, and Policies Affecting the System
+
+# Laws, Regulations, and Policies Affecting the System
 The following laws and regulations apply to the information system:
 •	Privacy Act of 1974 as amended [5 USC 552a]
 •	Defense Federal Acquisition Regulation Supplement (DFARS) [Clause 252.204-7012 - Safeguarding Covered Defense Information and Cyber Incident Reporting]
@@ -476,4 +478,3 @@ MIT
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
    [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
    [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
-
