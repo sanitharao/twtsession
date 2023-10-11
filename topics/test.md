@@ -80,29 +80,38 @@ The DICE infrastructure does not participate in any system interconnections wher
 
 # Laws, Regulations, and Policies Affecting the System
 The following laws and regulations apply to the information system:
-•	Privacy Act of 1974 as amended [5 USC 552a]
-•	Defense Federal Acquisition Regulation Supplement (DFARS) [Clause 252.204-7012 - Safeguarding Covered Defense Information and Cyber Incident Reporting]
-•	NIST Special Publication 800-171 r2
-12.	Minimum Security Controls
+- Privacy Act of 1974 as amended [5 USC 552a]
+- Defense Federal Acquisition Regulation Supplement (DFARS) [Clause 252.204-7012 - Safeguarding Covered Defense Information and Cyber Incident Reporting]
+- NIST Special Publication 800-171 r2
+
+# Minimum Security Controls
 Security controls must meet minimum-security control baseline requirements. There are security control baseline requirements for management controls, operational controls, and technical controls.
+
 Management security controls identify the management safeguards and countermeasures in-place or planned for the Deepwave Digital system. Management Controls are those safeguards and countermeasures that focus on the management of risk and the management of the information security system. They are actions that are performed primarily to support information system security management decisions.
+
 Operational security controls identify the operational safeguards and countermeasures in-place or planned for the Deepwave Digital system. Operational controls are those safeguards and countermeasures that are primarily implemented and executed by people as opposed to systems and technology.
+
 Technical security controls identify the technical safeguards and countermeasures in-place or planned for the Deepwave Digital system. Technical Controls are those safeguards and countermeasures that are primarily implemented and executed by the information system through mechanisms contained in the hardware, software, or firmware components of the system.
+
 Security controls that are representative of the sensitivity of the Deepwave Digital systems are described in the sections that follow. Only security controls mandated by the CMMC are implemented or planned and are described below. Additional security controls may be added below as they are implemented or planned for the Deepwave Digital system.
+
 Deepwave Digital has begun the process of organizing each Security Control family into its own policy document that bears the name of the control family. Each policy will identify the roles and responsibilities of those tasked with implementation of the control family. 
 
-12.1	ACCESS CONTROL (AC)
-AC.L1-3.1.1
+## ACCESS CONTROL (AC)
+
+### AC.L1-3.1.1
 Limit information system access to authorized users, processes acting on behalf of authorized users, or devices (including other information systems)
-Control Summary
+
+#### Control Summary
 Deepwave has identified authorized users, processes and devices that are connected to the system and maintains a list of those users and their roles via tracked modifications to the respective access control list. This list is located in the it-admin repository and is maintained as needed.  Deepwave Digital has limited access to the DICE systems to only authorized users and those users have limited access to DICE systems. Deepwave has the tools to identify, define, and limit access to transactions and functions that authorized users are permitted to execute for all systems. 
 
-System	Role	Functions Accessed	Actions Limiting Access 
-PreVeil	User	•	Encrypted email, file storage, access to any folders/files shared with user	A PreVeil account is required for any user to access the PreVeil system. Access rights are enforced via private, user and device-based key authentication cryptography. Any accidental communications (into or out of the system) and/or spoofing attempts are eliminated with the Trusted Community feature. The Device Management feature provides control over all active devices within the system. Organization-specified Admin roles and Approval Groups are required for invasive Admin actions. 
+| System | Role | Functions Accessed | Actions Limiting Access |
+|:--- |:--- |:--- |:--- |
+| PreVeil | User | <ol><li>Encrypted email, file storage, access to any folders/files shared with user</li</ol> | A PreVeil account is required for any user to access the PreVeil system. Access rights are enforced via private, user and device-based key authentication cryptography. Any accidental communications (into or out of the system) and/or spoofing attempts are eliminated with the Trusted Community feature. The Device Management feature provides control over all active devices within the system. Organization-specified Admin roles and Approval Groups are required for invasive Admin actions. 
 PreVeil 	Administrator	•	Encrypted email, file storage, access to any folders/files shared with user.
 •	Administrative functions including, Approval Groups, approving allow-listing (whitelisting), approving added/removing approved devices, adding/removing users, adding/removing administrators etc.	
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
-Referenced Policy 
+### Referenced Policy 
 Deepwave Digital Access Control
 
 AC.L1-3.1.2
