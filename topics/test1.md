@@ -217,8 +217,6 @@ For additional information, please see the Deepwave Digital Customer Responsibil
 ##### Referenced Policy
 Deepwave Digital Access Control
 
-# Second set of content
-
 #### AC.L2-3.1.7
 
 Prevent non-privileged users from executing privileged functions and capture the execution of such functions in audit logs. 
@@ -441,145 +439,215 @@ For additional information, please see the Deepwave Security Implementation.
 
 3.01_Access_Control_SOP
 
-AC.L2-3.1.18
+#### AC.L2-3.1.18
+
 Control connection of mobile devices.
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital Does not allow any Mobile devices to access CUI data or PreVeil Systems Deepwave defines a mobile devise as such. A mobile device is a small hand-held device that has a display screen with touch input and/or a QWERTY keyboard and may provide users with telephony capabilities 
+
 Company uses PreVeil for all digital CUI storage and transmission. PreVeil Device Management capabilities support the registration, tracking and management of Deepwave Digital mobile devices that are enabled with the PreVeil system. Use of mobile devices can be restricted by Administrators on a user-by-user basis. Device additions can be managed. Access to PreVeil on any device can be locked by Administrators. 
+
 PreVeil Device Management capabilities support the registration, tracking and management of Deepwave Digital mobile devices that are enabled with the PreVeil system. Use of mobile devices can be restricted by Administrators on a user-by-user basis. Device additions can be managed. Access to PreVeil on any device can be locked by Administrators. 
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
-3.01_Access_Control_SOP
-AC.L2-3.1.19
-Encrypt CUI on mobile devices and mobile computing platforms. 
-Control Summary
-Deepwave Digital Does not allow any Mobile devices to access CUI data or PreVeil Systems Deepwave defines a mobile device as such. A mobile device is a small hand-held device that has a display screen with touch input and/or a QWERTY keyboard and may provide users with telephony capabilities.
- Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil supports biometric protection (when available on a device) and user and device key management to restrict access to the PreVeil mobile application to authorized users. During standard operation, PreVeil does not store data on mobile devices. Information on the PreVeil mobile app is accessed in view mode. No CUI information from the PreVeil system is stored, at any time, on the user’s mobile device.  The PreVeil system allows administrators to allow or disallow mobile devices, at their discretion, to connect to the customer's instance of PreVeil, as well as providing monitoring and audit logging functionality for such connections.  All data transmitted and stored via the PreVeil system is FIPS 140-2 end-to-end encrypted, including on mobile devices and mobile computing platforms through the PreVeil mobile app. The PreVeil NIST CMVP certification may be found here.
-For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.01_Access_Control_SOP
 
-AC.L1-3.1.20
+#### AC.L2-3.1.19
+
+Encrypt CUI on mobile devices and mobile computing platforms. 
+
+##### Control Summary
+
+Deepwave Digital Does not allow any Mobile devices to access CUI data or PreVeil Systems Deepwave defines a mobile device as such. A mobile device is a small hand-held device that has a display screen with touch input and/or a QWERTY keyboard and may provide users with telephony capabilities.
+
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil supports biometric protection (when available on a device) and user and device key management to restrict access to the PreVeil mobile application to authorized users. During standard operation, PreVeil does not store data on mobile devices. Information on the PreVeil mobile app is accessed in view mode. No CUI information from the PreVeil system is stored, at any time, on the user’s mobile device.  The PreVeil system allows administrators to allow or disallow mobile devices, at their discretion, to connect to the customer's instance of PreVeil, as well as providing monitoring and audit logging functionality for such connections.  All data transmitted and stored via the PreVeil system is FIPS 140-2 end-to-end encrypted, including on mobile devices and mobile computing platforms through the PreVeil mobile app. The PreVeil NIST CMVP certification may be found [here](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3804).
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+
+3.01_Access_Control_SOP
+
+#### AC.L1-3.1.20
+
 Verify and control/limit connections to and use of external information systems. 
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital manages connection to and use of external information systems by limiting the use of such connections to the following: Deepwave Digital has designated PreVeil as the only system used by Deepwave Digital for CUI transmission and storage.
 
-External System	Purpose	Controls in Place to Manage
-PreVeil	Storage and transmission of all CUI data (inbound and outbound)	PreVeil utilizes end-to-end WDE encryption with user and device-based keys to enforce information flow restrictions for CUI. PreVeil can be deployed for a subset of organization users that need the highest level of security. File/Folder permissions are enforced cryptographically. Admin Console only accessible by specified Admins. All system actions are logged. Shared Folders with encrypted contents can be restricted to user groups on a need-to-know basis. 
+| External System | Purpose | Controls in Place to Manage |
+|:--- |:--- |:--- |
+| PreVeil | Storage and transmission of all CUI data (inbound and outbound) | PreVeil utilizes end-to-end WDE encryption with user and device-based keys to enforce information flow restrictions for CUI. PreVeil can be deployed for a subset of organization users that need the highest level of security. File/Folder permissions are enforced cryptographically. Admin Console only accessible by specified Admins. All system actions are logged. Shared Folders with encrypted contents can be restricted to user groups on a need-to-know basis. |
 
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.01_Access_Control_SOP
 
-AC.L2-3.1.21
+#### AC.L2-3.1.21
+
 Limit use of portable storage devices on external systems. 
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital Deepwave Digital uses Microsoft Intune for the purpose of restricting the utilization of portable storage devices. This is accomplished by enforcing FIPS-compliant BitLocker Encryption on such devices. Furthermore, Deepwave has enacted a policy that explicitly prohibits the use of portable storage for storing (CUI) data.
+
 Deepwave Digital uses PreVeil for all digital CUI storage and transmission. The PreVeil system does not allow for portable storage devices to connect to the PreVeil system infrastructure backend. 
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.01_Access_Controls
 
 
+#### AC.L1-3.1.22
 
-AC.L1-3.1.22
 Control information posted or processed on publicly accessible information systems.
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital has identified individuals authorized to post or process information on publicly accessible systems. That list of authorized individuals can be found here user-access-list-public-posting located in the it-admin repository.
 
 Content will follow the workflow below before being finally authorized for posting on publicly accessible systems:
-Role	Responsibility	Workflow Steps
-Content Creator	Review content for grammar, spelling, and other contextual errors.  	1.	Send draft copy to Content Reviewer.
-Content Reviewer	Review the draft copy from Content Creator to ensure that no CUI is present and do a check of any grammar, spelling, and other contextual errors that the Content Creator may have missed.	2.	Send the copy back to the Content Creator, if necessary.  If not, send the copy to the Posting Resource for final review and posting.
-Posting Resource
-Review the final copy and make sure no CUI is present.  Double check for contextual errors and then posts to the appropriate publicly accessible system. 	3.	Reviews the final copy and then posts to publicly accessible systems.  If any last-minute errors are found by the Posting Resource, the copy will be sent back to the Content Reviewer and/or Content Creator for correct before posting. 
+
+| Role | Responsibility | Workflow Steps |
+|:--- |:--- |:--- |
+| Content Creator | Review content for grammar, spelling, and other contextual errors. | <ol><li>Send draft copy to Content Reviewer.</li></ol> |
+| Content Reviewer | Review the draft copy from Content Creator to ensure that no CUI is present and do a check of any grammar, spelling, and other contextual errors that the Content Creator may have missed. | <ol start="2"><li>Send the copy back to the Content Creator, if necessary.  If not, send the copy to the Posting Resource for final review and posting.</li></ol> |
+| Posting Resource | Review the final copy and make sure no CUI is present.  Double check for contextual errors and then posts to the appropriate publicly accessible system. | <ol start="3"><li>Reviews the final copy and then posts to publicly accessible systems.  If any last-minute errors are found by the Posting Resource, the copy will be sent back to the Content Reviewer and/or Content Creator for correct before posting.</li></ol> |
 
 For any information spillage to publicly accessible systems, the following workflow will be followed:
-Role	Responsibility	Workflow Steps
-Spillage Identifier	The individual who identifies the CUI spillage is responsible for reporting that spillage, immediately. 	1.	The Spillage Identifier reports the spillage to the possible CUI spillage to the Security Officer.
-Security Officer	The Security Officer reviews the location of the possible CUI spillage and decides if an incident has occurred.  If a spillage has in fact occurred, the Security Officer will notify the IT Manager and Executive Management.	2.	The Security Officer decides if a CUI spillage has occurred and then reports that spillage and the location to the IT Manager and Executive Management.  The Security Officer will also record the spillage [list where the spillage would be recorded here], ensuring that all pertinent information is captured (i.e., date of incident, resources involved, high level overview of CUI data that was spilled, actions taken for remediation, stakeholders notified, etc.)
-IT Manager	The IT Manager will take the information from the Security Officer and remove the CUI immediately, upon notification. 	3.	The IT Manager will remove all CUI spillage, once confirmed, and reported by the Security Officer
-Executive Management	The member of the Executive Management team that is alerted about the CUI spillage from the Security Officer will alert all stakeholders (including, but not limited to, government contracts personnel).	4.	Executive Management will report the CUI spillage, as necessary, to the appropriate government contracts representatives and follow all other government sanctioned reporting guidelines for CUI spillage.  Executive Management will be sure to document all communications and actions taken. 
+
+| Role | Responsibility | Workflow Steps |
+|:-- |:-- |:-- |
+| Spillage Identifier | The individual who identifies the CUI spillage is responsible for reporting that spillage, immediately. | <ol><li>The Spillage Identifier reports the spillage to the possible CUI spillage to the Security Officer.</li> |
+| Security Officer | The Security Officer reviews the location of the possible CUI spillage and decides if an incident has occurred.  If a spillage has in fact occurred, the Security Officer will notify the IT Manager and Executive Management. | <ol start="2"><li>The Security Officer decides if a CUI spillage has occurred and then reports that spillage and the location to the IT Manager and Executive Management.  The Security Officer will also record the spillage **\[list where the spillage would be recorded here\]**, ensuring that all pertinent information is captured (i.e., date of incident, resources involved, high level overview of CUI data that was spilled, actions taken for remediation, stakeholders notified, etc.)</li></ol> |
+| IT Manager | The IT Manager will take the information from the Security Officer and remove the CUI immediately, upon notification. | <ol start="3"><li>The IT Manager will remove all CUI spillage, once confirmed, and reported by the Security Officer</li></ol>
+| Executive Management | The member of the Executive Management team that is alerted about the CUI spillage from the Security Officer will alert all stakeholders (including, but not limited to, government contracts personnel).| <ol start="4"><li>Executive Management will report the CUI spillage, as necessary, to the appropriate government contracts representatives and follow all other government sanctioned reporting guidelines for CUI spillage.  Executive Management will be sure to document all communications and actions taken. </li></ol> | 
+
 This control is out of scope for the PreVeil system.
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.01_Access_Control_SOP
 
 
-12.2	AWARENESS AND TRAINING (AT)
-AT.L2-3.2.1
+### 12.2 AWARENESS AND TRAINING (AT)
+
+#### AT.L2-3.2.1
+
 Ensure that managers, system administrators, and users of organizational systems are made aware of the security risks associated with their activities and of the applicable policies, standards, and procedures related to the security of those systems. 
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital has created a training solution using DoD Mandatory Controlled Unclassified Information (CUI) Training , Role-Based Training provided by PreVeil, Insider Threat Training provided by PreVeil, and Deepwave Digital role-based training. To ensure that all employees who use Deepwave Digital systems are made aware of the security risks within their roles and responsibilities. 
+
 Deepwave Digital security training happens upon hire, annually, and those trained must complete a training form attesting to completion of said training. 
+
 Deepwave Digital uses PreVeil for all digital CUI transmission and storage. Deepwave Digital utilizes PreVeil’s training solutions regarding the security risks of CUI handling, as well as the security risks surrounding PreVeil roles and responsibilities. 
+
 Training happens upon hire and as needed, and refresher training is conducted no less than annually.  Training schedules and roles are listed below. For a complete list of all trained resources and trainer roles assigned, please see Deepwave_Training_POCs_and_Users_Training_logs located in the it-admin repository.
-Name of Training	Training Description	Role Responsible for Taking Training	Role Responsible for Administering Training
-PreVeil Role-Based Training	 Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil Role Responsibility Training reviews the different responsibilities and risks involved in having access to CUI at the user and Administrator levels.
-	PreVeil Users and Administrators	PreVeil asynchronous training
-PreVeil CUI Training	Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil CUI Risk Training reviews the risks and possible security issues that can arise from having access to CUI data.
-	PreVeil Users and Administrators	PreVeil asynchronous training
-Security Training	Initial security brief for all Deepwave Digital resources includes defining CUI - Controlled Unclassified Information, Explain the purpose for the CUI program, Describe the purpose and location of the Information Security Oversight Office (ISOO) and DOD CUI registries, Apply proper initial marking requirements, Identify decontrol requirements, Describe safeguarding requirements, Identify proper destruction methods, Apply appropriate access and dissemination controls, Explain the procedures for identifying and reporting security incidents, and State the implementation guidelines for CUI	 PreVeil Users and Administrators	IT Manger
-Deepwave Digital Role Based Training	Role based training for all users and administrators on all Deepwave Digital systems outside PreVeil 	Microsoft Windows  Users and Administrators	 IT Manger
+
+| Name of Training | Training Description | Role Responsible for Taking Training | Role Responsible for Administering Training |
+|:--- |:--- |:--- |:--- |
+| PreVeil Role-Based Training | Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil Role Responsibility Training reviews the different responsibilities and risks involved in having access to CUI at the user and Administrator levels.| PreVeil Users and Administrators | PreVeil asynchronous training |
+| PreVeil CUI Training | Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil CUI Risk Training reviews the risks and possible security issues that can arise from having access to CUI data. | PreVeil Users and Administrators | PreVeil asynchronous training |
+| Security Training | Initial security brief for all Deepwave Digital resources includes defining CUI - Controlled Unclassified Information, Explain the purpose for the CUI program, Describe the purpose and location of the Information Security Oversight Office (ISOO) and DOD CUI registries, Apply proper initial marking requirements, Identify decontrol requirements, Describe safeguarding requirements, Identify proper destruction methods, Apply appropriate access and dissemination controls, Explain the procedures for identifying and reporting security incidents, and State the implementation guidelines for CUI | PreVeil Users and Administrators | IT Manger |
+| Deepwave Digital Role Based Training | Role based training for all users and administrators on all Deepwave Digital systems outside PreVeil | Microsoft Windows  Users and Administrators | IT Manger |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.02_Awareness_and_Training_SOP
 
-AT.L2-3.2.2
+#### AT.L2-3.2.2
+
 Ensure that personnel are trained to carry out their assigned information security related duties and responsibilities. 
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital training is provided where managers, systems administrators, and users of the system are made aware of the security risks associated with their activities and the policies governing those systems. Deepwave Digital personnel are adequately trained, and training is specific to assigned information security-related duties, roles, and responsibilities.
+
 Deepwave Digital uses PreVeil for all digital CUI transmission and storage. Deepwave Digital utilizes PreVeil’s training solutions regarding the security related duties and responsibilities as they pertain to PreVeil. 
+
 Training happens upon hire and as needed, and refresher training is conducted no less than annually.  Training schedules and roles are listed below. For a complete list of all trained resources and trainer roles assigned, please see  Deepwave_Training_POCs_and_Users_Training_logs located in the it-admin repository.
-Name of Training	Training Description	Role Responsible for Taking Training	Role Responsible for Administering Training
-PreVeil Role Training	 Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil Role Responsibility Training reviews the different responsibilities and risks involved in having access to CUI at the user and Administrator levels.
-	PreVeil Users and Administrators	PreVeil asynchronous training
-PreVeil CUI Training	Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil CUI Risk Training reviews the risks and possible security issues that can arise from having access to CUI data.
-	PreVeil Users and Administrators	PreVeil asynchronous training
-Administrator Responsibilities	Training for all Deepwave Microsoft Windows Administrators will include all user training as well as how to safeguard and maintain the security of the Windows system and all the authorized users and devices within it. Additionally, hands-on training for Azure Active Directory, Defender 365, and the Intune Admin Console. 
-Deepwave Microsoft Windows administrators	IT Manger
-User Responsibilities	Training for all Deepwave Microsoft Windows Administrators will include information on how to Safely use approved applications, Navigate the internet securely, effectively manage and utilize email, Edit and manage personal files with ease, print documents effortlessly, Access network resources seamlessly, Customize and change personal settings to suit your needs, Run non-administrative programs confidently.	Deepwave Microsoft Windows users 	IT Manger
+
+| Name of Training | Training Description | Role Responsible for Taking Training | Role Responsible for Administering Training |
+|:--- |:--- |:--- |:--- |
+| PreVeil Role Training | Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil Role Responsibility Training reviews the different responsibilities and risks involved in having access to CUI at the user and Administrator levels. | PreVeil Users and Administrators | PreVeil asynchronous training |
+| PreVeil CUI Training | Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil CUI Risk Training reviews the risks and possible security issues that can arise from having access to CUI data. | PreVeil Users and Administrators | PreVeil asynchronous training |
+| Administrator Responsibilities | Training for all Deepwave Microsoft Windows Administrators will include all user training as well as how to safeguard and maintain the security of the Windows system and all the authorized users and devices within it. Additionally, hands-on training for Azure Active Directory, Defender 365, and the Intune Admin Console. | Deepwave Microsoft Windows administrators | IT Manger |
+| User Responsibilities | Training for all Deepwave Microsoft Windows Administrators will include information on how to Safely use approved applications, Navigate the internet securely, effectively manage and utilize email, Edit and manage personal files with ease, print documents effortlessly, Access network resources seamlessly, Customize and change personal settings to suit your needs, Run non-administrative programs confidently. | Deepwave Microsoft Windows users | IT Manger |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.02_Awareness_and_Training_SOP
 
-AT.L2-3.2.3
+#### AT.L2-3.2.3
+
 Provide security awareness training on recognizing and reporting potential indicators of insider threat.
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital trains all new employees, upon hiring within Deepwave Digital and annually.  Any insider threat will be reported to the Security Officer [or alternative POC] who will decide if the threat is credible and needs to be escalated.
+
 Deepwave Digital leverages the PreVeil insider threat training for all management and general users within the company information systems. Training happens upon hire and as needed, and refresher training is conducted no less than annually.  Training schedules and roles are listed below. For a complete list of all trained resources and trainer roles assigned, please see Training POCs and users training logs Spreadsheet located in the it-admin repository.
-Name of Training	Training Description	Role Responsible for Taking Training	Role Responsible for Administering Training
-Insider Threat Training - Managers	Managers review the PreVeil insider threat training describing different types of insider threats and how to identify them, as well as good reporting techniques when responding to a potential insider threat. Additional management specific insider threat training 	PreVeil Administrators and users	PreVeil asynchronous training
-Insider Threat Training - General	Managers review the PreVeil insider threat training describing different types of insider threats and how to identify them, as well as good reporting techniques when responding to a potential insider threat. General resource, non-management specific insider threat training 	Users and Administrators 	PreVeil asynchronous training
+
+| Name of Training | Training Description | Role Responsible for Taking Training | Role Responsible for Administering Training |
+|:--- |:--- |:--- |:--- |
+| Insider Threat Training - Managers | Managers review the PreVeil insider threat training describing different types of insider threats and how to identify them, as well as good reporting techniques when responding to a potential insider threat. Additional management specific insider threat training | PreVeil Administrators and users | PreVeil asynchronous training |
+| Insider Threat Training - General | Managers review the PreVeil insider threat training describing different types of insider threats and how to identify them, as well as good reporting techniques when responding to a potential insider threat. General resource, non-management specific insider threat training | Users and Administrators | PreVeil asynchronous training |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.02_Awareness_and_Training_SOP
 
 
-12.3	AUDIT AND ACCOUNTABILITY (AU)
-AU.L2-3.3.1
+## 12.3 AUDIT AND ACCOUNTABILITY (AU)
+
+#### AU.L2-3.3.1
+
 Create and retain system audit logs and records to the extent needed to enable the monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity. 
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital maintains audit logs for all systems.  These systems capture, at a minimum, the following information:
-•	Time stamps
-•	Source and destination addresses
-•	User or process identifiers
-•	Event descriptions
-•	Success or fail indications.
-•	Filenames
+
+- Time stamps
+- Source and destination addresses
+- User or process identifiers
+- Event descriptions
+- Success or fail indications.
+- Filenames
+- 
 Each Deepwave Digital system audit logs are monitored, analyzed, investigated (as necessary), and reporting of unlawful or unauthorized system activities are specified.  For a complete list of audit see 3.03_Audit_and_Accountability_SOP located in the it-admin repository.
+
 An overview of audit log retention, reporting, and analysis may be found below:
-System Name	Audit Log Information	Role to Review Audit Log	Audit Log Retention	Reporting Procedures
-PreVeil	Deepwave Digital  uses PreVeil for all digital CUI storage and transmission. PreVeil ensures system audit records support the ability to identify individual system users associated with the event. PreVeil audit logs are tamperproof and cannot be edited or deleted.  PreVeil Administrators export audit logs to review either manually or through third-party software. See PreVeil Security White Paper 
-	Deepwave Digital  PreVeil Administrators	PreVeil audit logs are retained, indefinitely 	PreVeil Administrators are the only resources that can access the administrative logs. 
-These logs will be reviewed no less than Monthly. 
-These logs will be retained [insert location where audit logs will be retained] along with the review and any additional actions taken as per the Deepwave Digital  incident response plan found within this document. 
-Deepwave in scope End Points	General audit log information user activity information, Virus scans, Firewall reports,  web filtering reports, remote sessions occurrence report, failed login attempts, account creation or deactivation reports.	IT Manger	Deepwave will retain end point logs for a period of 2 years. 	The IT Manager is the only resource that can access the administrative logs. 
-These logs will be reviewed no less than Monthly.
-These logs will be retained within the Deepwave “Admin Actions” folder found on the company PreVeil Drive.
+
+| System Name | Audit Log Information | Role to Review Audit Log | Audit Log Retention | Reporting Procedures |
+|:--- |:--- |:--- |:--- |:--- |
+| PreVeil | Deepwave Digital  uses PreVeil for all digital CUI storage and transmission. PreVeil ensures system audit records support the ability to identify individual system users associated with the event. PreVeil audit logs are tamperproof and cannot be edited or deleted.  PreVeil Administrators export audit logs to review either manually or through third-party software. See [PreVeil Security White Paper](https://www.preveil.com/resources/architectural-white-paper/) | Deepwave Digital  PreVeil Administrators	| PreVeil audit logs are retained, indefinitely | PreVeil Administrators are the only resources that can access the administrative logs.<br><br>These logs will be reviewed no less than Monthly.<br><br>These logs will be retained [insert location where audit logs will be retained] along with the review and any additional actions taken as per the Deepwave Digital  incident response plan found within this document. |
+| Deepwave in scope End Points | General audit log information user activity information, Virus scans, Firewall reports,  web filtering reports, remote sessions occurrence report, failed login attempts, account creation or deactivation reports. | IT Manger | Deepwave will retain end point logs for a period of 2 years. | The IT Manager is the only resource that can access the administrative logs.<br><br>These logs will be reviewed no less than Monthly.<br><br>These logs will be retained within the Deepwave “Admin Actions” folder found on the company PreVeil Drive. |
+
 For additional information, please see the Deepwave Security Implementation.
 
-Referenced Policy
+##### Referenced Policy
+
 3.03_Audit_and_Accountability_SOP
 
 
