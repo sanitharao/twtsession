@@ -66,7 +66,7 @@ The DICE system provides unclassified interconnectivity between its employees to
 ## 8. Deepwave Digital Network Diagram
 The following architectural diagram provides a visual depiction of the major hardware components that constitute the DICE system.
 
-![Garrison Network](figs/Garrison_Network.png)
+![Garrison Network](../figs/Garrison_Network.png "Garrison Network")
 
 ## 9. System Environment
 DICE is a custom environment composed of Windows Operating Systems with a list of approved hardware components, software components, and networking components. An up-to-date list of approved components may be found in the CCMC repository. 
@@ -931,107 +931,142 @@ Deepwave Digital tracks, reviews, and logs any changes to the system and these c
 
 Every organizational change will be captured **\[insert location for capturing of organizational system changes\]** and follow the workflow below **\[insert Deepwave Digital workflow, below, or update example\]**:
 
-![**Deepwave Digital Organizational Change Request Workflow**](figs/Deepwave-Digital-Organizational-Change-Request-Workflow.png)
+[**Deepwave Digital Organizational Change Request Workflow**]
+
+![**Deepwave Digital Organizational Change Request Workflow**](../figs/Deepwave-Digital-Organizational-Change-Request-Workflow.png "Deepwave Digital Organizational Change Request Workflow")
 
 
+Deepwave Digital utilizes PreVeil for CUI storage and management. PreVeil tracks, reviews, approves/disapproves changes to the backend PreVeil system and system components. All proposed configuration changes to the Deepwave Digital PreVeil information system are reviewed by appropriate PreVeil administrators within the organization’s IT Department for approval. Approved configuration changes are implemented and recorded. Records of all configuration changes are retained indefinitely.
 
-
-
-
-
-
-
-
-
-
-
-Deepwave Digital utilizes PreVeil for CUI storage and management. PreVeil tracks, reviews, approves/disapproves changes to the backend PreVeil system and system components. All proposed configuration changes to the Deepwave Digital PreVeil information system are reviewed by appropriate PreVeil administrators within the organization’s IT Department for approval. Approved configuration changes are implemented and recorded. Records of all configuration changes are retained indefinitely.  
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.04_Configuration_Management_SOP
 
-CM.L2-3.4.4
+#### CM.L2-3.4.4
+
 Analyze the security impact of changes prior to implementation.
-Control Summary
-Deepwave Digital analyzes, tests, validates, and documents all configuration changes to operational systems before installing.  Deepwave Digital Configuration Change Management Process is outlined below for all Deepwave Digital systems [insert additional locations for additional procedures related to this control here (or include them in this document) – including, change types, evaluation processes for each change types, priority levels of each change type, roles and responsibilities who will review each change type, where a change type will be submitted, who is authorized to create a change request, etc.]:
-System	Configuration Change Management Procedure
-PreVeil	Deepwave Digital utilizes PreVeil for CUI storage and management. PreVeil analyzes the security impact of changes prior to implementation in the PreVeil backend system that supports the customer’s instance of the PreVeil system.
-[insert procedure for analyzing, testing, validating, and documenting any changes to Company Name organizational systems – Example: 
-Company Name IT Department performs appropriate security impact analysis on all proposed configuration changes. Proposed configuration changes are analyzed within virtual or sandboxed environments, prior to implementation onto organizational information systems. Company Name IT Department documents all proposed changes to the organization’s information systems and the results of the preformed security impact analysis’s within (IT/IS Security Configuration Change Request & Management Form). Reference “IT/IS Security Configuration Change Request & Management Form”. 
-Company Name utilized third-party (Name of 3rd party used here) is responsible to consult Company Name IT Department regarding all changes to software and/or configurations of services under their control, which may present subsequent impacts on Company Name information systems and assets. ]
-Organizational System 1	[insert procedure for analyzing, testing, validating, and documenting any changes to organizational systems]
-Organizational System 2 	[insert procedure for analyzing, testing, validating, and documenting any changes to organizational systems]
+
+##### Control Summary
+
+Deepwave Digital analyzes, tests, validates, and documents all configuration changes to operational systems before installing.  Deepwave Digital Configuration Change Management Process is outlined below for all Deepwave Digital systems **\[insert additional locations for additional procedures related to this control here (or include them in this document) – including, change types, evaluation processes for each change types, priority levels of each change type, roles and responsibilities who will review each change type, where a change type will be submitted, who is authorized to create a change request, etc.\]:**
+
+| System | Configuration Change Management Procedure |
+|:--- |:--- |
+| PreVeil | Deepwave Digital utilizes PreVeil for CUI storage and management. PreVeil analyzes the security impact of changes prior to implementation in the PreVeil backend system that supports the customer’s instance of the PreVeil system.<br><br> **\[insert procedure for analyzing, testing, validating, and documenting any changes to Company Name organizational systems – Example:** <ul>Company Name IT Department performs appropriate security impact analysis on all proposed configuration changes. Proposed configuration changes are analyzed within virtual or sandboxed environments, prior to implementation onto organizational information systems. Company Name IT Department documents all proposed changes to the organization’s information systems and the results of the preformed security impact analysis’s within *(IT/IS Security Configuration Change Request & Management Form). Reference “IT/IS Security Configuration Change Request & Management Form”*.</ul><ul>Company Name utilized third-party (Name of 3rd party used here) is responsible to consult Company Name IT Department regarding all changes to software and/or configurations of services under their control, which may present subsequent impacts on Company Name information systems and assets.**\]**</ul>
+| Organizational System 1 | **\[insert procedure for analyzing, testing, validating, and documenting any changes to organizational systems\]** | 
+| Organizational System 2 | **\[insert procedure for analyzing, testing, validating, and documenting any changes to organizational systems\]** |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.04_Configuration_Management_SOP
 
-CM.L2-3.4.5
+#### CM.L2-3.4.5
+
 Define, document, approve, and enforce physical and logical access restrictions associated with changes to organizational systems.
-Control Summary
-Deepwave Digital ensures that changes to Company Name organizational systems are defined, documented, approved, and enforce physical and logical access restrictions. [insert the process by which Company Name ensures this. Example:
-Company Name defines, documents, approves, and enforces logical access restrictions using Microsoft Active Directory (AD). Only Company Name IT Department personnel can initiate changes within the organizational information system environment to include access to organizational information systems, system components, software, and software libraries. Reference Company Name 3.1 Access Control (AC) Policy; Section 6.1, 3.1.1. 
-Physical access to areas containing Company Name assets including vital information systems and components, are restricted to only authorized Company Name Personnel. Reference Company Name 3.10 Physical and Environmental Protection (PE) Policy; Section: 6.1, 3.10.1. 
-Company Name documents and approves all changes to organizational information systems or system components, prior to implementation. Reference “Configuration Change Control Log”.
-Access to PreVeil administrator assets, including vital information systems and components, are restricted to only authorized organization personnel.  PreVeil's Administrative Approval Groups support enforcement of policies associated with access to and management of the data in the PreVeil system. PreVeil logs all administrative actions in a tamperproof manner. 
-Company Name ensures all utilized third parties (Name of 3rd party here) implement appropriate processes and access restrictions, regarding physical and/or logical changes to their information system environments.
-Ensure the policy does the following:
-Defines, identifies, and documents qualified individuals authorized to make physical and logical changes to the organization’s hardware, software, software libraries, or firmware components. Control of configuration management activities may involve: 
-•	physical access control that prohibits unauthorized users from gaining physical access to an asset (e.g., requiring a special key card to enter a server room)
-•	logical access control that prevents unauthorized users from logging onto a system to make configuration changes (e.g., requiring specific credentials for modifying configuration settings, patching software, or updating software libraries)
-•	workflow automation in which configuration management workflow rules define human tasks and data or files are routed between people authorized to do configuration management based on pre-defined business rules (e.g., passing an electronic form to a manager requesting approval of configuration change made by an authorized employee)
-•	an abstraction layer for configuration management that requires changes be made from an external system through constrained interface (e.g., software updates can only be made from a patch management system with a specific IP address) 
-•	utilization of a configuration management change window (e.g., software updates are only allowed between 8:00 AM and 10:00 AM or between 6:00 PM and 8:00 PM). ]
+
+##### Control Summary
+
+Deepwave Digital ensures that changes to Company Name organizational systems are defined, documented, approved, and enforce physical and logical access restrictions. **\[insert the process by which Company Name ensures this. Example:**
+
+<ul><b>Company Name defines, documents, approves, and enforces logical access restrictions using Microsoft Active Directory (AD). Only Company Name IT Department personnel can initiate changes within the organizational information system environment to include access to organizational information systems, system components, software, and software libraries. Reference Company Name 3.1 Access Control (AC) Policy; Section 6.1, 3.1.1.</b></ul>
+
+<ul><b>Physical access to areas containing Company Name assets including vital information systems and components, are restricted to only authorized Company Name Personnel. Reference Company Name 3.10 Physical and Environmental Protection (PE) Policy; Section: 6.1, 3.10.1.</b></ul>
+
+<ul><b>Company Name documents and approves all changes to organizational information systems or system components, prior to implementation. Reference “Configuration Change Control Log”.</b></ul>
+
+<ul><b>Access to PreVeil administrator assets, including vital information systems and components, are restricted to only authorized organization personnel.  PreVeil's Administrative Approval Groups support enforcement of policies associated with access to and management of the data in the PreVeil system. PreVeil logs all administrative actions in a tamperproof manner.</b></ul>
+
+<ul><b>Company Name ensures all utilized third parties (Name of 3rd party here) implement appropriate processes and access restrictions, regarding physical and/or logical changes to their information system environments.</b></ul>
+
+<ul><b>Ensure the policy does the following:</b></ul>
+
+**Defines, identifies, and documents qualified individuals authorized to make physical and logical changes to the organization’s hardware, software, software libraries, or firmware components. Control of configuration management activities may involve:**
+
+- **physical access control that prohibits unauthorized users from gaining physical access to an asset (e.g., requiring a special key card to enter a server room)**
+- **logical access control that prevents unauthorized users from logging onto a system to make configuration changes (e.g., requiring specific credentials for modifying configuration settings, patching software, or updating software libraries)**
+- **workflow automation in which configuration management workflow rules define human tasks and data or files are routed between people authorized to do configuration management based on pre-defined business rules (e.g., passing an electronic form to a manager requesting approval of configuration change made by an authorized employee)**
+- **an abstraction layer for configuration management that requires changes be made from an external system through constrained interface (e.g., software updates can only be made from a patch management system with a specific IP address)** 
+- **utilization of a configuration management change window (e.g., software updates are only allowed between 8:00 AM and 10:00 AM or between 6:00 PM and 8:00 PM). ]**
+
 Deepwave Digital utilizes PreVeil for CUI storage and management. The PreVeil customer's instance supports defining, documenting, approving, and enforcing physical and logical access restrictions associated with changes to the customer's instance of the PreVeil system. The PreVeil system is hosted within the AWS environment and inherits physical access restrictions associated with AWS' security related to physical system access.
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.04_Configuration_Management_SOP
 
-CM.L2-3.4.6
+#### CM.L2-3.4.6
+
 Employ the principle of least functionality by configuring organizational systems to provide only essential capabilities.
-Control Summary
-Deepwave Digital systems are configured to provide only the defined essential capabilities based on the principle of least functionality.  For a breakdown of all roles and functions per Deepwave Digital system, please see [insert location for all roles and functions, per system, as well as identified users within those roles for each system].  Deepwave Digital IT personnel are responsible for disabling all nonessential functions and services when building baseline images for organizational information systems. To view a list of procedures for disabling nonessential functions and services, please see [insert location of procedures for disabling nonessential functions and services, by system].
-System configurations to exclude any function not needed in the operational environment are listed below: 
-System	System Configuration – Excluding Non-essential Functions
-PreVeil	Deepwave Digital utilizes PreVeil for CUI storage and management. Only authorized users on authorized devices can access the secure data in PreVeil. Permissions are enforced cryptographically. Only authorized Administrators can perform administrative functions. Only formal Approval Groups can authorize specific invasive system actions. See PreVeil security whitepaper 
 
-Organizational System 1	[insert system configurations that exclude nonessential functions]
-Organizational System 2 	[insert system configurations that exclude nonessential functions]
+##### Control Summary
+
+Deepwave Digital systems are configured to provide only the defined essential capabilities based on the principle of least functionality.  For a breakdown of all roles and functions per Deepwave Digital system, please see **\[insert location for all roles and functions, per system, as well as identified users within those roles for each system\]**.  Deepwave Digital IT personnel are responsible for disabling all nonessential functions and services when building baseline images for organizational information systems. To view a list of procedures for disabling nonessential functions and services, please see **\[insert location of procedures for disabling nonessential functions and services, by system\]**.
+
+System configurations to exclude any function not needed in the operational environment are listed below: 
+
+| System | System Configuration – Excluding Non-essential Functions |
+|:--- |:--- |
+| PreVeil | Deepwave Digital utilizes PreVeil for CUI storage and management. Only authorized users on authorized devices can access the secure data in PreVeil. Permissions are enforced cryptographically. Only authorized Administrators can perform administrative functions. Only formal Approval Groups can authorize specific invasive system actions. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) |
+| Organizational System 1 | **\[insert system configurations that exclude nonessential functions\]** |
+| Organizational System 2 |	**\[insert system configurations that exclude nonessential functions\]** | 
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.04_Configuration_Management_SOP
 
-CM.L2-3.4.7
+#### CM.L2-3.4.7
+
 Restrict, disable, or prevent the use of nonessential programs, functions, ports, protocols, and services.
-Control Summary
-Deepwave Digital ensures that all nonessential programs, functions, ports, protocols, and services are restricted, disabled or prevented from use.  [An example of how to address this control is below:
+
+##### Control Summary
+
+Deepwave Digital ensures that all nonessential programs, functions, ports, protocols, and services are restricted, disabled or prevented from use **\[An example of how to address this control is below:** 
+
 Baseline images are reviewed to identify and disable any unnecessary functions, ports, protocols, and services. These least functionality configurations can be extended to include restrictions of specific software execution. A baseline established configuration is the initial set up for all Deepwave Digital issued laptops and/or desktops. All Deepwave Digital controlled hardware is monitored via the (Name of Software Used). 
-Local administrative rights are not provided unless the user is deemed to need privileged rights, adding another layer of restrictions on employees. 
-If additional software is recommended to be added to the baseline configuration, it will be reviewed and approved by the IT Department prior to being approved by management. Ports, protocols, and services require approval, prior to utilization. Once baselines are established, local administrative restrictions assure that these rules are followed.
-All information systems are reviewed [insert cadence] to identify and disable any unnecessary functions, ports, protocols, and services. These least functionality configurations are extended to include the restriction of specific software executions.    
+
+<ul>Local administrative rights are not provided unless the user is deemed to need privileged rights, adding another layer of restrictions on employees.</ul>
+
+<ul>If additional software is recommended to be added to the baseline configuration, it will be reviewed and approved by the IT Department prior to being approved by management. Ports, protocols, and services require approval, prior to utilization. Once baselines are established, local administrative restrictions assure that these rules are followed.</ul>
+
+<ul>All information systems are reviewed <b>insert cadence</b> to identify and disable any unnecessary functions, ports, protocols, and services. These least functionality configurations are extended to include the restriction of specific software executions.</ul>
+
 Create documentation defining the following information for all Deepwave Digital systems:
-•	Essential Programs
-•	Essential Programs are defined.
-•	Use of Nonessential Programs
-•	Use of Nonessential Programs is restricted, disabled, or prevented, as defined.
-•	Essential Functions
-•	Essential Functions are defined.
-•	Use of Nonessential Functions
-•	Use of Nonessential Functions is restricted, disabled, or prevented, as defined.
-•	Essential Ports
-•	Essential Ports are defined.
-•	Use of Nonessential Ports
-•	Use of Nonessential Ports is restricted, disabled, or prevented, as defined.
-•	Essential Protocols
-•	Essential Protocols are defined.
-•	Use of Nonessential Protocols
-•	Use of Nonessential Protocols is restricted, disabled, or prevented, as defined.
-•	Essential Services
-•	Essential Services are defined.
-•	Use of Nonessential Services
-•	Use of Nonessential Services is restricted, disabled, or prevented, as defined.
+
+<ul><li><b>Essential Programs</b></li>
+<ul><li>Essential Programs are defined.</li>
+<li>Use of Nonessential Programs</li>
+<li>Use of Nonessential Programs is restricted, disabled, or prevented, as defined.</li></ul>
+<li><b>Essential Functions</b></li>
+<ul><li>Essential Functions are defined.</li>
+<li>Use of Nonessential Functions</li>
+<li>Use of Nonessential Functions is restricted, disabled, or prevented, as defined.</li></ul>
+<li><b>Essential Ports</b></li>
+<ul><li>Essential Ports are defined.</li>
+<li>Use of Nonessential Ports</li>
+<li>Use of Nonessential Ports is restricted, disabled, or prevented, as defined.</li></ul>
+<li><b>Essential Protocols</b></li>
+<ul><li>Essential Protocols are defined.</li>
+<li>Use of Nonessential Protocols</li>
+<li>Use of Nonessential Protocols is restricted, disabled, or prevented, as defined.</li></ul>
+<li><b>Essential Services</b></li>
+<ul><li>Essential Services are defined.</li>
+<li>Use of Nonessential Services</li>
+<li>Use of Nonessential Services is restricted, disabled, or prevented, as defined.</li></ul></ul>
+
 Deepwave Digital utilizes PreVeil for CUI storage and management. The PreVeil system prevents the use of nonessential programs, functions, ports, protocols, and services within the PreVeil system.
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.04_Configuration_Management_SOP
 
 
