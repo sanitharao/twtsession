@@ -66,7 +66,7 @@ The DICE system provides unclassified interconnectivity between its employees to
 ## 8. Deepwave Digital Network Diagram
 The following architectural diagram provides a visual depiction of the major hardware components that constitute the DICE system.
 
-![Garrison Network](Garrison_Network.png)
+![Garrison Network](figs/Garrison_Network.png)
 
 ## 9. System Environment
 DICE is a custom environment composed of Windows Operating Systems with a list of approved hardware components, software components, and networking components. An up-to-date list of approved components may be found in the CCMC repository. 
