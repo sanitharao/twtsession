@@ -1212,71 +1212,75 @@ For additional information, please see the Deepwave Security Implementation.
 
 3.05_Identification_and_Authentication_SOP
 
+#### IA.L2-3.5.6
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-IA.L2-3.5.6
 Disable identifiers after a defined period of inactivity.
-Control Summary
-Deepwave Digital disables identifiers after [insert period of inactivity that will disable an identifier].  Each system mechanism for monitoring and disabling identifiers is listed below:
-System	System Monitoring and Disabling Mechanisms
-PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. Deepwave Digital PreVeil Administrators evaluate the use of PreVeil, [ insert cadence here, i.e., daily, weekly] to assess those users that are no longer active in the Deepwave Digital PreVeil system. If a Deepwave Digital PreVeil user has been inactive for [insert amount of time inactive before disabling account], the Deepwave Digital  PreVeil administrator will disable the account via the Deepwave Digital PreVeil Admin Console. See PreVeil security whitepaper 
 
-Organizational System 1	[insert system monitoring and disabling mechanisms]
-Organizational System 2 	[insert system monitoring and disabling mechanisms]
+##### Control Summary
+
+Deepwave Digital disables identifiers after **\[insert period of inactivity that will disable an identifier\].**  Each system mechanism for monitoring and disabling identifiers is listed below:
+
+| System | System Monitoring and Disabling Mechanisms |
+|:--- |:--- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. Deepwave Digital PreVeil Administrators evaluate the use of PreVeil, **\[ insert cadence here, i.e., daily, weekly\]** to assess those users that are no longer active in the Deepwave Digital PreVeil system. If a Deepwave Digital PreVeil user has been inactive for **\[insert amount of time inactive before disabling account\]**, the Deepwave Digital  PreVeil administrator will disable the account via the Deepwave Digital PreVeil Admin Console. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) |
+| Organizational System 1 | **\[insert system monitoring and disabling mechanisms\]** |
+| Organizational System 2 | **\[insert system monitoring and disabling mechanisms\]** |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.05_Identification_and_Authentication_SOP
 
+#### IA.L2-3.5.7
 
-
-
-
-
-
-
-IA.L2-3.5.7
 Enforce a minimum password complexity and change of characters when new passwords are created.
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital minimum password complexity and change of characters policy is stated in the Deepwave Digital Identification and Authentication Policy document.  For each Deepwave Digital system, the following procedures and mechanisms are in place to ensure the enforcement of these policies:
-System	System Minimum Password and Change of Characters Mechanisms
-PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
 
-Organizational System 1	[insert system minimum password and change of characters mechanisms]
-Organizational System 2 	[insert system minimum password and change of characters mechanisms]
+| System | System Minimum Password and Change of Characters Mechanisms |
+|:-- |:-- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) | 
+| Organizational System 1 | **\[insert system minimum password and change of characters mechanisms\]** |
+| Organizational System 2 | **\[insert system minimum password and change of characters mechanisms\]** |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.05_Identification_and_Authentication_SOP
 
-IA.L2-3.5.8
+
+#### IA.L2-3.5.8
+
 Prohibit password reuse for a specified number of generations.
-Control Summary
-Deepwave Digital will allow the reuse of passwords only after [insert number of generations that must pass before a password may be reused]. For each Deepwave Digital system, password reuse specifications and mechanisms/procedures for enforcing those restrictions is below:
-System	System Password Reuse Prevention Mechanisms
-PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
 
-Organizational System 1	[insert system password reuse prevention mechanisms]
-Organizational System 2 	[insert system password reuse prevention mechanisms]
+##### Control Summary
+
+Deepwave Digital will allow the reuse of passwords only after **\[insert number of generations that must pass before a password may be reused\].** For each Deepwave Digital system, password reuse specifications and mechanisms/procedures for enforcing those restrictions is below:
+
+| System | System Password Reuse Prevention Mechanisms |
+|:--- |:--- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) 
+| Organizational System 1 | **\[insert system password reuse prevention mechanisms\]** |
+| Organizational System 2 | **\[insert system password reuse prevention mechanisms\]** |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.05_Identification_and_Authentication_SOP
 
-IA.L2-3.5.9
+#### IA.L2-3.5.9
+
 Allow temporary password use for system logons with an immediate change to a permanent password.
-Control Summary
+
+##### Control Summary
+
 Deepwave Digital system administrators require an immediate change from a temporary password to a permanent password when a new user logs into the system. For each Deepwave Digital system, the procedure for ensuring temporary passwords are immediately changed to permanent passwords, upon first access, are below:
+
 System	Temporary to Permanent Password Mechanisms
 PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
 
