@@ -1069,6 +1069,679 @@ For additional information, please see the Deepwave Security Implementation.
 
 3.04_Configuration_Management_SOP
 
+#### Third set
+
+#### CM.L2-3.4.8
+
+Apply deny-by-exception (blacklisting) policy to prevent the use of unauthorized software or deny-all, permit by-exception (whitelisting) policy to allow the execution of authorized software.
+
+##### Control Summary
+
+Deepwave Digital system administrators have established procedures to implement permit-by-exception for software installation. Deepwave Digital has determined what software is to be used for allow-listing to permit the execution of authorized software and deny-listing to prevent the use of unauthorized software.  For a complete list of all allowed and denied listing configurations, please see **\[insert location where all allowed software is listed and all denied software is listed, if applicable.\].**
+
+Deepwave Digital ensures that all information systems are configured to only allow authorized software to run.  Deepwave Digital does this by **\[insert procedures for ensuring that only authorized software is permitted to run on all Deepwave Digital information systems\].** Deepwave Digital information systems will disallow running of unauthorized software by **\[insert procedures for ensuring that systems will disallow running of unauthorized software\].** Deepwave Digital also uses automated mechanisms to prevent program execution in accordance with defined lists (i.e., allow/deny listing).  Those automated mechanisms are **\[insert the automated mechanisms used to prevent program execution in accordance with defined lists and how those mechanisms work\].**
+
+Deepwave Digital utilizes PreVeil for CUI storage and management. The customer's instance of the PreVeil system gives the customer's organization the ability to create allow-listing for the customer's instance of the PreVeil system. The PreVeil system infrastructure applies deny-listing policies to prevent the use of unauthorized software and allow listing for the use of authorized software on the PreVeil system.
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+
+3.04_Configuration_Management_SOP
+
+#### CM.L2-3.4.9
+
+Control and monitor user installed software.
+
+##### Control Summary
+
+Deepwave Digital has established a policy to control and monitor software that can be installed by users.
+
+Deepwave Digital ensures user installed software is controlled through **\[insert ways Deepwave Digital ensures user installed software is controlled, i.e., training, periodic network scanning, monitoring, etc.\].** Software requests are made by **\[insert procedure for initiating a change request for installed software outside of the baseline configuration settings\].**
+
+Users requiring local admin rights are audited periodically for installed software that is not part of the Deepwave Digital baseline image **\[insert process of auditing these users and installed software\].** All additional software installations must be requested and approved through the proper channels and installed by IT Department personnel.
+
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil’s Device Management permits authorized administrators to use PreVeil system controls for limiting access to PreVeil to specific devices.  Deepwave Digital PreVeil Administrators can run a report that shows all PreVeil users in the Deepwave Digital PreVeil system, all devices enabled, and the version of the PreVeil software on the devices. Deepwave Digital PreVeil Administrators can lock any devices or delete accounts remotely, as needed based on the Deepwave Digital Configuration Management Control. The PreVeil system infrastructure applies deny-listing policies to prevent the use of unauthorized software and allow-listing for the use of authorized software on the PreVeil system.
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+
+3.04_Configuration_Management_SOP
+
+### 12.5	IDENTIFICATION AND AUTHENTICATION (IA)
+
+#### IA.L1-3.5.1
+
+Identify information system users, processes acting on behalf of users, or devices.
+
+##### Control Summary
+
+Deepwave Digital has identified system users, processes acting on behalf of users and devices accessing the organization’s systems. Deepwave Digital, as a prerequisite to system access, identified, verifies, and authenticates each user. Deepwave Digital identifies each device accessing or connecting to the system then verifies and authenticates the device prior to allowing access to the system. For a complete list of procedures for each Deepwave Digital system regarding system user, processes, and device identification, please see below:
+
+| System | System Identification Procedures |
+|:-- |:-- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil utilizes user and device-specific private keys to ensure information systems uniquely identify company users (or processes acting on behalf of company users) as a prerequisite to allowing access.  There is no capability to share user accounts or passwords within the PreVeil environment. All accounts operate with unique identifiers and authenticate using cryptographic protections. Identity and authentication are established cryptographically via user and device-specific private keys, which are managed and enforced via the Admin Console. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/). |
+| Organizational System 1	| **\[insert system identification procedures\]** |
+| Organizational System 2 | **\[insert system identification procedures\]** |
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+
+3.05_Identification_and_Authentication_SOP
+
+#### IA.L1-3.5.2
+
+Authenticate (or verify) the identities of those users, processes, or devices, as a prerequisite to allowing access to organizational information systems.
+
+##### Control Summary
+
+Deepwave Digital authenticates the identity of users, processes, and/or devices as a prerequisite to allowing access to Deepwave Digital systems. Deepwave Digital ensure this through the following system processes:
+
+| System | System Authentication Procedures |
+|:-- |:-- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil access is authenticated using the organization’s Active Directory (AD) and the specific cryptographic user and device key administered to the authorized device and user.  PreVeil's end-to-end encryption ensures that only authorized and authenticated users on authorized devices can access the secure data in PreVeil. Identity and authentication are established cryptographically via user and device-specific private keys. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/). |
+| Organizational System 1	| **\[insert system authentication procedures\]** |
+| Organizational System 2 | **\[insert system authentication procedures\]** |
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+
+3.05_Identification_and_Authentication_SOP
+
+#### IA.L2-3.5.3
+
+Use multifactor authentication for local and network access to privileged accounts and for network access to nonprivileged accounts.
+
+##### Control Summary
+
+Deepwave Digital has identified privileged and non-privileged accounts and utilizes multifactor authentication (MFA) for local and network access to these accounts. **\[insert the procedures for multifactor authentication, example: Authorization into Deepwave Digital information systems require username and password verification managed by the organization’s IT Department Deepwave Digital implements and manages multifactor authentication for all network (VPN) access for both privileged and non-privileged accounts.\]**  Deepwave Digital system MFA standards, by system, are:
+
+| System | System MFA Procedures |
+|:--- |:--- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil is inherently cloud based. PreVeil supports the use of endpoint MFA for privileged and non-privileged Deepwave Digital PreVeil account network access. Authorization into Deepwave Digital PreVeil environment requires device authorization utilizing a cryptographic key. In addition to the device credentials required to log into a laptop or device and CMMC required MFA for endpoint management, PreVeil requires an additional factor (cryptographic user and device private keys) to authenticate to the PreVeil service. Identity and authentication are established cryptographically via user private keys and device-specific private keys. Additionally, on mobile devices, PreVeil supports endpoint biometric authentication for access to encrypted content. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) |
+| Organizational System 1 | **\[insert system MFA procedures\]** |
+| Organizational System 2 | **\[insert system MFA procedures\]** |
+
+In addition, Deepwave Digital has identified all privileged and non-privileged users and functions.  A list of those privileged functions may be found here **\[insert location for a list of all privileged and non-privileged functions within Deepwave Digital\].**
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+3.05_Identification_and_Authentication_SOP
+
+#### IA.L2-3.5.4
+
+Employ replay-resistant authentication mechanisms for network access to privileged and non-privileged accounts.
+
+##### Control Summary
+
+Deepwave Digital utilizes replay-resistant authentication mechanisms for all network account access to privileged and non-privileged accounts **\[insert procedures and resources used to ensure replay-resistance, i.e., Microsoft Active Directory is enabled for all users at Deepwave Digital, which inherently utilizes Kerberos to protect against this vulnerability\].**
+
+| System | System Anti-Replay Authentication Mechanisms |
+|:--- |:--- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil’s end-to-end encryption, with user and device-based keys, provides built-in resistance to replay attacks. PreVeil leverages device-to-device cryptographic authentication via intrinsically linked user and device keys to eliminate the potential for a man-in-the-middle attack. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) | 
+| Organizational System 1 | Microsoft Active Directory is enabled for all users at Deepwave Digital, which inherently utilizes Kerberos to protect against this vulnerability |
+| Organizational System 2 | **\[insert system anti-replay authentication mechanisms\]** |
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+
+3.05_Identification_and_Authentication_SOP
+
+#### IA.L2-3.5.5
+
+Prevent the reuse of identifiers for a defined period.
+
+##### Control Summary
+
+Deepwave Digital does not allow for the reuse of identifiers.  All identifiers are uniquely assigned to employees, contractors, and subcontractors.   Each system reuse of identifier procedure is listed below:
+
+| System | Prevention of Reuse of Identifiers |
+|:--- |:--- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) | 
+| Organizational System 1 | **\[insert system prevention or reuse of identifiers mechanisms\]** |
+| Organizational System 2 | **\[insert system prevention or reuse of identifiers mechanisms\]** |
+
+For additional information, please see the Deepwave Security Implementation.
+
+##### Referenced Policy
+
+3.05_Identification_and_Authentication_SOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IA.L2-3.5.6
+Disable identifiers after a defined period of inactivity.
+Control Summary
+Deepwave Digital disables identifiers after [insert period of inactivity that will disable an identifier].  Each system mechanism for monitoring and disabling identifiers is listed below:
+System	System Monitoring and Disabling Mechanisms
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. Deepwave Digital PreVeil Administrators evaluate the use of PreVeil, [ insert cadence here, i.e., daily, weekly] to assess those users that are no longer active in the Deepwave Digital PreVeil system. If a Deepwave Digital PreVeil user has been inactive for [insert amount of time inactive before disabling account], the Deepwave Digital  PreVeil administrator will disable the account via the Deepwave Digital PreVeil Admin Console. See PreVeil security whitepaper 
+
+Organizational System 1	[insert system monitoring and disabling mechanisms]
+Organizational System 2 	[insert system monitoring and disabling mechanisms]
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.05_Identification_and_Authentication_SOP
+
+
+
+
+
+
+
+
+IA.L2-3.5.7
+Enforce a minimum password complexity and change of characters when new passwords are created.
+Control Summary
+Deepwave Digital minimum password complexity and change of characters policy is stated in the Deepwave Digital Identification and Authentication Policy document.  For each Deepwave Digital system, the following procedures and mechanisms are in place to ensure the enforcement of these policies:
+System	System Minimum Password and Change of Characters Mechanisms
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
+
+Organizational System 1	[insert system minimum password and change of characters mechanisms]
+Organizational System 2 	[insert system minimum password and change of characters mechanisms]
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.05_Identification_and_Authentication_SOP
+
+IA.L2-3.5.8
+Prohibit password reuse for a specified number of generations.
+Control Summary
+Deepwave Digital will allow the reuse of passwords only after [insert number of generations that must pass before a password may be reused]. For each Deepwave Digital system, password reuse specifications and mechanisms/procedures for enforcing those restrictions is below:
+System	System Password Reuse Prevention Mechanisms
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
+
+Organizational System 1	[insert system password reuse prevention mechanisms]
+Organizational System 2 	[insert system password reuse prevention mechanisms]
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.05_Identification_and_Authentication_SOP
+
+IA.L2-3.5.9
+Allow temporary password use for system logons with an immediate change to a permanent password.
+Control Summary
+Deepwave Digital system administrators require an immediate change from a temporary password to a permanent password when a new user logs into the system. For each Deepwave Digital system, the procedure for ensuring temporary passwords are immediately changed to permanent passwords, upon first access, are below:
+System	Temporary to Permanent Password Mechanisms
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
+
+Organizational System 1	[insert temporary to permanent password mechanisms]
+Organizational System 2 	[insert temporary to permanent password mechanisms]
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.05_Identification_and_Authentication_SOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IA.L2-3.5.10
+Store and transmit only cryptographically protected passwords.
+Control Summary
+Deepwave Digital ensures that all passwords are cryptographically encrypted at rest and in transit.  For each Deepwave Digital system, the following cryptographic mechanisms are in place to protect system passwords:
+System	Cryptographic Password Protection Mechanisms
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
+
+Organizational System 1	[insert cryptographic password protection mechanisms]
+Organizational System 2 	[insert cryptographic password protection mechanisms]
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.05_Identification_and_Authentication_SOP
+
+IA.L2-3.5.11
+Obscure feedback of authentication information.
+Control Summary
+Deepwave Digital obscures authentication information during the authentication process to protect the information from possible exploitation by unauthorized individuals. Obscuring mechanisms and procedures are listed below for each Deepwave Digital system:
+System	Authentication Obscuring Mechanisms
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours. All storage and transmission of information within the customer's instance of the PreVeil system, including device key authentication, is FIPS 140-2 validated encrypted. The PreVeil FIPS 140-2 validated certification may be found here. See PreVeil security whitepaper. 
+
+Organizational System 1	[insert authentication obscuring mechanisms]
+Organizational System 2 	[insert authentication obscuring mechanisms]
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.05_Identification_and_Authentication_SOP
+
+
+
+
+
+
+
+
+
+
+
+
+
+12.6	INCIDENT RESPONSE (IR)
+IR.L2-3.6.1
+Establish an operational incident-handling capability for organizational systems that includes preparation, detection, analysis, containment, recovery, and user response activities.
+Control Summary
+Deepwave Digital has established an incident response procedure which includes preparation, detection, analysis, containment, recovery, and user response activity. The company provides incident response training, so all users understand their response activities and responsibilities. For a complete list of resources and their current roles and responsibilities please see [insert location where all current employees’ roles and responsibilities are listed]. 
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The Deepwave Digital PreVeil customer's instance supports incident response handling by allowing for detection, containment, and user response activities within the customer's instance of the PreVeil system. Incident detection and analysis is supported through the Deepwave Digital PreVeil customer instance through the audit logging and reporting functionality available to the Deepwave Digital customer's instance of the PreVeil system administrators. Deepwave Digital PreVeil system administrators can contain information by removing privileges and device key access, as needed. The Deepwave Digital customer's instance of the PreVeil system supports the recovery actions deemed appropriate within the customer's incident response plan, policy, and procedures. [Insert where the Deepwave Digital customer's instance of the PreVeil system is integrated within the incident response plan, policy, and procedures listed below].
+Incident Response procedures are outlined below:
+Role	Responsibility Regarding the Incident	Incident Reporting Mechanism	Tracking and Storage of Incident Information	Location of Evidence/Analysis of Incident	Containment Activities
+Incident Discoverer	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.] 
+PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. 
+	[insert the location of where incident information will be stored and tracked]
+PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. 
+	[insert storage location for evidence of incident]
+PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. 
+	[insert containment activities]
+IT Administrator	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.]	[insert the location of where incident information will be stored and tracked]	[insert storage location for evidence of incident]	[insert containment activities]
+Security Officer 	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.]	[insert the location of where incident information will be stored and tracked]	[insert storage location for evidence of incident]	[insert containment activities]
+Executive Management	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.]	[insert the location of where incident information will be stored and tracked]	[insert storage location for evidence of incident]	[insert containment activities]
+Deepwave Digital also uses different detection methods to ensure incidents are identified expeditiously [insert different ways that incidents may be detected, i.e., system alerts, log review, suspicious network traffic, etc.]. 
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.06_Incident_Response_SOP
+
+IR.L2-3.6.2
+Track, document, and report incidents to designated officials and/or authorities both internal and external to the organization.
+Control Summary
+Deepwave Digital tracks and documents incidents and ensures proper communication and reporting of all incidents to internal and external stakeholders. Incidents will be reported to the IT Department who will then begin Incident Reporting procedures. Incident tracking, documenting, and reporting procedures are listed below and for a complete list of all internal and external officials and authorities, please see [insert location where a current list of all individuals that would be alerted regarding and incident, including their roles and responsibilities]:
+Type of Incident	Location Incident Information will be Documented and Tracked	Internal Stakeholders to be Notified	External Stakeholders to be Notified	Location of Evidence/Analysis of Incident	Containment Activities
+Example: System Breach	[insert the location of where incident information will be stored and tracked]
+Deepwave Digital uses the PreVeil system for all incident reporting, communicating, and documentation.  Specific groups and security procedures are set up in the Deepwave Digital PreVeil system to help ensure proper incident response handling. 	[insert internal stakeholder roles that will be notified]
+	[insert external stakeholders-including authorities- that will be notified]
+	[insert storage location for evidence of incident]
+	[insert containment activities]
+Example: Insider Threat	[insert the location of where incident information will be stored and tracked]	[insert internal stakeholder roles that will be notified]
+	[insert external stakeholders-including authorities- that will be notified]
+	[insert storage location for evidence of incident]	[insert containment activities]
+Incident Type 1 	[insert the location of where incident information will be stored and tracked]	[insert internal stakeholder roles that will be notified]
+	[insert external stakeholders-including authorities- that will be notified]
+	[insert storage location for evidence of incident]	[insert containment activities]
+Incident Type 2	[insert the location of where incident information will be stored and tracked]	[insert internal stakeholder roles that will be notified]
+	[insert external stakeholders-including authorities- that will be notified]
+	[insert storage location for evidence of incident]	[insert containment activities]
+This is out of scope of the PreVeil system.
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.06_Incident_Response_SOP
+
+IR.L2-3.6.3
+Test the organizational incident response capability.
+Control Summary
+Deepwave Digital tests the company’s incident response capabilities. [insert organizational incident response procedures.  Example:
+Deepwave Digital tests incident handling through quarterly tabletop exercises (TTX) that are held for all role-based incident testing.  A list of these trainings and the roles associated with those trainings is listed below:
+Training	Frequency	Training Type	Roles Taking Training	Roles Administering Training	After-Action-Report (AAR) Location
+Incident Handling – IT Security  	Quarterly	TTX 	Management and assigned IT Security Roles	IT Management	[insert location of AAR]
+Incident Handling – Physical Security	Quarterly	TTX	All roles (employees, contractors, subcontractors)	IT Management and Security Officer	[insert location of AAR]
+For a complete list of all trainings, after action reports, and resource training completion records, please see 3.06_Incident_Response_SOP Located in the it_admin_repostiory
+This is out of scope of the PreVeil system.
+For additional information, please see the Deepwave Security Implementation.
+Referenced Policy
+3.06_Incident_Response_SOP
+
+ 
+12.7	MAINTENANCE (MA)
+MA.L2-3.7.1
+Perform maintenance on organizational systems.
+Control Summary
+Deepwave Digital has developed procedures to perform system maintenance and to review records of maintenance and repairs at a defined frequency.  These procedures are listed below, and additional standard operating procedures (SOPs) are listed [insert location where other SOPs are house]:
+System	Maintenance Type (Corrective, Preventative, Adaptive, Perfective)	Maintenance Description	Frequency of Maintenance	Roles Administering Maintenance	Location of Maintenance Records
+PreVeil  	All	The Deepwave Digital PreVeil customer's instance inherits maintenance from the PreVeil system, this includes performing maintenance on the PreVeil system, and thus for the customer's instance of the PreVeil system. System maintenance for the PreVeil system is partially inherited by AWS, which hosts the PreVeil system instance for all PreVeil customers. Maintenance activities associated with the cloud-based infrastructure components of the PreVeil system are managed per PreVeil maintenance guidelines. PreVeil handles maintenance and performs regular system updates, patching, and enhancements to its software and the infrastructure it maintains.  
+	As needed	PreVeil	PreVeil maintains all PreVeil system maintenance records in accordance with NIST 800-53 and SOC-2 guidance
+Operational System 1		[insert maintenance description]	[insert frequency of maintenance]	[insert roles administering maintenance]	[insert location of maintenance records]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Maintenance Control
+
+MA.L2-3.7.2
+Provide controls on the tools, techniques, mechanisms, and personnel used to conduct system maintenance.
+Control Summary
+Deepwave Digital controls tools, techniques, and mechanisms as well as the personnel tasked with conducting system maintenance. For each system, Deepwave Digital has identified the resources that may conduct system maintenance. To review the list of resources identified to conduct system maintenance and their roles please see [insert location of list containing all approved resources and their roles who are permitted to conduct system maintenance]. For a list of controls for tools, techniques, mechanisms, and personnel for all system maintenance, by system, please see the list below:
+System	Tools/Techniques/Mechanisms Used to Conduct System Maintenance	Controls Used for Tools/Techniques/Mechanisms Conducting System Maintenance	Controls Used for Personnel Conducting System Maintenance	Roles Permitted to Perform System Maintenance
+PreVeil  	All listed for FedRAMP Moderate Equivalent and SOC-2 certified	The Deepwave Digital PreVeil customer's instance inherits maintenance from the PreVeil system, this includes performing maintenance on the PreVeil system, and thus for the customer's instance of the PreVeil system. System maintenance for the PreVeil system is partially inherited by AWS, which hosts the PreVeil system instance for all PreVeil customers. Maintenance activities associated with the cloud-based infrastructure components of the PreVeil system are managed per PreVeil maintenance guidelines. PreVeil handles maintenance and performs regular system updates, patching, and enhancements to its software and the infrastructure it maintains.  
+	Only authorized PreVeil personnel may conduct system maintenance	PreVeil System Administrators
+Operational System 1	[insert all tools/techniques/mechanisms used to conduct system maintenance]	[insert controls used for tools/techniques/mechanisms conducting system maintenance]	[insert controls used for personnel conducting system maintenance]	[insert roles permitted to perform maintenance]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Maintenance Control
+
+MA.L2-3.7.3
+Ensure equipment removed for off-site maintenance is sanitized of any CUI.
+Control Summary
+Deepwave Digital sanitizes CUI from equipment prior to removal from the facility for off-site maintenance. Procedures for sanitization of CUI from equipment follows the [insert guideline for sanitization here, or use a preexisting set of standards, i.e., Carnegie Mellon University standards for CUI equipment here. Also, include under what circumstances, if any, equipment may be moved off site and when it should be sanitized]. 
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that CUI is always protected with end-to-end encryption. Maintenance activities associated with the cloud-based infrastructure components of the PreVeil system are managed per PreVeil maintenance guidelines. PreVeil employs Amazon AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. 
+PreVeil employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates and provides very effective protection and monitoring of facilities for security. With PreVeil, CUI, ITAR and EAR data are always protected with end-to-end encryption. Since Deepwave Digital only houses CUI data within PreVeil, CUI data not stored within Deepwave Digital endpoints, will follow AWS equipment sanitation guidelines for the removal of CUI containing equipment of CUI data from devices. For Deepwave Digital endpoints that may contain CUI, Deepwave Digital will follow the [insert company endpoint sanitation guidelines here. Suggested use for sanitation guidelines may be found here and here]. For additional sanitation policies, see the Deepwave Digital Maintenance Control policy. 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Maintenance Control
+
+MA.L2-3.7.4
+Check media containing diagnostic and test programs for malicious code before the media are used in organizational systems.
+Control Summary
+Deepwave Digital checks media containing diagnostic and test programs for malicious code before being used in organizational systems that process, store, or transmit CUI. Procedures for how Deepwave Digital checks media containing diagnostic and test programs for malicious code, is below:
+System Name	Media Types Used	Malicious Code Checking Mechanism
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that media containing diagnostic and test programs is checked for malicious code before the media is used in the PreVeil system. PreVeil inherits these checks from the AWS hosting infrastructure that the PreVeil system is built upon. AWS follows the NIST 800-53 standards for checking media containing diagnostic and testing programs before the media is used on the PreVeil system hosted in AWS. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].	Malicious Code Checking based on NIST 800-53 standards inherited through AWS’ FedRAMP authorized processes
+System1	[insert types of media used on this system, i.e., USB, external hard drive, etc. If none are permitted, list that here]	[insert all malicious code checking mechanisms used]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Maintenance Control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MA.L2-3.7.5
+Require multifactor authentication to establish nonlocal maintenance sessions via external network connections and terminate such connections when nonlocal maintenance is complete.
+Control Summary
+Deepwave Digital has implemented a process to determine when multifactor authentication (MFA) is required to establish nonlocal maintenance sessions via external network connections and nonlocal maintenance sessions established via external network connections are terminated when nonlocal maintenance is complete. Deepwave Digital MFA procedures for nonlocal maintenance sessions is below:
+System	MFA Protocols
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmission. The PreVeil customer's instance inherits maintenance from the PreVeil system, this includes requiring multifactor authentication to establish nonlocal maintenance sessions via external network connections and terminate such connections when nonlocal maintenance is complete on the PreVeil system, and thus for the customer's instance of the PreVeil system. System maintenance for the PreVeil system is partially inherited by AWS, which hosts the PreVeil system instance for all PreVeil customers. The PreVeil system runs on AWS Cloud, which requires multifactor authentication to establish any nonlocal maintenance sessions.  PreVeil security policies ensure the termination of such connections when nonlocal maintenance is complete. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+Operating System 1	[insert MFA protocols for nonlocal maintenance sessions]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Maintenance Control
+
+MA.L2-3.7.6
+Supervise the maintenance activities of personnel without required access authorization.
+Control Summary
+Deepwave Digital supervises maintenance personnel without required access authorization during maintenance activities. Supervisory procedures are found below:
+System	Supervising Non-Authorized Personnel Performing Maintenance
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmission. The PreVeil customer's instance inherits maintenance from the PreVeil system, this includes supervising the maintenance activities of personnel without required access authorization on the PreVeil system, and thus for the customer's instance of the PreVeil system. System maintenance for the PreVeil system is partially inherited by AWS, which hosts the PreVeil system instance for all PreVeil customers. Supervision of maintenance personnel associated with the cloud-based infrastructure components of the PreVeil system are managed per PreVeil maintenance guidelines. All maintenance activities are supervised and no one within PreVeil who is not authorized for maintenance functions is granted access to those functions. PreVeil follows all security procedures outlined for FedRAMP Moderate compliance. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+
+Operating System 1	[insert supervisory protocols including:
+•	Escorting Procedures
+•	Company Personnel Supervising
+•	Types of Personnel Permitted to Perform Maintenance without Required Access Authorization (i.e., vendor representative)
+•	Temporary System Credential Creation (if applicable)
+•	Limited Access to System – Explain
+•	Reference Visitor Procedures]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Maintenance Control
+
+
+
+
+
+12.8	MEDIA PROTECTION (MP)
+MP.L1-3.8.3
+Sanitize or destroy information system media containing Federal Contract Information before disposal or release for reuse.
+Control Summary
+Deepwave Digital sanitizes or destroys information system media containing Federal Contract Information before release for reuse or disposal. Deepwave Digital follows the [insert procedures followed for media sanitation here, or reference existing procedures like Carnegie Mellon University, here], as needed, when media containing FCI/CUI leaves a controlled area. Media includes the following:
+•	Disks
+•	Paper
+•	Microfilm
+•	Tapes
+•	Digital Photography
+•	USB drives
+•	CDs
+•	DVDs
+•	Mobile Phones
+•	Digital Media found in:
+o	Workstations
+o	Network components
+o	Scanners
+o	Copiers
+o	Printers
+o	Notebook computers
+o	Mobile devices
+
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. The PreVeil customer's instance inherits the sanitization or destruction of system media of FCI before disposal or release from reuse from the PreVeil system only for the media hosted by PreVeil (i.e., servers that host the customer's instance of the PreVeil system). All other system media that the customer uses in the processing, storing, or transmitting of FCI data is the responsibility of the customer. For additional sanitation policies, see the Deepwave Digital Maintenance Control policy. 
+[NOTE: The PreVeil customer's instance inherits the physical and securely stored system media containing CUI, digitally, if the customer does not use any other system media outside of the PreVeil system to digitally store CUI. If the customer keeps all CUI data in the digitally storage of the customer's instance of the PreVeil system (including the PreVeil mobile app for mobile phones), the customer inherits the digital protections of the PreVeil system, as well as the ability to control access to information on the customer's instance of the PreVeil system and associated system media (i.e., PreVeil mobile application for mobile devices). If the customer stores paper CUI, PreVeil does not have any responsibility for the safeguarding of customer paper CUI.] 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+
+MP.L2-3.8.1
+Protect (i.e., physically control and securely store) system media containing CUI, both paper and digital.
+Control Summary
+Deepwave Digital protects all digital media containing Controlled Unclassified Information/Controlled Defense Information (CUI/CDI) stored within the PreVeil environment through end-to-end encryption and access controls. Deepwave Digital limits PreVeil usage to authorized individuals with a need-to-know.  FCI/CUI/CTI is prohibited from being stored outside of the PreVeil environment. See PreVeil Security Whitepaper
+[insert procedures for protecting paper (i.e., locked cabinet or drawer) CUI, if applicable.  It is also possible to not have any paper CUI.  If this is the case, ensure that is properly addressed within the policy document, as well as the SSP.  If CUI is allowed to be printed, include the guidelines for that process].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. Media protection policies associated with the cloud-based infrastructure components of the PreVeil system are managed per PreVeil security policies. PreVeil employs Amazon AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. 
+[NOTE: The PreVeil customer's instance inherits the physical and securely stored system media containing CUI, digitally, if the customer does not use any other system media outside of the PreVeil system to digitally store CUI. If the customer keeps all CUI data in the digitally storage of the customer's instance of the PreVeil system (including the PreVeil mobile app for mobile phones), the customer inherits the digital protections of the PreVeil system, as well as the ability to control access to information on the customer's instance of the PreVeil system and associated system media (i.e., PreVeil mobile application for mobile devices). If the customer stores paper CUI, PreVeil does not have any responsibility for the safeguarding of customer paper CUI.] 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+MP.L2-3.8.2
+Limit access to CUI on system media to authorized users.
+Control Summary
+Deepwave Digital physically controls, securely stores, and limits access to digital, paper and system media to authorized users. Deepwave Digital protects all digital media containing Controlled Unclassified Information/Controlled Defense Information (CUI/CDI) stored within the PreVeil environment through end-to-end encryption. Deepwave Digital limits PreVeil usage to authorized individuals with a need-to-know.  
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil end-to-end encryption enforces authentication/identification. All system access and actions are logged (logs are encrypted and hash-chained to prevent tampering). AWS meets control requirements for limiting physical access to system infrastructure. See PreVeil Security Whitepaper 
+[NOTE: The PreVeil customer's instance inherits the physical and securely stored system media containing CUI, digitally, if the customer does not use any other system media outside of the PreVeil system to digitally store CUI. If the customer keeps all CUI data in the digitally storage of the customer's instance of the PreVeil system (including the PreVeil mobile app for mobile phones), the customer inherits the digital protections of the PreVeil system, as well as the ability to control access to information on the customer's instance of the PreVeil system and associated system media (i.e., PreVeil mobile application for mobile devices). If the customer stores paper CUI, PreVeil does not have any responsibility for the safeguarding of customer paper CUI.] 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+
+MP.L2-3.8.4
+Mark media with necessary CUI markings and distribution limitations.
+Control Summary
+Deepwave Digital marks media containing CUI per the CUI marking guidelines found within the DoD CUI and National Archives and Records Administration (NARA) guidance. Deepwave Digital uses PreVeil for all digital CUI transmission and storage.  Only authorized resources, with a “need-to-know” are permitted access to PreVeil and the CUI therein. All folders within the Deepwave Digital PreVeil system are marked with “CUI” to ensure understanding and limit possible spillage. 
+[insert procedures for marking hardcopy CUI, if applicable.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+
+MP.L2-3.8.5
+Control access to media containing CUI and maintain accountability for media during transport outside of controlled areas.
+Control Summary
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. Only authorized Deepwave Digital personnel with a “need-to-know” will be permitted access to the Deepwave Digital PreVeil system. For a list of all personnel with access to the Deepwave Digital PreVeil system and subsequent CUI, please see [insert location of personnel list who have access to Deepwave Digital PreVeil and CUI].  
+[NOTE: The PreVeil customer's instance inherits the physical and securely stored system media containing CUI, digitally, if the customer does not use any other system media outside of the PreVeil system to digitally store CUI. If the customer keeps all CUI data in the digitally storage of the customer's instance of the PreVeil system (including the PreVeil mobile app for mobile phones), the customer inherits the digital protections of the PreVeil system, as well as the ability to control access to information on the customer's instance of the PreVeil system and associated system media (i.e., PreVeil mobile application for mobile devices). If the customer stores paper CUI, PreVeil does not have any responsibility for the safeguarding of customer paper CUI.] 
+PreVeil utilizes end-to-end encryption with user and device-based keys to log user activities at the user level and ensure that access is limited only to authorized users. PreVeil employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates for physical control and provides secure protection and monitoring of facilities. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+[insert policy for protecting physical CUI (i.e., paper, USB drives, disks, tapes, CDs, etc.) ensure to include storage procedures (i.e., locking drawer or cabinet) and transport procedures (i.e., must sign a log stating the CUI being transported, how it will be transported, who will transport it, etc.)]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+
+MP.L2-3.8.6
+Implement cryptographic mechanisms to protect the confidentiality of CUI stored on digital media during transport unless otherwise protected by alternative physical safeguards.
+Control Summary
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil uses FIPS 140-2 validated end-to-end encryption, so all Deepwave Digital data is secure at rest and during PreVeil system transmission. A copy of the PreVeil FIPS 140-2 validation certification may be found here. Any transmission of CUI outside of the Deepwave Digital PreVeil system will be physically protected prior to transport, as well as ensuring all data is encrypted prior to transport outside the Deepwave Digital PreVeil system. 
+[insert procedures for encrypting any portable storage devices containing CUI and transportation procedures (i.e., who may transport, how they may transport, logging of transportation, etc.) – make sure that any transportation media storage device encryption complies with FIPS 140-2] 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+MP.L2-3.8.7
+Control the use of removable media on system components.
+Control Summary
+Deepwave Digital prohibits the use of non-company provided portable storage devices or external hard disk drives on organizational information systems and system components.  [insert procedures for using company provided portable storage devices, if permitted. Example:
+Company Storage Device	Roles Permitted to Use	Limitations/Restrictions/Controls on Use 	Actions Taken to Safeguard Storage Devices	Roles Responsible for Administering Safeguarding Actions
+USB Drives	[insert roles that are permitted to use storage device type]	[insert limitations/restrictions/control regarding use]	[insert actions taken to safeguard storage devices (i.e., encryption, physical security, virus scanning, etc.)]	[insert the roles responsible for administering safeguarding actions]
+External Hard drive	[insert roles that are permitted to use storage device type]	[insert limitations/restrictions/control regarding use]	[insert actions taken to safeguard storage devices (i.e., encryption, physical security, virus scanning, etc.)]	[insert the roles responsible for administering safeguarding actions]
+CD/DVD	[insert roles that are permitted to use storage device type]	[insert limitations/restrictions/control regarding use]	[insert actions taken to safeguard storage devices (i.e., encryption, physical security, virus scanning, etc.)]	[insert the roles responsible for administering safeguarding actions]
+The PreVeil customer's instance inherits control of the use of removable media on the PreVeil system and PreVeil system components. The PreVeil system does not allow for the use of removable media on the PreVeil system infrastructure. 
+[Note: It is the customer's responsibility to ensure that all system and system components processing, storing, and/or transmitting CUI are controlled regarding their use of removable media on system components outside of the PreVeil system (i.e., endpoint management).]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+
+MP.L2-3.8.8
+Prohibit the use of portable storage devices when such devices have no identifiable owner.
+Control Summary
+Deepwave Digital ensures that all Deepwave Digital personnel are aware of Deepwave Digital policy regarding the use of storage devices without an identifiable owner.  Deepwave Digital ensures that all company owned storage devices are labeled [insert procedures regarding labeling and the roles within Deepwave Digital responsible for ensuring labeling and control of all portable storage devices.  Also, include a link to the Asset Inventory that should include all portable storage devices. Include the procedures for capturing who is permitted to use portable storage devices and how those using Deepwave Digital portable storage devices are logged].
+The PreVeil customer's instance inherits control of the use of removable media on the PreVeil system and PreVeil system components. The PreVeil system does not allow for the use of removable media on the PreVeil system infrastructure. 
+[Note: It is the customer's responsibility to ensure that all system and system components processing, storing, and/or transmitting CUI are controlled regarding their use of removable media on system components outside of the PreVeil system (i.e., endpoint management).]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+
+MP.L2-3.8.9
+Protect the confidentiality of backup CUI at storage locations.
+Control Summary
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. Access to the cloud-based infrastructure components of the PreVeil system are managed per PreVeil security policies. PreVeil employs Amazon AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. PreVeil and AWS cannot decrypt Deepwave Digital CUI data. All primary storage and back-ups consist of FIPS 140-2 validated end-to-end encrypted content which can only be decrypted and accessed by authorized users in the organization. At no time are the decryption keys stored centrally at a backup location. A copy of the PreVeil FIPS 140-2 validation certification may be found here.
+
+[Note: It is the customer's responsibility to ensure that all system and system components processing, storing, and/or transmitting CUI are controlled regarding their use of removable media on system components outside of the PreVeil system (i.e., endpoint management).]
+[insert any additional security backup procedures in place at Deepwave Digital . These should include:
+•	Encryption procedures
+•	Personnel access controls
+•	Physical security for devices and media containing CUI
+Also include a list of storage locations used for backups, outside of PreVeil. These may include:
+•	External Hard Drives
+•	USB Drives
+•	CD/DVD
+•	Network Attached Storage (NAS)
+•	Servers
+•	Additional cloud backup]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Media Protection Control
+
+
+
+
+
+
+
+
+12.9	PERSONNEL SECURITY (PS)
+PS.L2-3.9.1
+Screen individuals prior to authorizing access to organizational systems containing CUI.
+Control Summary
+Deepwave Digital screens individuals prior to authorizing access to organizational systems. Deepwave Digital uses the following procedures for personnel screening and background checks:
+Personnel Role	Screening Procedures	Type of Background Check	Company Used for Background Check	Location of Documentation Related to Background Check/Screenings
+Role 1	[insert screening procedures here, i.e., HR Manager screening, followed by IT Manager screening, and/or Security Officer screening, etc.]	[insert type of background check required, i.e., TS, TS-SCI, Secret, etc.]	[insert the company used for background checks (i.e., DoD Clearance)]	[insert the location of all documentation related to the personnel background check/screenings]
+Role 2	[insert screening procedures here, i.e., HR Manager screening, followed by IT Manager screening, and/or Security Officer screening, etc.]	[insert type of background check required, i.e., TS, TS-SCI, Secret, etc.]	[insert the company used for background checks (i.e., DoD Clearance)]	[insert the location of all documentation related to the personnel background check/screenings]
+Role 3	[insert screening procedures here, i.e., HR Manager screening, followed by IT Manager screening, and/or Security Officer screening, etc.]	[insert type of background check required, i.e., TS, TS-SCI, Secret, etc.]	[insert the company used for background checks (i.e., DoD Clearance)]	[insert the location of all documentation related to the personnel background check/screenings]
+
+Deepwave Digital  uses PreVeil for all digital CUI transmission and storage and only allows authorized personnel with a “need-to-know” access to the Deepwave Digital  PreVeil system. Access to the cloud-based infrastructure components of the PreVeil system are managed per PreVeil security policies. PreVeil employs Amazon AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. GovCloud ensures all required personnel security controls. PreVeil and AWS cannot decrypt Company’s CUI data. PreVeil backend operations that do not contain any customer data meet FedRAMP Moderate equivalent compliance, which includes personnel screening and US persons only.
+
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Personnel Security Control
+
+PS.L2-3.9.2
+Ensure that organizational systems containing CUI are protected during and after personnel actions such as terminations and transfers.
+Control Summary
+Deepwave Digital reviews information systems/facilities access authorization when individuals are reassigned or transferred to other positions within the organization, or terminated from Deepwave Digital, and initiates appropriate actions. Deepwave Digital ensures that the system is protected during and after personnel transfer actions. Upon termination, Deepwave Digital verifies that all user account accesses are revoked, all physical access devices are acquired, and all company equipment is returned to designated personnel.
+[insert references to procedures for offboarding, especially those applied to IT and IT Security.  These procedures should be documented and must include the following:
+•	How Deepwave Digital IT equipment (i.e., laptops, mobile devices, etc.) will be returned and how that return will be documented and by whom
+•	How all identification, access cards, keys, etc. are returned to Deepwave Digital
+•	How exit interviews will be conducted, including a CUI debriefing reminding the employee not to discuss any CUI, even after employment
+•	How personnel will be removed from all account access, or how their account access will be modified, post transfer, especially concerning systems containing CUI 
+•	How employee accounts are disabled or closed for departing employees
+•	How access to physical spaces with CUI will be addressed for departing and transitioning employees
+•	How will these procedures be documented, once completed and where will the information be stored]
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage.  Deepwave Digital PreVeil administrators control and manage account deletion and device locking associated with personnel actions such as terminations and transfers. PreVeil Administrative controls provide for account deletion and device locking associated with personnel actions such as terminations and transfers [insert the procedures used for removing access in the PreVeil system – See PreVeil Security Whitepaper 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Personnel Security Control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12.10	PHYSICAL PROTECTION (PE)
+PE.L1-3.10.1
+Limit physical access to organizational systems, equipment, and the respective operating environments to authorized individuals.
+Control Summary
+Deepwave Digital identifies authorized individuals allowed physical access to facilities that contain CUI and limits access to organizational systems, equipment, and operating environments that process, store, or transmit CUI. Deepwave Digital maintains a list of personnel with authorized access with appropriate authorization credentials issues [insert location of maintained list of authorized personnel including access levels and authorization credentials issued].  
+Deepwave Digital has identified physical locations that have been designated as “sensitive” and ensured physical security protections are in place to limit access to these areas to only authorized employees [insert the physical security protections in place in these locations, i.e., guards, locks, cameras, card readers, etc. and a reference to the list of personnel with access to these areas].
+All Deepwave Digital printers, scanners, and other common devices have been placed in areas where their use does not expose data to unauthorized individuals. 
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The Deepwave Digital PreVeil customer's instance inherits all physical access to PreVeil equipment and operating environments, including limiting physical access to organizational information systems equipment and the respective operating environments to authorized individuals, as part of the PreVeil infrastructure from the PreVeil system, which inherits these physical controls from AWS (the PreVeil hosting environment). PreVeil ensures that all CUI data is FIPS 140-2 end-to-end encrypted (a copy of the PreVeil FIPS 140-2 validation certification may be found here) and employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates and provides secure protection and monitoring of facilities and ensures that only authorized individuals are permitted physical access to AWS systems, equipment, and operating environments. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Physical Protection Control
+
+
+PE.L1-3.10.3
+Escort visitors and monitor visitor activity.
+Control Summary
+Deepwave Digital escorts all visitors and monitors visitor activity.  Visitors must [include a list of procedures will be followed regarding visitors. Examples:
+complete the visitors log before entrance to any part of Deepwave Digital physical locations.
+•	Visitors will always wear a visitor badge
+•	Visitors will be escorted by authorized Deepwave Digital personnel for duration of visit
+•	Visitors will use temporary credentials for access to any Deepwave Digital system and track visitor activity via audit logs
+•	Deepwave Digital  authorized personnel will ensure activity is monitored for duration of visit, i.e., use of cameras, guards, reviews of secure areas upon visitor departure, review of visitor audit logs, etc.]
+Deepwave Digital uses PreVeil for all CUI storage and transmission. The Deepwave Digital PreVeil customer's instance inherits all physical access to PreVeil equipment and operating environments, including escorting visitors, and monitoring visitor activity, as part of the PreVeil infrastructure from the PreVeil system, which inherits these physical controls from AWS (the PreVeil hosting environment). PreVeil employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates and provides secure protection and monitoring of facilities, including the escorting and monitoring of visitors and visitor activities. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Physical Protection Control
+
+PE.L1-3.10.4
+Maintain audit logs of physical access.
+Control Summary
+Deepwave Digital maintains audit logs for all physical access to any Deepwave Digital facilities.  These audit logs are [insert location where the audit logs of physical access for Deepwave Digital facilities is stored]. All Deepwave Digital audit logs for physical access are maintained for [insert amount of time physical access audit logs will be maintained for, i.e., 90 days, 6 months, a year, etc.]
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The Deepwave Digital PreVeil customer's instance inherits all physical access to PreVeil equipment and operating environments, including maintaining audit logs of physical access, as part of the PreVeil infrastructure from the PreVeil system, which inherits these physical controls from AWS (the PreVeil hosting environment). Audit logs for physical access to the cloud-based infrastructure components of the PreVeil system are managed per PreVeil security policies. PreVeil employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates and provides secure protection and monitoring of facilities, including maintaining audit logs of physical access. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Physical Protection Control
+
+PE.L1-3.10.5
+Control and manage physical access devices.
+Control Summary
+Deepwave Digital identifies, controls, and manages all physical access devices. Deepwave Digital maintains an inventory of all physical access devices maintained and resources currently assigned to those physical access devices (i.e., keys, facility badges, key cards, etc.) [insert location of the inventory of all physical access devices and personnel assigned to those physical access devices]. Deepwave Digital only permits authorized resources to hold physical access devices. Physical access devices may be revoked, as necessary (i.e., termination of personnel) and control is maintained over all access control devices and systems [include any additional procedures and processes involved in maintaining and controlling access control devices and systems].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. The PreVeil customer's instance inherits all physical access to PreVeil equipment and operating environments, including controlling, and managing physical access devices, as part of the PreVeil infrastructure from the PreVeil system, which inherits these physical controls from AWS (the PreVeil hosting environment). PreVeil employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates and provides secure protection and monitoring of facilities, including controlling and management of physical access devices. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Physical Protection Control
+
+PE.L2-3.10.2
+Protect and monitor the physical facility and support infrastructure for organizational systems.
+Control Summary
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance inherits all physical access to PreVeil equipment and operating environments, including protecting and monitoring they physical facility and support infrastructure, as part of the PreVeil infrastructure from the PreVeil system, which inherits these physical controls from AWS (the PreVeil hosting environment).
+PreVeil employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates and provides secure protection and monitoring of facilities, including physical access monitoring to detect and response to physical security incidents. For more information, please see the PreVeil CRM [insert location of PreVeil CRM].
+
+[insert additional Example:
+The infrastructure inside of a facility, such as power and network cables, is protected so that visitors and unauthorized employees cannot access it. The protection is also monitored by security guards, video cameras, sensors, or alarms.]
+
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+
+Referenced Policy
+Deepwave Digital Physical Protection Control
 
 
 
