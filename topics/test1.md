@@ -1281,90 +1281,77 @@ Allow temporary password use for system logons with an immediate change to a per
 
 Deepwave Digital system administrators require an immediate change from a temporary password to a permanent password when a new user logs into the system. For each Deepwave Digital system, the procedure for ensuring temporary passwords are immediately changed to permanent passwords, upon first access, are below:
 
-System	Temporary to Permanent Password Mechanisms
-PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
+| System | Temporary to Permanent Password Mechanisms |
+|:-- |:-- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) |
+| Organizational System 1 | **\[insert temporary to permanent password mechanisms\]** |
+| Organizational System 2 | **\[insert temporary to permanent password mechanisms\]** |
 
-Organizational System 1	[insert temporary to permanent password mechanisms]
-Organizational System 2 	[insert temporary to permanent password mechanisms]
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.05_Identification_and_Authentication_SOP
 
+#### IA.L2-3.5.10
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-IA.L2-3.5.10
 Store and transmit only cryptographically protected passwords.
-Control Summary
+
+#### Control Summary
+
 Deepwave Digital ensures that all passwords are cryptographically encrypted at rest and in transit.  For each Deepwave Digital system, the following cryptographic mechanisms are in place to protect system passwords:
-System	Cryptographic Password Protection Mechanisms
-PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See PreVeil security whitepaper 
 
-Organizational System 1	[insert cryptographic password protection mechanisms]
-Organizational System 2 	[insert cryptographic password protection mechanisms]
+| System | Cryptographic Password Protection Mechanisms |
+|:--- |:--- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours and are not re-used. See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/) | 
+| Organizational System 1 | **\[insert cryptographic password protection mechanisms\]** |
+| Organizational System 2 | **\[insert cryptographic password protection mechanisms\]** |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.05_Identification_and_Authentication_SOP
 
-IA.L2-3.5.11
+#### IA.L2-3.5.11
+
 Obscure feedback of authentication information.
-Control Summary
-Deepwave Digital obscures authentication information during the authentication process to protect the information from possible exploitation by unauthorized individuals. Obscuring mechanisms and procedures are listed below for each Deepwave Digital system:
-System	Authentication Obscuring Mechanisms
-PreVeil	Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours. All storage and transmission of information within the customer's instance of the PreVeil system, including device key authentication, is FIPS 140-2 validated encrypted. The PreVeil FIPS 140-2 validated certification may be found here. See PreVeil security whitepaper. 
 
-Organizational System 1	[insert authentication obscuring mechanisms]
-Organizational System 2 	[insert authentication obscuring mechanisms]
+##### Control Summary
+
+Deepwave Digital obscures authentication information during the authentication process to protect the information from possible exploitation by unauthorized individuals. Obscuring mechanisms and procedures are listed below for each Deepwave Digital system:
+
+| System | Authentication Obscuring Mechanisms |
+|:--- |:--- |
+| PreVeil | Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. The PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username, and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours. All storage and transmission of information within the customer's instance of the PreVeil system, including device key authentication, is FIPS 140-2 validated encrypted. The PreVeil FIPS 140-2 validated certification may be found [here](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3804). See [PreVeil security whitepaper](https://www.preveil.com/resources/architectural-white-paper/). 
+| Organizational System 1 | **\[insert authentication obscuring mechanisms\]** |
+| Organizational System 2 | **\[insert authentication obscuring mechanisms\]** |
+
 For additional information, please see the Deepwave Security Implementation.
-Referenced Policy
+
+##### Referenced Policy
+
 3.05_Identification_and_Authentication_SOP
 
+### 12.6 INCIDENT RESPONSE (IR)
 
+#### IR.L2-3.6.1
 
-
-
-
-
-
-
-
-
-
-
-12.6	INCIDENT RESPONSE (IR)
-IR.L2-3.6.1
 Establish an operational incident-handling capability for organizational systems that includes preparation, detection, analysis, containment, recovery, and user response activities.
-Control Summary
-Deepwave Digital has established an incident response procedure which includes preparation, detection, analysis, containment, recovery, and user response activity. The company provides incident response training, so all users understand their response activities and responsibilities. For a complete list of resources and their current roles and responsibilities please see [insert location where all current employees’ roles and responsibilities are listed]. 
-Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The Deepwave Digital PreVeil customer's instance supports incident response handling by allowing for detection, containment, and user response activities within the customer's instance of the PreVeil system. Incident detection and analysis is supported through the Deepwave Digital PreVeil customer instance through the audit logging and reporting functionality available to the Deepwave Digital customer's instance of the PreVeil system administrators. Deepwave Digital PreVeil system administrators can contain information by removing privileges and device key access, as needed. The Deepwave Digital customer's instance of the PreVeil system supports the recovery actions deemed appropriate within the customer's incident response plan, policy, and procedures. [Insert where the Deepwave Digital customer's instance of the PreVeil system is integrated within the incident response plan, policy, and procedures listed below].
+
+##### Control Summary
+
+Deepwave Digital has established an incident response procedure which includes preparation, detection, analysis, containment, recovery, and user response activity. The company provides incident response training, so all users understand their response activities and responsibilities. For a complete list of resources and their current roles and responsibilities please see **\[insert location where all current employees’ roles and responsibilities are listed\]**. 
+
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The Deepwave Digital PreVeil customer's instance supports incident response handling by allowing for detection, containment, and user response activities within the customer's instance of the PreVeil system. Incident detection and analysis is supported through the Deepwave Digital PreVeil customer instance through the audit logging and reporting functionality available to the Deepwave Digital customer's instance of the PreVeil system administrators. Deepwave Digital PreVeil system administrators can contain information by removing privileges and device key access, as needed. The Deepwave Digital customer's instance of the PreVeil system supports the recovery actions deemed appropriate within the customer's incident response plan, policy, and procedures. **\[Insert where the Deepwave Digital customer's instance of the PreVeil system is integrated within the incident response plan, policy, and procedures listed below\]**.
+
 Incident Response procedures are outlined below:
-Role	Responsibility Regarding the Incident	Incident Reporting Mechanism	Tracking and Storage of Incident Information	Location of Evidence/Analysis of Incident	Containment Activities
-Incident Discoverer	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.] 
-PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. 
-	[insert the location of where incident information will be stored and tracked]
-PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. 
-	[insert storage location for evidence of incident]
-PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. 
-	[insert containment activities]
-IT Administrator	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.]	[insert the location of where incident information will be stored and tracked]	[insert storage location for evidence of incident]	[insert containment activities]
-Security Officer 	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.]	[insert the location of where incident information will be stored and tracked]	[insert storage location for evidence of incident]	[insert containment activities]
+
+| Role | Responsibility Regarding the Incident | Incident Reporting Mechanism | Tracking and Storage of Incident Information | Location of Evidence/Analysis of Incident | Containment Activities |
+|:--- |:--- |:--- |:--- |:--- |:--- |
+| Incident Discoverer | **\[insert responsibilities for role regarding the incident\]** | **\[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.\]** <br><br>PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. | **\[insert the location of where incident information will be stored and tracked\]** <br><br>PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. | **\[insert storage location for evidence of incident\]** <br><br>PreVeil can be an important part of an Incident Response plan as it provides an out-of-band, secure and reliable communications, and information storage tool. | **\[insert containment activities\]** |
+| IT Administrator | **\[insert responsibilities for role regarding the incident\]** | **\[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.\]** | **\[insert the location of where incident information will be stored and tracked\]** | **\[insert storage location for evidence of incident\]** | **\[insert containment activities\]** |
+| Security Officer **\[insert responsibilities for role regarding the incident\]** | **\[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.\]** | **\[insert the location of where incident information will be stored and tracked\]** | **\[insert storage location for evidence of incident\]** | **\[insert containment activities\]** |
 Executive Management	[insert responsibilities for role regarding the incident]	[insert incident reporting mechanisms, i.e., call, text, email, chat, ticket, etc.]	[insert the location of where incident information will be stored and tracked]	[insert storage location for evidence of incident]	[insert containment activities]
 Deepwave Digital also uses different detection methods to ensure incidents are identified expeditiously [insert different ways that incidents may be detected, i.e., system alerts, log review, suspicious network traffic, etc.]. 
 For additional information, please see the Deepwave Security Implementation.
