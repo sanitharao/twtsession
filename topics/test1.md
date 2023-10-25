@@ -1413,7 +1413,7 @@ For additional information, please see the Deepwave Security Implementation.
 ##### Referenced Policy
 
 3.06_Incident_Response_SOP
- 
+
 ### 12.7 MAINTENANCE (MA)
 
 #### MA.L2-3.7.1
@@ -2540,40 +2540,54 @@ Perform periodic scans of the information system and real-time scans of files fr
 ##### Control Summary
 
 Deepwave Digital performs real-time malicious code scans of files from external sources (including media, i.e., USB drives, CD-ROM) as files are downloaded, opened, or executed at defined frequencies. Deepwave Digital performs periodic **\[insert frequency\]** deep scans of organizational information systems and blocks or quarantines any detected malicious code. Deepwave Digital uses **\[insert malicious code mechanisms\]** to perform real-time malicious code scans **\[insert any additional information regarding Deepwave Digital malicious code scanning procedures\]**.
+
 Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that the PreVeil system and subsequently the Deepwave Digital instance of the PreVeil system perform periodic scans of the PreVeil system and real time scans of files from external sources as files are downloaded, opened, or executed, as it pertains to the PreVeil system. PreVeil does not scan files that are downloaded or opened from the customer's instance of the PreVeil system to the customer's endpoints. PreVeil works with existing Deepwave Digital malicious code scans by limiting exposure to malicious code through an end-to-end encryption model that assures the authenticity between both ends of a communication session using complex cryptographic user keys. Only authorized users in Deepwave Digital PreVeil system can be validated. For external partiers, cryptographic user keys are also employed along with a Trusted Community capability that restricts information sharing only to those third parties that have been whitelisted by Deepwave Digital PreVeil administrators. 
+
 **\[Note: The customer is responsible for perform periodic scans of the information system and real time scans of files from external sources as files are downloaded, opened, or executed (outside of the customer's instance of the PreVeil system) for all systems and endpoints within the organization.\]**
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+
 ##### Referenced Policy
+
 Deepwave Digital System and Information Control
 
-SI.L2-3.14.3
+#### SI.L2-3.14.3
+
 Monitor system security alerts and advisories and take action in response.
+
 ##### Control Summary
+
 Deepwave Digital's system administrators monitor and respond to system security alerts and advisories. Deepwave Digital receives information system security alerts and advisories on a regular basis, issues those alerts and advisories to appropriate personnel, and takes appropriate actions in response. For a complete list of system security alerts and advisories that are reviewed by Deepwave Digital, please see **\[insert location of the list of all security alerts and advisories reviewed by Deepwave Digital,  the roles who are responsible for reviewing and acting on those alerts and advisories, actions in response to security alerts and advisories,\]**.
 
-**\[There are many publicly available sources of system security alerts and advisories. The United States Computer Emergency Readiness Team (US-CERT) generates security alerts and advisories to maintain situational awareness across the federal government and in nonfederal organizations. Software vendors, subscription services, and relevant industry information sharing, and analysis centers (ISACs) may also provide security alerts and advisories. Examples of response actions include notifying relevant external organizations, for example, external mission/business partners, supply chain partners, external service providers, and peer or supporting organizations.
+**\[There are many publicly available sources of system security alerts and advisories. The United States Computer Emergency Readiness Team (US-CERT) generates security alerts and advisories to maintain situational awareness across the federal government and in nonfederal organizations. Software vendors, subscription services, and relevant industry information sharing, and analysis centers (ISACs) may also provide security alerts and advisories. Examples of response actions include notifying relevant external organizations, for example, external mission/business partners, supply chain partners, external service providers, and peer or supporting organizations.**
 
-**Solicit and receive security alerts, advisories, and directives from reputable external organizations. Identify sources relevant to the industry and technology used by your company. Methods to receive alerts and advisories may include: 
+**Solicit and receive security alerts, advisories, and directives from reputable external organizations. Identify sources relevant to the industry and technology used by your company. Methods to receive alerts and advisories may include:**
 - **Signing up for email distributions**
 - **Subscribing to RSS feeds**
 - **Attending meetings**
 
-**Review alerts and advisories for applicability as they are received. The frequency of the reviews should be based on the frequency of the alerts and advisories to ensure you have the most up-to-date information.
+**Review alerts and advisories for applicability as they are received. The frequency of the reviews should be based on the frequency of the alerts and advisories to ensure you have the most up-to-date information.**
 
 **NIST SP 800-161 provides guidance on supply chain risk management.\]**
 
 Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that the PreVeil system monitors system security alerts and advisories and acts in response, as it pertains to the PreVeil system. PreVeil provides system security alerts and advisors, monthly, to all registered PreVeil users that may be used to help satisfy this control. 
+
 **\[Note: It is the responsibility of the customer to take those system security alerts and advisories under consideration and act, as necessary, for all systems and endpoints within the organization.\]**
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+
 ##### Referenced Policy
+
 Deepwave Digital System and Information Control
 
 
+#### SI.L2-3.14.6
 
-SI.L2-3.14.6
 Monitor organizational systems, including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks.
+
 ##### Control Summary
-Deepwave Digital monitors the system to detect attacks and indicators of potential attacks on inbound and outbound communication traffic. Deepwave Digital has created a methodology for determining attacks and indicators of an attack here **\[insert the location where the methodology for determining attacks and indicators of attacks resides, these can include:
+
+Deepwave Digital monitors the system to detect attacks and indicators of potential attacks on inbound and outbound communication traffic. Deepwave Digital has created a methodology for determining attacks and indicators of an attack here **\[insert the location where the methodology for determining attacks and indicators of attacks resides, these can include:**
 
 - **Internal traffic that indicates the presence of malicious code**
 - **Anomalous activity detected during non-business hours.**
@@ -2581,116 +2595,103 @@ Deepwave Digital monitors the system to detect attacks and indicators of potenti
 - **Communicating to external information systems\]**. 
 
 Deepwave Digital has created a checklist of items that are reviewed **\[insert cadence here, i.e., weekly\]** to review various places on the Deepwave Digital network.  The checklist of locations is found **\[insert the location of where this checklist of areas on the system that must be checked for inbound and outbound communications traffic to detect attacks and possible indicators of attacks, i.e., firewall logs, audit logs of a file server where CUI is stored, connection logs for Deepwave Digital VPN gateway, etc.\]**.
+
 **\[insert any additional information regarding the communication traffic flow and deployed capabilities of reviewing said traffic\]**
+
 Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that the PreVeil system monitors PreVeil organizational systems, including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks, as it pertains to the PreVeil system. 
+
 **\[Note: It is the responsibility of the customer to monitor customer organizational systems (outside of the customer's instance of the PreVeil system), including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks, for all systems and endpoints within the organization.\]**
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+
 ##### Referenced Policy
+
 Deepwave Digital System and Information Control
 
-SI.L2-3.14.7
+#### SI.L2-3.14.7
+
 Identify unauthorized use of organizational systems.
+
 ##### Control Summary
+
 Deepwave Digital limits communication by source and destination port, IP, and MAC addresses; is protocol aware and, can detect both authorized and unauthorized use of the system. Deepwave Digital monitors systems through **\[insert tools, techniques, mechanisms, and procedures for monitoring system use, i.e., intrusion detection systems, intrusion prevention systems, malicious code protection software, scanning tolls, audit record monitoring software, network monitoring software, etc.\]**. 
+
 All Deepwave Digital system users must review, sign, and adhere to all of the rules and guidelines mapped out in the Deepwave Digital Acceptable Use Policy document **\[insert link or location of the Deepwave Digital Acceptable Use Policy documentation\]**. The Deepwave Digital Acceptable Use Policy document includes policies that establish the baseline for how users access devices, internal network services, and the internet, as well as authorized and unauthorized use of Deepwave Digital systems. 
+
 Deepwave Digital has defined specific roles that are authorized for specific use of the system, as well as unauthorized use of Deepwave Digital systems based on roles.  The list of role-based authorized access is found here **\[insert link to up-to-date list of all role based access on the system including current personnel currently in each role\]**. 
+
 Deepwave Digital  uses PreVeil for all digital CUI transmission and storage. PreVeil utilizes user logs to monitor user access and capabilities in the event of an unauthorized user intrusion. All logins and user activity within PreVeil are digitally signed and logged cryptographically.  In the event an attacker compromises a user's account and can gain unauthorized use of the system, this activity would be logged and enable administrators to identify, respond to, and analyze the incident. 
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+
 ##### Referenced Policy
+
 Deepwave Digital System and Information Control
 
- 
-13.	Acronyms
+## 13. Acronyms
 
-Acronym	Definition
-CDI	Covered Defense Information
-CMMC	Cybersecurity Maturity Model Certification
-CUI	Controlled Unclassified Information 
-DFARS	Defense Federal Acquisition Regulation Supplement
-FIPS	Federal Information Processing Standard
-HR	Human Resources
-IA	Identification and Authentication
-ID	Identification
-IP	Internet Protocol
-IT	Information Technology
-NIST	National Institute of Standards and Technology
-POAM or POA&M	Plan of Action & Milestones
-SAN	Storage Area Network
-SQL	Structured Query Language
-VLAN	Virtual Local Area Network
-DSS	Decision Support System
-SSP	System Security Plan
-WDE	Whole Disc Encryption
-USC	United States Code
-VPN	Virtual Private Network
-WPA	Wi-Fi Protected Access 
-USB	Universal Serial Bus
-IDS	Intrusion Detection System
+| Acronym | Definition |
+|:--- |:--- |
+| CDI | Covered Defense Information |
+| CMMC | Cybersecurity Maturity Model Certification |
+| CUI | Controlled Unclassified Information |
+| DFARS | Defense Federal Acquisition Regulation Supplement |
+| FIPS | Federal Information Processing Standard |
+| HR | Human Resources |
+| IA | Identification and Authentication |
+| ID | Identification |
+| IP | Internet Protocol |
+| IT | Information Technology |
+| NIST | National Institute of Standards and Technology |
+| POAM or POA&M | Plan of Action & Milestones |
+| SAN | Storage Area Network |
+| SQL | Structured Query Language |
+| VLAN | Virtual Local Area Network |
+| DSS | Decision Support System |
+| SSP | System Security Plan |
+| WDE | Whole Disc Encryption |
+| USC | United States Code |
+| VPN | Virtual Private Network |
+| WPA | Wi-Fi Protected Access |
+| USB | Universal Serial Bus |
+| IDS | Intrusion Detection System |
 
- 
-14.	Document References Table
+## 14. Document References Table
 
-Document Name	Description	Location
-Deepwave_Training_POCs_and_Users_Training_logs
-	CMMC_Materials Onedrive
-PreVeil_Security_Whitepaper-v1.5
-	CMMC_Materials Onedrive
-Deepwave Digital Access Control Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Audit and Accountability Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Awareness and Training Control Policy
-	CMMC_Materials Onedrive
-Deepwave Configuration Management Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Identification and Authentication Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Incident Response Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Maintenance Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Media Protection Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Personnel Security Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Physical Protection Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Risk Assessment Policy
-	CMMC_Materials Onedrive
-Deepwave Digital Security Assessment Policy
-	CMMC_Materials Onedrive
-Deepwave Digital System and Communication Protection Policy
-	CMMC_Materials Onedrive
-Deepwave Digital System and Information Integrity Policy
-	CMMC_Materials Onedrive
-Deepwave Digital CustomerResponsibilityMatrix
-	CMMC_Materials Onedrive
-3.03_Audit_and_Accountability_SOP		CMMC_Materials Onedrive
-Asset Inventory List
-	CMMC_Materials Onedrive
-SOP - Audit and Accountability
-	CMMC_Materials Onedrive
-ChangeRequestLog
-	CMMC_Materials Onedrive
-Change Request Log Management Process
-	CMMC_Materials Onedrive
-		
-		
+| Document Name | Description | Location |
+|:--- |:--- |:--- |
+| [Deepwave_Training_POCs_and_Users_Training_logs](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Awareness and Training/Deepwave_Training_POCs_and_Users_Training_logs.xlsx) | CMMC_Materials Onedrive |
+| [PreVeil_Security_Whitepaper-v1.5](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/PreVeil_Security_Whitepaper/PreVeil_Security_Whitepaper-v1.5.pdf) | CMMC_Materials Onedrive |
+| [Deepwave Digital Access Control Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Access Control/Deepwave Digital Access Control Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Audit and Accountability Policy]https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Audit and Accountability/Deepwave Digital Audit and Accountability Policy.docx() | CMMC_Materials Onedrive |
+| [Deepwave Digital Awareness and Training Control Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Awareness and Training/Deepwave Digital Awareness and Training Control Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Configuration Management Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Configuration Management/Deepwave Digital Configuration Management Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Identification and Authentication Policy]https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Identification and Authentication/Deepwave Digital Identification and Authentication Policy.docx() | CMMC_Materials Onedrive |
+| [Deepwave Digital Incident Response Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Incident Response/Deepwave Digital Incident Response Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Maintenance Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Maintenance/Deepwave Digital Maintenance Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Media Protection Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Media Protection/Deepwave Digital Media Protection Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Personnel Security Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Personnel Security/Deepwave Digital Personnel Security Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Physical Protection Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Physical Protection/Deepwave Digital Physical Protection Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Risk Assessment Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Risk Assessment/Deepwave Digital Risk Assessment Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital Security Assessment Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Security Assessment/Deepwave Digital Security Assessment Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital System and Communication Protection Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/System and Communication Protection/Deepwave Digital System and Communication Protection Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital System and Information Integrity Policy](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/System and Infomation Intergrity/Deepwave Digital System and Information Integrity Policy.docx) | CMMC_Materials Onedrive |
+| [Deepwave Digital CustomerResponsibilityMatrix](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/CRM/CustomerResponsibilityMatrix_V6.0_AssessmentVersion.xlsx) | CMMC_Materials Onedrive |
+| 3.03_Audit_and_Accountability_SOP | CMMC_Materials Onedrive |
+| [Asset Inventory List](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Configuration Management/Asset InventoryList.xlsx) | CMMC_Materials Onedrive |
+| [SOP - Audit and Accountability](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Audit and Accountability/SOP - Audit and Accountability .docx) | CMMC_Materials Onedrive |
+| [ChangeRequestLog](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Configuration Management/ChangeRequestLog CM --Pending review--.xlsx) | CMMC_Materials Onedrive |
+| [Change Request Log Management Process](https://deepwavedigital-my.sharepoint.com/personal/john_deepwavedigital_com/Documents/Shared-Folders-Internal/CMMC_Materials/Security Controls/Configuration Management/Change Request Log Management Process.docx) | CMMC_Materials Onedrive |
 
- 
-15.	Appendix A – PreVeil: Supplemental Technical Information – Auditor’s Guide
+## 15. Appendix A – PreVeil: Supplemental Technical Information – Auditor’s Guide
 
 ** Attached **
 
- 
-16.	Appendix B – PreVeil: Email Gateway 
+## 16. Appendix B – PreVeil: Email Gateway 
 
 ** Attached **
 
-
- 
-17.	Appendix C – PreVeil 
+## 17. Appendix C – PreVeil 
 
 ** Attached **
-
 
