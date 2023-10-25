@@ -1900,109 +1900,152 @@ Periodically assess the risk to organizational operations (including mission, fu
 
 Deepwave Digital has defined a risk assessment matrix to assist in the identification and management of risk within Deepwave Digital. Deepwave Digital Risk Matrix is below:
 
-[Risk Matrix](../figs/Risk_Matrix.png)
+![Risk Matrix](../fig/Risk_Matrix.png)
 
- Impact
-Likelihood	Insignificant	Minor	Moderate	Major	Severe
-Almost Certain	Medium	High	Very High	Very High	Very High
-Likely	Medium	High	High	Very High	Very High
-Possible	Low	Medium	High	High	Very High
+Deepwave Digital has clearly defined system boundaries to ensure effective risk assessments **\[insert location of system boundary documentation\]**. Deepwave Digital conducts risk assessments regarding the operation of organizational systems and the associated processing, storage, or transmission of CUI **\[insert cadence for when risk assessments are performed\]**. These risk assessments consider the following:
 
-Deepwave Digital has clearly defined system boundaries to ensure effective risk assessments [insert location of system boundary documentation]. Deepwave Digital conducts risk assessments regarding the operation of organizational systems and the associated processing, storage, or transmission of CUI [insert cadence for when risk assessments are performed]. These risk assessments consider the following:
-•	Threats
-•	Vulnerabilities
-•	Likelihood
-•	Impact to Organizational Operations 
-Deepwave Digital risk assessments also consider risks from external parties (i.e., service providers, contractor operating systems on behalf of the organization, individuals accessing organizational systems, outsourcing entities). Deepwave Digital conducts these risk assessments [insert how these risk assessments are conducted, i.e., formal/informal, at the organizational level, the mission level, the business process level, system level, different phases in the software development life cycle] and information and documentation regarding the results of these assessments can be found here [insert location where the information for all risk assessments may be found.  Ensure that the information provided regarding these risk assessments includes date and time of the assessment, assessment format, who conducted the assessment, other stakeholders involved in the assessment (if applicable), results of the assessment, any after action items as a result of the assessment and where those after-action items are being tracked – for additional information, please see NIST SP 800-30]. 
+- Threats
+- Vulnerabilities
+- Likelihood
+- Impact to Organizational Operations
+
+Deepwave Digital risk assessments also consider risks from external parties (i.e., service providers, contractor operating systems on behalf of the organization, individuals accessing organizational systems, outsourcing entities). Deepwave Digital conducts these risk assessments **\[insert how these risk assessments are conducted, i.e., formal/informal, at the organizational level, the mission level, the business process level, system level, different phases in the software development life cycle\]** and information and documentation regarding the results of these assessments can be found here **\[insert location where the information for all risk assessments may be found.  Ensure that the information provided regarding these risk assessments includes date and time of the assessment, assessment format, who conducted the assessment, other stakeholders involved in the assessment (if applicable), results of the assessment, any after action items as a result of the assessment and where those after-action items are being tracked – for additional information, please see NIST SP 800-30\]**.
+
 Deepwave Digital has identified multiple areas where weakness or vulnerabilities could lead to risk, including, but not limited to:
-•	Poorly designed and executed business processes
-•	Inadvertent actions of people, such as unauthorized disclosure or modification of information
-•	Intentional actions of people inside and outside of Deepwave Digital
-•	Failure of systems to perform as intended
-•	Failures of Technology
-•	External events, such as
-o	Natural Disasters
-o	Public Infrastructure Failures
-o	Supply Chain Failures
-[Note: The PreVeil customer's instance inherits the risk assessments to the organization via the PreVeil system from PreVeil. The customer is still responsible for all risk assessments required to satisfy this control regarding internal organizational risk and assessments that are not directly related to the PreVeil system. Only the PreVeil system related risk assessment portion is inherited by the customer for their customer instance of the PreVeil system.]
+
+- Poorly designed and executed business processes
+- Inadvertent actions of people, such as unauthorized disclosure or modification of information
+- Intentional actions of people inside and outside of Deepwave Digital
+- Failure of systems to perform as intended
+- Failures of Technology
+- External events, such as
+    - Natural Disasters
+    - Public Infrastructure Failures
+    - Supply Chain Failures
+
+**\[Note: The PreVeil customer's instance inherits the risk assessments to the organization via the PreVeil system from PreVeil. The customer is still responsible for all risk assessments required to satisfy this control regarding internal organizational risk and assessments that are not directly related to the PreVeil system. Only the PreVeil system related risk assessment portion is inherited by the customer for their customer instance of the PreVeil system.\]**
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
-Referenced Policy
+
+##### Referenced Policy
+
 Deepwave Digital Risk Assessment Control
 
-RA.L2-3.11.2
+#### RA.L2-3.11.2
+
 Scan for vulnerabilities in organizational systems and applications periodically and when new vulnerabilities affecting the systems and applications are identified.
-Control Summary
-Deepwave Digital scans for vulnerabilities [insert cadence for vulnerability scanning here] in all Deepwave Digital systems and applications for regular review. Deepwave Digital also ensures that all Deepwave Digital applications and systems are scanned when new vulnerabilities are identified. Deepwave Digital also ensures that vulnerability scanning of all system components are conducted [insert cadence here] (i.e., laptops, virtual machines, firewalls, custom-made solutions, switches, network scanners, printers, copiers, etc.).  For a list of personnel and roles responsible for running and reviewing vulnerability scans for Deepwave Digital, please see [insert location where all personnel and roles authorized to run and review vulnerability scans is located]. For each identified vulnerability, the following information is captured, and action reports are found [insert location of action reports for all identified vulnerabilities, including remediation process]:
-Vulnerability Identified (Name and Type)	Date and Time Identified	Method Used to Identify the Vulnerability	Role Responsible for Identifying and Addressing Vulnerability	Location of Action Reports Regarding Vulnerability
-Vulnerability 1	[insert date and time vulnerability was identified]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
-Vulnerability 2	[insert date and time vulnerability was identified]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
-Vulnerability 3	[insert date and time vulnerability was identified]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
-To facilitate interoperability, Deepwave Digital uses products [insert product list here, or reference to list of products used for vulnerability scanning here] that are Security Content Automated Protocol (SCAP)-validated, scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention, and that employ the Open Vulnerability Assessment Language (OVAL) to determine the presence of system vulnerabilities. Sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD).
-Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil scans for vulnerabilities in the PreVeil system, daily, and when new vulnerabilities affecting the PreVeil system are identified.  Deepwave Digital also has logging information sent directly to [insert location for third party product where logging information is sent, i.e., SIEM solution], periodically [insert cadence here], for vulnerability scanning, evaluating, and remediating. 
-[Note: The PreVeil customer's instance inherits the vulnerability scans for the PreVeil system from PreVeil. The customer is still responsible for all vulnerability scans  required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related vulnerability scanning portion is inherited by the customer for their customer instance of the PreVeil system.]
+
+##### Control Summary
+
+Deepwave Digital scans for vulnerabilities **\[insert cadence for vulnerability scanning here\]** in all Deepwave Digital systems and applications for regular review. Deepwave Digital also ensures that all Deepwave Digital applications and systems are scanned when new vulnerabilities are identified. Deepwave Digital also ensures that vulnerability scanning of all system components are conducted **\[insert cadence here\]** (i.e., laptops, virtual machines, firewalls, custom-made solutions, switches, network scanners, printers, copiers, etc.).  For a list of personnel and roles responsible for running and reviewing vulnerability scans for Deepwave Digital, please see **\[insert location where all personnel and roles authorized to run and review vulnerability scans is located\]**. For each identified vulnerability, the following information is captured, and action reports are found **\[insert location of action reports for all identified vulnerabilities, including remediation process\]**:
+
+| Vulnerability Identified (Name and Type) | Date and Time Identified | Method Used to Identify the Vulnerability | Role Responsible for Identifying and Addressing Vulnerability | Location of Action Reports Regarding Vulnerability |
+|:--- |:--- |:--- |:--- |:--- |
+| Vulnerability 1 | **\[insert date and time vulnerability was identified\]** | **\[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)\]** | **\[insert role responsible for identifying and addressing the vulnerability\]** | **\[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability\]** |
+| Vulnerability 2 | **\[insert date and time vulnerability was identified\]** | **\[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)\]** | **\[insert role responsible for identifying and addressing the vulnerability\]** | **\[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability\]** |
+| Vulnerability 3 | **\[insert date and time vulnerability was identified\]** | **\[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)\]** | **\[insert role responsible for identifying and addressing the vulnerability\]** | **\[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability\]** |
+
+To facilitate interoperability, Deepwave Digital uses products **\[insert product list here, or reference to list of products used for vulnerability scanning here\]** that are Security Content Automated Protocol (SCAP)-validated, scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention, and that employ the Open Vulnerability Assessment Language (OVAL) to determine the presence of system vulnerabilities. Sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD).
+
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil scans for vulnerabilities in the PreVeil system, daily, and when new vulnerabilities affecting the PreVeil system are identified.  Deepwave Digital also has logging information sent directly to **\[insert location for third party product where logging information is sent, i.e., SIEM solution\]**, periodically [insert cadence here], for vulnerability scanning, evaluating, and remediating. 
+
+**\[Note: The PreVeil customer's instance inherits the vulnerability scans for the PreVeil system from PreVeil. The customer is still responsible for all vulnerability scans  required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related vulnerability scanning portion is inherited by the customer for their customer instance of the PreVeil system.\]**
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
-Referenced Policy
+
+##### Referenced Policy
+
 Deepwave Digital Risk Assessment Control
 
-RA.L2-3.11.3
+#### RA.L2-3.11.3
+
 Remediate vulnerabilities in accordance with risk assessments.
-Control Summary
-Deepwave Digital identifies vulnerabilities and remediates those vulnerabilities in accordance with the risk assessment. For a list of personnel and roles responsible for running and reviewing vulnerabilities for Deepwave Digital, please see [insert location where all personnel and roles authorized to run and review vulnerability scans is located]. For each identified vulnerability a severity/likelihood will be established (based on section RA.L2-3.11.1 of this document) and those vulnerabilities that are deemed the most critical will be addressed first. All identified vulnerabilities will be tracked and actions regarding the vulnerability will be capture, even if it is determined that no remediation is necessary. 
-For each identified vulnerability, the following information is captured, and action reports are found [insert location of action reports for all identified vulnerabilities, including remediation process]:
-Vulnerability Identified (Name and Type)	Date and Time Identified	Vulnerability Severity/Likelihood (based on RA.L2-3.11.1)	Method Used to Identify the Vulnerability	Role Responsible for Identifying and Addressing Vulnerability	Location of Action Reports Regarding Vulnerability
-Vulnerability 1	[insert date and time vulnerability was identified]	[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
-Vulnerability 2	[insert date and time vulnerability was identified]	[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
-Vulnerability 3	[insert date and time vulnerability was identified]	[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
-Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil scans for vulnerabilities in the PreVeil system, daily, and when new vulnerabilities affecting the PreVeil system are identified.  Deepwave Digital also has logging information sent directly to [insert location for third party product where logging information is sent, i.e., SIEM solution], periodically [insert cadence here], for vulnerability scanning, evaluating, and remediating. 
-[Note: The PreVeil customer's instance inherits the vulnerability scans and remediation for the PreVeil system from PreVeil. The customer is still responsible for all vulnerability scans and remediation required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related vulnerability scanning, and remediation portion is inherited by the customer for their customer instance of the PreVeil system.]
+
+##### Control Summary
+
+Deepwave Digital identifies vulnerabilities and remediates those vulnerabilities in accordance with the risk assessment. For a list of personnel and roles responsible for running and reviewing vulnerabilities for Deepwave Digital, please see **\[insert location where all personnel and roles authorized to run and review vulnerability scans is located\]**. For each identified vulnerability a severity/likelihood will be established (based on section RA.L2-3.11.1 of this document) and those vulnerabilities that are deemed the most critical will be addressed first. All identified vulnerabilities will be tracked and actions regarding the vulnerability will be capture, even if it is determined that no remediation is necessary. 
+
+For each identified vulnerability, the following information is captured, and action reports are found **\[insert location of action reports for all identified vulnerabilities, including remediation process\]**:
+
+| Vulnerability Identified (Name and Type) | Date and Time Identified | Vulnerability Severity/Likelihood (based on RA.L2-3.11.1) | Method Used to Identify the Vulnerability | Role Responsible for Identifying and Addressing Vulnerability | Location of Action Reports Regarding Vulnerability |
+|:--- |:--- |:--- |:--- |:--- |:--- |
+| Vulnerability 1 | **\[insert date and time vulnerability was identified\]** | **\[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1\]** | **\[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)\]** | **\[insert role responsible for identifying and addressing the vulnerability\]** | **\[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability\]** |
+| Vulnerability 2 | **\[insert date and time vulnerability was identified\]** | **\[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1\]** | **\[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)\]** | **\[insert role responsible for identifying and addressing the vulnerability**\] | **\[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability\]** |
+| Vulnerability 3 | **\[insert date and time vulnerability was identified\]** | **\[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1\]** | **\[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)\]** | **\[insert role responsible for identifying and addressing the vulnerability\]** | **\[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability\]** |
+
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil scans for vulnerabilities in the PreVeil system, daily, and when new vulnerabilities affecting the PreVeil system are identified.  Deepwave Digital also has logging information sent directly to **\[insert location for third party product where logging information is sent, i.e., SIEM solution\]**, periodically **\[insert cadence here\]**, for vulnerability scanning, evaluating, and remediating. 
+
+**\[Note: The PreVeil customer's instance inherits the vulnerability scans and remediation for the PreVeil system from PreVeil. The customer is still responsible for all vulnerability scans and remediation required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related vulnerability scanning, and remediation portion is inherited by the customer for their customer instance of the PreVeil system.\]**
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
-Referenced Policy
+
+##### Referenced Policy
+
 Deepwave Digital Risk Assessment Control
 
-12.12	SECURITY ASSESSMENT (CA)
-CA.L2-3.12.1
-Periodically assess the security controls in organizational systems to determine if the controls are effective in their application.
-Control Summary
-Deepwave Digital conducts security control assessments [insert cadence of security control assessments]. Deepwave Digital assesses security controls and determines if the controls are effective in their applications, relevant to Deepwave Digital goals, business processes, and current security requirements, as well as for overall effectiveness and value add.
-Deepwave Digital addresses deficiencies and vulnerabilities through a plan of action, ensures review of suggested corrective actions before implementation, and continues to monitor, reduce, or eliminate identified vulnerabilities. Deepwave Digital has included in this document system boundaries, environments, and security requirements and how those systems relate with or connect to other systems.
-Security control assessments are conducted [insert cadence of security control assessment] and capture the following information:
-Security Control Assessed	Date of Security Assessment	Assessment of the Security Control – Sustain, Update, Remove, Replace	Suggested Actions	Newly Identified Risks Found to Be Addressed?	Roles to Peer Review Security Assessment Suggested Actions and Newly Identified Risks
-Security Control 1	[insert date and time vulnerability was identified]	[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace]	[for any security control that is not marked as “Sustain” include the suggested actions taken]	[insert any new risks that may have been found because of the security control assessment]	[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable]
-Security Control 2	[insert date and time vulnerability was identified]	[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace]	[for any security control that is not marked as “Sustain” include the suggested actions taken]	[insert any new risks that may have been found because of the security control assessment]	[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable]
-Security Control 3	[insert date and time vulnerability was identified]	[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace]	[for any security control that is not marked as “Sustain” include the suggested actions taken]	[insert any new risks that may have been found because of the security control assessment]	[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable]
+### 12.12 SECURITY ASSESSMENT (CA)
 
-Any resulting changes to the current Deepwave Digital security framework will result in a peer review of potential organizational changes during [insert when that peer review will occur, i.e., weekly IT meeting, monthly managers meeting, etc.] and will be documented [insert location where all documentation for security assessments are located]. For a list of all stakeholders regarding security control assessments, including those roles and personnel that may perform the security control assessments for Deepwave Digital and personnel eligible to join the security control assessment peer review, please see [insert location of the list of all personnel authorized to conduct and peer review security control assessments].
+#### CA.L2-3.12.1
+
+Periodically assess the security controls in organizational systems to determine if the controls are effective in their application.
+
+##### Control Summary
+
+Deepwave Digital conducts security control assessments **\[insert cadence of security control assessments\]**. Deepwave Digital assesses security controls and determines if the controls are effective in their applications, relevant to Deepwave Digital goals, business processes, and current security requirements, as well as for overall effectiveness and value add.
+
+Deepwave Digital addresses deficiencies and vulnerabilities through a plan of action, ensures review of suggested corrective actions before implementation, and continues to monitor, reduce, or eliminate identified vulnerabilities. Deepwave Digital has included in this document system boundaries, environments, and security requirements and how those systems relate with or connect to other systems.
+
+Security control assessments are conducted **\[insert cadence of security control assessment\]** and capture the following information:
+
+| Security Control Assessed | Date of Security Assessment | Assessment of the Security Control – Sustain, Update, Remove, Replace | Suggested Actions | Newly Identified Risks Found to Be Addressed? | Roles to Peer Review Security Assessment Suggested Actions and Newly Identified Risks |
+|:--- |:--- |:--- |:--- |:--- |:--- |
+| Security Control 1 | **\[insert date and time vulnerability was identified\]** | **\[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace\]** | **\[for any security control that is not marked as “Sustain” include the suggested actions taken\]** | **\[insert any new risks that may have been found because of the security control assessment\]** | **\[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable\]** |
+| Security Control 2 | **\[insert date and time vulnerability was identified\]** | **\[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace\]** | **\[for any security control that is not marked as “Sustain” include the suggested actions taken\]** | **\[insert any new risks that may have been found because of the security control assessment\]** | **\[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable\]** |
+| Security Control 3 | **\[insert date and time vulnerability was identified\]** | **\[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace\]** | **\[for any security control that is not marked as “Sustain” include the suggested actions taken\]** | **\[insert any new risks that may have been found because of the security control assessment\]** | **\[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable\]** |
+
+Any resulting changes to the current Deepwave Digital security framework will result in a peer review of potential organizational changes during **\[insert when that peer review will occur, i.e., weekly IT meeting, monthly managers meeting, etc.\]** and will be documented **\[insert location where all documentation for security assessments are located\]**. For a list of all stakeholders regarding security control assessments, including those roles and personnel that may perform the security control assessments for Deepwave Digital and personnel eligible to join the security control assessment peer review, please see **\[insert location of the list of all personnel authorized to conduct and peer review security control assessments\]**.
+
 Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil is SOC-2 certified and annually assesses system security controls, internally for PreVeil and the PreVeil system. The Deepwave Digital PreVeil customer's instance inherits the periodic assessment of the security controls in the PreVeil system to determine if the controls are effective in their application for the PreVeil system from PreVeil.
-[Note: The customer is still responsible for all assessments of security controls in organizational systems required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related period assessment of security controls portion is inherited by the customer for their customer instance of the PreVeil system.]
+
+**\[Note: The customer is still responsible for all assessments of security controls in organizational systems required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related period assessment of security controls portion is inherited by the customer for their customer instance of the PreVeil system.\]**
+
 For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
-Referenced Policy
+
+##### Referenced Policy
+
 Deepwave Digital Security Assessment Control
 
 
-CA.L2-3.12.2
+#### CA.L2-3.12.2
+
 Develop and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in organizational systems.
-Control Summary
-Deepwave Digital has developed and implemented a Plan of Actions and Milestones (POA&M) to correct deficiencies and reduce or eliminate vulnerabilities with Deepwave Digital.  Deepwave Digital uses the following procedure to identify and add items to the POA&M [insert procedures for adding deficiencies to the POA&M including who is authorized to add deficiencies, how those deficiencies are reviewed before adding them, and any additional information]. The Deepwave Digital POA&M is located [insert location for Deepwave Digital here]. For a list of all roles and personnel permitted to add and update items within the POA&M please see [insert location, if different then the POA&M location, of all resources authorized to update and work on POA&M items]. Items may be added to the POA&M from multiple sources including, but not limited to:
-•	Vulnerability Scans
-•	Security Alerts
-•	Risk Assessments
-•	Security Assessments
-•	Business Process Changes
-•	Security Updates
-•	Security Requirement Changes
-•	Updates to law, regulation, or policies
-POA&M items will include the following and is maintained throughout the lifecycle of every POA&M item [a screenshot or link to the POA&M location may be added here.  The PreVeil POA&M template is also available for use]:
-•	Point of Contact (POC)/Owner for POA&M item
-•	POC for action on POA&M item (if different than Owner)
-•	Description of POA&M item
-•	Expected Start Date
-•	Expected Completion Date
-•	Actual Start Date
-•	Actual Completion Date
-•	Milestones/Achievements
-•	Assigned POCs for Milestones/Achievements
-•	Status of POA&M item
-•	Additional Information (if applicable)
+
+##### Control Summary
+
+Deepwave Digital has developed and implemented a Plan of Actions and Milestones (POA&M) to correct deficiencies and reduce or eliminate vulnerabilities with Deepwave Digital.  Deepwave Digital uses the following procedure to identify and add items to the POA&M [insert procedures for adding deficiencies to the POA&M including who is authorized to add deficiencies, how those deficiencies are reviewed before adding them, and any additional information]. The Deepwave Digital POA&M is located [insert location for Deepwave Digital here]. For a list of all roles and personnel permitted to add and update items within the POA&M please see **\[insert location, if different then the POA&M location, of all resources authorized to update and work on POA&M items\]**. Items may be added to the POA&M from multiple sources including, but not limited to:
+
+- Vulnerability Scans
+- Security Alerts
+- Risk Assessments
+- Security Assessments
+- Business Process Changes
+- Security Updates
+- Security Requirement Changes
+- Updates to law, regulation, or policies
+
+POA&M items will include the following and is maintained throughout the lifecycle of every POA&M item **\[a screenshot or link to the POA&M location may be added here.  The PreVeil POA&M template is also available for use\]**:
+
+- Point of Contact (POC)/Owner for POA&M item
+- POC for action on POA&M item (if different than Owner)
+- Description of POA&M item
+- Expected Start Date
+- Expected Completion Date
+- Actual Start Date
+- Actual Completion Date
+- Milestones/Achievements
+- Assigned POCs for Milestones/Achievements
+- Status of POA&M item
+- Additional Information (if applicable)
 
 PreVeil has developed and implemented plans of actions designed to correct deficiencies and reduce or eliminate vulnerabilities in the PreVeil system. The customer's instance of PreVeil inherits the development and implementation of plans of action within the PreVeil system, only. PreVeil is SOC-2 certified, FedRAMP Moderate equivalent organization that reviews POA&M items, monthly.  These POA&M items include clear goals and objectives of the plan, as well as personnel and resources assigned to each POA&M item and the expected time it will take to address each POA&M item.  
 [Note: The customer is responsible for all development and implementation of plans of actions designed to correct deficiencies and reduce or eliminate vulnerabilities in their organizational systems outside of the customer's instance of the PreVeil system.]
