@@ -1870,3 +1870,653 @@ For additional information, please see the Deepwave Digital Customer Responsibil
 ##### Referenced Policy
 
 Deepwave Digital Physical Protection Control
+
+
+
+#### PE.L2-3.10.6
+
+Enforce safeguarding measures for CUI at alternate work sites.
+
+##### Control Summary
+
+Deepwave Digital has defined and enforces safeguarding measures for CUI at alternate worksites. **\[include any physical safeguarding measures in place for alternative worksites as well as any guidance for alternative work sites such as, government facilities, and working remotely from home locations. For additional information regarding guidelines for safeguarding when remote working to use in creation of these policies, please see NIST SP 800-46 and NIST SP 800-114\]**.
+
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. The PreVeil customer's instance inherits all physical access to PreVeil equipment and operating environments, including enforcing safeguarding measures for CUI at alternate work sites, as part of the PreVeil infrastructure from the PreVeil system, which inherits these physical controls from AWS (the PreVeil hosting environment). PreVeil employs Amazon AWS US East-West systems for FedRAMP Moderate impact level and AWS GovCloud (US) for FedRAMP High impact level encrypted data storage. AWS meets the required FedRAMP/NIST mandates and provides secure protection and monitoring of facilities, including enforcing defined safeguarding measures for CUI at alternate worksites. For more information, please see the PreVeil CRM **\[insert location of PreVeil CRM\]**.
+
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+
+##### Referenced Policy
+
+Deepwave Digital Physical Protection Control
+
+
+### 12.11	RISK ASSESSMENT (RA)
+
+#### RA.L2-3.11.1
+
+Periodically assess the risk to organizational operations (including mission, functions, image, or reputation), organizational assets, and individuals, resulting from the operation of organizational systems and the associated processing, storage, or transmission of CUI.
+
+##### Control Summary
+
+Deepwave Digital has defined a risk assessment matrix to assist in the identification and management of risk within Deepwave Digital. Deepwave Digital Risk Matrix is below:
+
+[Risk Matrix](../figs/Risk_Matrix.png)
+
+ Impact
+Likelihood	Insignificant	Minor	Moderate	Major	Severe
+Almost Certain	Medium	High	Very High	Very High	Very High
+Likely	Medium	High	High	Very High	Very High
+Possible	Low	Medium	High	High	Very High
+
+Deepwave Digital has clearly defined system boundaries to ensure effective risk assessments [insert location of system boundary documentation]. Deepwave Digital conducts risk assessments regarding the operation of organizational systems and the associated processing, storage, or transmission of CUI [insert cadence for when risk assessments are performed]. These risk assessments consider the following:
+•	Threats
+•	Vulnerabilities
+•	Likelihood
+•	Impact to Organizational Operations 
+Deepwave Digital risk assessments also consider risks from external parties (i.e., service providers, contractor operating systems on behalf of the organization, individuals accessing organizational systems, outsourcing entities). Deepwave Digital conducts these risk assessments [insert how these risk assessments are conducted, i.e., formal/informal, at the organizational level, the mission level, the business process level, system level, different phases in the software development life cycle] and information and documentation regarding the results of these assessments can be found here [insert location where the information for all risk assessments may be found.  Ensure that the information provided regarding these risk assessments includes date and time of the assessment, assessment format, who conducted the assessment, other stakeholders involved in the assessment (if applicable), results of the assessment, any after action items as a result of the assessment and where those after-action items are being tracked – for additional information, please see NIST SP 800-30]. 
+Deepwave Digital has identified multiple areas where weakness or vulnerabilities could lead to risk, including, but not limited to:
+•	Poorly designed and executed business processes
+•	Inadvertent actions of people, such as unauthorized disclosure or modification of information
+•	Intentional actions of people inside and outside of Deepwave Digital
+•	Failure of systems to perform as intended
+•	Failures of Technology
+•	External events, such as
+o	Natural Disasters
+o	Public Infrastructure Failures
+o	Supply Chain Failures
+[Note: The PreVeil customer's instance inherits the risk assessments to the organization via the PreVeil system from PreVeil. The customer is still responsible for all risk assessments required to satisfy this control regarding internal organizational risk and assessments that are not directly related to the PreVeil system. Only the PreVeil system related risk assessment portion is inherited by the customer for their customer instance of the PreVeil system.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Risk Assessment Control
+
+RA.L2-3.11.2
+Scan for vulnerabilities in organizational systems and applications periodically and when new vulnerabilities affecting the systems and applications are identified.
+Control Summary
+Deepwave Digital scans for vulnerabilities [insert cadence for vulnerability scanning here] in all Deepwave Digital systems and applications for regular review. Deepwave Digital also ensures that all Deepwave Digital applications and systems are scanned when new vulnerabilities are identified. Deepwave Digital also ensures that vulnerability scanning of all system components are conducted [insert cadence here] (i.e., laptops, virtual machines, firewalls, custom-made solutions, switches, network scanners, printers, copiers, etc.).  For a list of personnel and roles responsible for running and reviewing vulnerability scans for Deepwave Digital, please see [insert location where all personnel and roles authorized to run and review vulnerability scans is located]. For each identified vulnerability, the following information is captured, and action reports are found [insert location of action reports for all identified vulnerabilities, including remediation process]:
+Vulnerability Identified (Name and Type)	Date and Time Identified	Method Used to Identify the Vulnerability	Role Responsible for Identifying and Addressing Vulnerability	Location of Action Reports Regarding Vulnerability
+Vulnerability 1	[insert date and time vulnerability was identified]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
+Vulnerability 2	[insert date and time vulnerability was identified]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
+Vulnerability 3	[insert date and time vulnerability was identified]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
+To facilitate interoperability, Deepwave Digital uses products [insert product list here, or reference to list of products used for vulnerability scanning here] that are Security Content Automated Protocol (SCAP)-validated, scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention, and that employ the Open Vulnerability Assessment Language (OVAL) to determine the presence of system vulnerabilities. Sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD).
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil scans for vulnerabilities in the PreVeil system, daily, and when new vulnerabilities affecting the PreVeil system are identified.  Deepwave Digital also has logging information sent directly to [insert location for third party product where logging information is sent, i.e., SIEM solution], periodically [insert cadence here], for vulnerability scanning, evaluating, and remediating. 
+[Note: The PreVeil customer's instance inherits the vulnerability scans for the PreVeil system from PreVeil. The customer is still responsible for all vulnerability scans  required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related vulnerability scanning portion is inherited by the customer for their customer instance of the PreVeil system.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Risk Assessment Control
+
+RA.L2-3.11.3
+Remediate vulnerabilities in accordance with risk assessments.
+Control Summary
+Deepwave Digital identifies vulnerabilities and remediates those vulnerabilities in accordance with the risk assessment. For a list of personnel and roles responsible for running and reviewing vulnerabilities for Deepwave Digital, please see [insert location where all personnel and roles authorized to run and review vulnerability scans is located]. For each identified vulnerability a severity/likelihood will be established (based on section RA.L2-3.11.1 of this document) and those vulnerabilities that are deemed the most critical will be addressed first. All identified vulnerabilities will be tracked and actions regarding the vulnerability will be capture, even if it is determined that no remediation is necessary. 
+For each identified vulnerability, the following information is captured, and action reports are found [insert location of action reports for all identified vulnerabilities, including remediation process]:
+Vulnerability Identified (Name and Type)	Date and Time Identified	Vulnerability Severity/Likelihood (based on RA.L2-3.11.1)	Method Used to Identify the Vulnerability	Role Responsible for Identifying and Addressing Vulnerability	Location of Action Reports Regarding Vulnerability
+Vulnerability 1	[insert date and time vulnerability was identified]	[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
+Vulnerability 2	[insert date and time vulnerability was identified]	[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
+Vulnerability 3	[insert date and time vulnerability was identified]	[insert the likelihood and severity of the vulnerability based on the Risk Matrix found in 3.11.1]	[insert system used to identify the vulnerability, or outside information used to identify the vulnerability (i.e., security alerts, etc.)]	[insert role responsible for identifying and addressing the vulnerability]	[insert the location of all documentation related to the vulnerability and action reports regarding the vulnerability]
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil scans for vulnerabilities in the PreVeil system, daily, and when new vulnerabilities affecting the PreVeil system are identified.  Deepwave Digital also has logging information sent directly to [insert location for third party product where logging information is sent, i.e., SIEM solution], periodically [insert cadence here], for vulnerability scanning, evaluating, and remediating. 
+[Note: The PreVeil customer's instance inherits the vulnerability scans and remediation for the PreVeil system from PreVeil. The customer is still responsible for all vulnerability scans and remediation required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related vulnerability scanning, and remediation portion is inherited by the customer for their customer instance of the PreVeil system.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Risk Assessment Control
+
+12.12	SECURITY ASSESSMENT (CA)
+CA.L2-3.12.1
+Periodically assess the security controls in organizational systems to determine if the controls are effective in their application.
+Control Summary
+Deepwave Digital conducts security control assessments [insert cadence of security control assessments]. Deepwave Digital assesses security controls and determines if the controls are effective in their applications, relevant to Deepwave Digital goals, business processes, and current security requirements, as well as for overall effectiveness and value add.
+Deepwave Digital addresses deficiencies and vulnerabilities through a plan of action, ensures review of suggested corrective actions before implementation, and continues to monitor, reduce, or eliminate identified vulnerabilities. Deepwave Digital has included in this document system boundaries, environments, and security requirements and how those systems relate with or connect to other systems.
+Security control assessments are conducted [insert cadence of security control assessment] and capture the following information:
+Security Control Assessed	Date of Security Assessment	Assessment of the Security Control – Sustain, Update, Remove, Replace	Suggested Actions	Newly Identified Risks Found to Be Addressed?	Roles to Peer Review Security Assessment Suggested Actions and Newly Identified Risks
+Security Control 1	[insert date and time vulnerability was identified]	[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace]	[for any security control that is not marked as “Sustain” include the suggested actions taken]	[insert any new risks that may have been found because of the security control assessment]	[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable]
+Security Control 2	[insert date and time vulnerability was identified]	[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace]	[for any security control that is not marked as “Sustain” include the suggested actions taken]	[insert any new risks that may have been found because of the security control assessment]	[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable]
+Security Control 3	[insert date and time vulnerability was identified]	[insert the assessment outcome at a high level – Sustain, Update, Remove, Replace]	[for any security control that is not marked as “Sustain” include the suggested actions taken]	[insert any new risks that may have been found because of the security control assessment]	[insert roles that will participate in the peer review of security assessment suggested actions and newly identified risks, if applicable]
+
+Any resulting changes to the current Deepwave Digital security framework will result in a peer review of potential organizational changes during [insert when that peer review will occur, i.e., weekly IT meeting, monthly managers meeting, etc.] and will be documented [insert location where all documentation for security assessments are located]. For a list of all stakeholders regarding security control assessments, including those roles and personnel that may perform the security control assessments for Deepwave Digital and personnel eligible to join the security control assessment peer review, please see [insert location of the list of all personnel authorized to conduct and peer review security control assessments].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil is SOC-2 certified and annually assesses system security controls, internally for PreVeil and the PreVeil system. The Deepwave Digital PreVeil customer's instance inherits the periodic assessment of the security controls in the PreVeil system to determine if the controls are effective in their application for the PreVeil system from PreVeil.
+[Note: The customer is still responsible for all assessments of security controls in organizational systems required to satisfy this control regarding other systems and endpoints that are not directly related to the PreVeil system. Only the PreVeil system related period assessment of security controls portion is inherited by the customer for their customer instance of the PreVeil system.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Security Assessment Control
+
+
+CA.L2-3.12.2
+Develop and implement plans of action designed to correct deficiencies and reduce or eliminate vulnerabilities in organizational systems.
+Control Summary
+Deepwave Digital has developed and implemented a Plan of Actions and Milestones (POA&M) to correct deficiencies and reduce or eliminate vulnerabilities with Deepwave Digital.  Deepwave Digital uses the following procedure to identify and add items to the POA&M [insert procedures for adding deficiencies to the POA&M including who is authorized to add deficiencies, how those deficiencies are reviewed before adding them, and any additional information]. The Deepwave Digital POA&M is located [insert location for Deepwave Digital here]. For a list of all roles and personnel permitted to add and update items within the POA&M please see [insert location, if different then the POA&M location, of all resources authorized to update and work on POA&M items]. Items may be added to the POA&M from multiple sources including, but not limited to:
+•	Vulnerability Scans
+•	Security Alerts
+•	Risk Assessments
+•	Security Assessments
+•	Business Process Changes
+•	Security Updates
+•	Security Requirement Changes
+•	Updates to law, regulation, or policies
+POA&M items will include the following and is maintained throughout the lifecycle of every POA&M item [a screenshot or link to the POA&M location may be added here.  The PreVeil POA&M template is also available for use]:
+•	Point of Contact (POC)/Owner for POA&M item
+•	POC for action on POA&M item (if different than Owner)
+•	Description of POA&M item
+•	Expected Start Date
+•	Expected Completion Date
+•	Actual Start Date
+•	Actual Completion Date
+•	Milestones/Achievements
+•	Assigned POCs for Milestones/Achievements
+•	Status of POA&M item
+•	Additional Information (if applicable)
+
+PreVeil has developed and implemented plans of actions designed to correct deficiencies and reduce or eliminate vulnerabilities in the PreVeil system. The customer's instance of PreVeil inherits the development and implementation of plans of action within the PreVeil system, only. PreVeil is SOC-2 certified, FedRAMP Moderate equivalent organization that reviews POA&M items, monthly.  These POA&M items include clear goals and objectives of the plan, as well as personnel and resources assigned to each POA&M item and the expected time it will take to address each POA&M item.  
+[Note: The customer is responsible for all development and implementation of plans of actions designed to correct deficiencies and reduce or eliminate vulnerabilities in their organizational systems outside of the customer's instance of the PreVeil system.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Security Assessment Control
+
+CA.L2-3.12.3
+Monitor security controls on an ongoing basis to ensure the continued effectiveness of the controls.
+Control Summary
+Deepwave Digital continuously monitors security controls to ensure their continued effectiveness. Deepwave Digital has identified the security controls that need to be monitored continuously and may be found [insert location where the list of security controls that need to be monitored continuously are stored]. Deepwave Digital ensures that monitoring of security controls happens no less than [insert cadence here, suggestion would be daily or weekly].  Deepwave Digital uses [insert vulnerability scanning mechanisms here] to support timely risk management decisions and help develop an appropriate risk response action plan. Continuous monitoring outputs are optimized to include [please see NIST 800-137 for additional guidance regarding continuous monitoring]:
+•	Specific continuous monitoring information
+•	Measurable continuous monitoring information
+•	Actionable continuous monitoring information
+•	Relevant continuous monitoring information
+•	Timely continuous monitoring information
+All Deepwave Digital continuous monitoring outputs are provided to appropriate stakeholders via [insert way continuous monitoring outputs are provided to stakeholders, i.e., link share, email, meeting, etc.]. For a list of all continuous monitoring stakeholders please see [insert location of all personnel who are listed as continuous monitoring stakeholders that will be provided continuous monitoring outputs].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil monitors security controls on an ongoing basis to ensure continued effectiveness of the control within the PreVeil system. Deepwave Digital inherit this control only as it pertains to the Deepwave Digital customer instance of the PreVeil system. PreVeil monitors security controls, on an ongoing basis (daily), to ensure the continued effectiveness of those controls. 
+[Note: Customers are responsible for addressing the monitoring of security controls for their organization and other organizational systems in use by the customer.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Security Assessment Control
+
+CA.L2-3.12.4
+Develop, document, and periodically update system security plans that describe system boundaries, system environments of operation, how security requirements are implemented, and the relationships with or connections to other systems.
+Control Summary
+Deepwave Digital has developed a System Security Plan (SSP) that is updated [insert cadence of updates here, i.e., annually] and maintained by the roles and personnel listed here [insert location where the roles and personnel responsible for updating the SSP are housed].  
+Deepwave Digital SSP includes the following: 
+•	System boundaries are described and documented [insert location within SSP]
+•	System environment of operation is described and documented [insert location within SSP]
+•	Security requirements identified and approved by the designated authority as non-applicable are identified [insert location within SSP]
+•	Method of security requirement implementation is described and documented [insert location within SSP]
+•	CMMC Assessment Scope Description: high-level description of the assets within the assessment scope [insert location within SSP]
+•	Description of the Environment of Operation: physical surroundings in which an information system processes, stores, and transmits information [insert location within SSP]
+•	Identified and Approved Security Requirements: requirements levied on an information system that are derived from [insert location within SSP]
+•	Applicable laws 
+•	Executive Orders
+•	Directives
+•	Policies
+•	Standards
+Instructions
+•	Regulations
+•	Procedures
+•	Organizational mission/business case needs to ensure the confidentiality
+•	Integrity
+•	Availability of the information being processed, stored, or transmitted
+•	Implementation Method for Security Requirements: description of how the identified and approved security requirements are implemented with the system or environment [insert location within SSP]
+•	Connections and Relationships to Other Systems and Networks: description of related, dependent, and interconnected systems [insert location within SSP]
+•	Defined Frequency of Updates [insert location within SSP]
+[In addition to the requirements above, an SSP often includes: 
+•	General information system description: technical and functional description
+•	Design philosophies: defense-in-depth strategies and allowed interfaces and network protocols
+•	Roles and responsibilities: description of the roles and responsibilities for key personnel, which may include the system owner, system custodian, authorizing officials, and other stakeholders] 
+This control is out of scope for PreVeil.
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital Security Assessment Control
+
+
+
+
+
+
+
+
+
+
+
+
+12.13	SYSTEM AND COMMUNICATION PROTECTION (SC)
+SC.L1-3.13.1
+Monitor, control, and protect communications (i.e., information transmitted or received by organizational systems) at the external boundaries and key internal boundaries of organizational systems.
+Control Summary
+Deepwave Digital external boundaries and key internal system boundaries are defined and can be found [insert location where external boundaries and key internal system boundary diagrams/documentation may be found]. Communications are monitored for all external system boundaries using [insert how external system boundaries communications are monitored, logged, reviewed and suspicious traffic alerts administered] and key internal boundary communications are monitored using [insert mechanisms used to monitor, log, review, and suspicious traffic alerts administered for all key internal boundary communications].  Communications at all external system boundaries are controlled using [insert the mechanisms used to control all external system boundary communications] and key internal boundaries are controlled using [insert mechanisms for controlling key internal boundary communications].  Communications are protected at the external system boundary with [insert mechanism for protecting external system boundary communications] and key internal boundary communications is protected with [insert the mechanism for protecting key internal boundary communications – is there a Demilitarized Zone (DMZ) at the edge of the network?]. 
+Deepwave Digital ensures that data traversing the external and internal system boundaries is controlled such that connections are denied by default and only authorized connections are allowed [insert the procedures in place to ensure data traversing the external and internal system boundaries are controlled such that connections are denied by default and only authorized connections are allowed]. Deepwave Digital ensures that all data flowing in and out of the external and key internal system boundaries is protected [insert how data flow is protected, i.e., applying encryption when required or prudent, tunneling traffic as needed].
+[Example: Restricting or prohibiting interfaces in Deepwave Digital systems includes restricting external web communication traffic to designated web servers within managed interfaces and prohibiting external traffic that appears to be spoofing internal addresses.]
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil monitors, controls, and protects PreVeil system communications (i.e., information transmitted or received by the PreVeil system) at the external boundaries and key internal boundaries of the PreVeil system. The customer inherits this monitoring, controlling, and protection of communications as it pertains to the customer's instance of the PreVeil system, only. PreVeil can facilitate the cross-organization boundary. Information stored and transmitted within the PreVeil system is FIPS 140-2 verified and end-to-end encrypted. The PreVeil FIPS validation certificate may be found here. The Trusted Community feature permits an additional level of control and protection by limited communication and sharing to a allow-listed group of PreVeil users. 
+[Note: All other communications and boundary definitions will be the responsibility of the customer to address for all systems and applications, outside of the customer's instance of the PreVeil system, within scope of this control.] For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L1-3.13.5
+Implement subnetworks for publicly accessible system components that are physically or logically separated from internal networks.
+Control Summary
+Deepwave Digital has identified publicly accessible system components, and a list of those components is found here [insert list/documentation/location/reference to all publicly accessible system components within Deepwave Digital]. Subnetworks for publicly accessible system components are physically or logically separated from internal networks using [insert the mechanisms used to locally or physically separate subnetworks for publicly accessible system components]. 
+[include any system components that are reachable by the public, i.e., internet-facing web servers, VPN gateways, publicly accessible could services. Also, include information regarding any DMZ that may exist to route communications].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil has implemented subnetworks for publicly accessible system components that are physically or logically separated from internal networks used by the PreVeil system. The Deepwave Digital customer's instance of the PreVeil system is physically and logically separated from publicly accessible system components, unless otherwise configured by the customer to remove that physical and logical separation. By default, the customer's instance of PreVeil will not touch any publicly accessible system components. The PreVeil system does not allow for the interaction of the PreVeil system and/or system components with publicly accessible system components.
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.2
+Employ architectural designs, software development techniques, and systems engineering principles that promote effective information security within organizational systems.
+Control Summary
+Deepwave Digital has identified and documented architectural designs, software development techniques, and systems engineering principles that promote effective information security [insert location where those documents and additional procedures related to architectural designs, software development techniques, and system engineering principles that promote effective information security are located].  Deepwave Digital employs architectural designs, software development techniques, and system engineering principles that promote effective information security by [insert mechanisms used by Deepwave Digital to ensure architectural designs, software development techniques, and system engineering principles that promote effective information security are employed]. 
+Deepwave Digital applies systems security engineering principles to new development systems or systems undergoing major upgrades. For legacy systems, Deepwave Digital applies systems security engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware components within those systems.
+[Note: The application of systems security engineering concepts and principles helps to develop trustworthy, secure, and resilient systems and system components and reduce the susceptibility of organizations to disruptions, hazards, and threats. NIST SP 800-160 System Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems can serve as a source of security engineering and design principles. Examples of these concepts and principles include:
+•	Developing layered protections
+•	Establishing security policies, architecture, and controls as the foundation for design
+•	Incorporating security requirements into the system development life cycle
+•	Delineating physical and logical security boundaries
+•	Ensuring that developers are trained on how to build secure software
+•	Performing threat modeling to identify use cases, threat agents, attack vectors and patterns, design patterns, and compensating controls needed to mitigate risk.
+Decide which designs and principles to apply. Some will not be possible or appropriate for Deepwave Digital or for specific systems or components. 
+Designs and principles should be applied to policies and security standards. Starting with the baseline configuration, they should be extended through all layers of the technology stack (e.g., hardware, software, firmware) and throughout all the components of the infrastructure. The application of these chosen designs and principles should drive Deepwave Digital towards a secure architecture with the required security capabilities and intrinsic behaviors present throughout the lifecycle of Deepwave Digital technology.]
+Deepwave Digital factors in the understanding of aging legacy components into life-cycle decisions for those components (i.e., replacing legacy hardware, upgrading or re-writing software, upgrading run-time environment, etc.).
+Deepwave Digital holds meetings [insert cadence for these meetings and any additional information regarding these meetings, i.e., attendance, location of documentation from said meetings, etc.] that evaluate the effectiveness of the information security and will require the input and definition of the operations that occur in or any organizational facility that deviates from Deepwave Digital baseline network/infrastructure configuration. 
+The Deepwave Digital PreVeil customer's instance inherits the employing of architectural designs, software development, techniques, and system engineering principles that promote effective information security, as part of the PreVeil infrastructure from the PreVeil system.
+[Note: If Deepwave Digital creates architectural designs, software development, techniques, and system engineering within their organization, those need to be listed here.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.3
+Separate user functionality from system management functionality.
+Control Summary
+Deepwave Digital separates user functionality from system management functionality for all Deepwave Digital systems.  All personnel with access to system management functionality are listed here [insert location of maintained, up to date, list of all personnel in roles that allow for system functionality management actions] For additional information regarding user system functionality delineations, please see below:
+System	User Functionality Description	System Management Functionality Description and Safeguards	Role(s) Permitted to Access System Functionality Management
+PreVeil	PreVeil users are permitted to access PreVeil encrypted mail and folders within PreVeil Drive that they created, as well as those folders shared with them.  PreVeil users have no access to the PreVeil admin console. 	The PreVeil system ensures the organization’s information system separates user functionality (including user interface services) from PreVeil information system management functionality (e.g., privileged access).  PreVeil incorporates strict cryptographic controls and an approval group process for setting up Admin accounts. The admin accounts are distinct from user accounts and admin capabilities cannot be accessed from User accounts. 	PreVeil Administrators (note: PreVeil recommends an additional user profile for Administrators)
+
+System 1	[insert user functionality description]	[insert the system management functionality and safeguards in place to ensure only authorized users have access to system management functionality]	[insert role(s) with system functionality management access]
+System 2	[insert user functionality description]	[insert the system management functionality and safeguards in place to ensure only authorized users have access to system management functionality]	[insert role(s) with system functionality management access]
+[insert any additional physical or logical controls used to separate user functionality from system management-related functionality]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.4
+Prevent unauthorized and unintended information transfer via shared system resources.
+Control Summary
+Deepwave Digital ensures object reuse and residual information protection on shared system resources (i.e., registers, cache memory, main memory, hard disks, etc.) by [insert procedures and SOPs involved in protecting information in shared systems]. Deepwave Digital  prevents information produced by the actions of prior users or roles (or the actions of processes acting on behalf of prior users or roles) from being available to any current users or roles (or current processes acting on behalf of current users or roles) that obtain access to shared system resources after those resources have been released back to the system [insert procedures in place to ensure information protection when shared system resources have been released back to the system].
+Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil supports the protection of CUI/CDI stored on shared devices within the PreVeil environment using user-specific cryptographic keys. Information access can be limited to specific users with cryptographic user and device keys required for user access. Only authorized users on authorized devices can access data stored in PreVeil. PreVeil encrypted data is stored in a parallel secure network separate from standard unencrypted organization data. The Multi-Tenancy (MT) feature is enabled within the PreVeil environment to support isolation of user accounts and the protection of specific user files on a Deepwave Digital device.
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.6
+Deny network communications traffic by default and allow network communications traffic by exception (i.e., deny all, permit by exception).
+Control Summary
+Deepwave Digital systems are configured to deny all network traffic, by default, and allow traffic by exception, for all relevant system components (i.e., host and network firewalls, routers, gateways, etc.). Deepwave Digital will accept requests to add specific traffic, as necessary, through [insert how a user or member of Deepwave Digital team can request an exception for network traffic] and approved or disapproved by [insert the location of the list of authorized personnel who may approve or disapprove an exception to the network traffic].  Documentation regarding any exceptions made can be found [insert location for all documented exceptions made regarding network traffic]. For additional information regarding system mechanisms in place to control the deny all, permit by exception flow of network traffic, please see below:
+System	Mechanisms Used to Deny All Network Traffic and Permit by Exception
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmissions. PreVeil’s end-to-end encryption model ensures that only authorized individuals can access CUI from authorized devices. PreVeil is configured to allow-list all network communications traffic through enabling the “Trusted Community” feature for both inbound and outbound communications traffic. Deepwave Digital limits sharing of CUI with third parties to those individuals specifically allow-listed by Deepwave Digital PreVeil administrators.  
+System 1	[insert mechanisms used to deny all network traffic and permit by exception]
+System 2	[insert mechanisms used to deny all network traffic and permit by exception]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+SC.L2-3.13.7
+Prevent remote devices from simultaneously establishing non-remote connections with organizational systems and communicating via some other connection to resources in external networks (i.e., split tunneling).
+Control Summary
+Deepwave Digital has configured its systems to prevent remote devices from simultaneously establishing non-remote connections with the system and communicating via some other connection to resources in external networks (i.e., split tunneling). Deepwave Digital  has implemented the prevention of split tunneling on remote devices (e.g., notebook computers, smart phones, and tablets) through configuration settings to disable split tunneling in those devices, and by preventing configuration settings from being readily configurable by users. Deepwave Digital has implemented detection in the system, of split tunneling (or of configuration settings that allow split tunneling) in remote devices and has prohibited the connection if the remote device is using split tunneling. For additional split tunneling prohibition configuration settings information, please see below:
+System	Mechanisms, Settings, and Procedures Used to Prohibit Split Tunneling
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmissions. Access to PreVeil requires a user and device-specific private key. With PreVeil, identity and authentication are established cryptographically via user private keys and device-specific private keys. Each system user is intrinsically related to specific devices and each device connection is always direct to the secure PreVeil cloud application and encrypted data storage network. The PreVeil system is not accessed via VPN and is FIPS 140-2 end-to-end encrypted making split tunneling not possible within the PreVeil system. The FIPS 140-2 PreVeil validation certification may be found here. 
+
+System 1	[insert mechanisms, settings, and procedures used to prohibit split tunneling]
+System 2	[insert mechanisms, settings, and procedures used to prohibit split tunneling]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.8
+Implement cryptographic mechanisms to prevent unauthorized disclosure of CUI during transmission unless otherwise protected by alternative physical safeguards.
+Control Summary
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. In the PreVeil system, all files and communications are encrypted prior to transmission, and remain encrypted end-to-end until the data reaches the authorized recipients' devices, at which point the information is decrypted. End to end encryption is a more powerful security mechanism than encryption in transit and encryption at rest which allow for central points of attack. PreVeil uses approved FIPS 140-2 compliant cryptographic algorithms. PreVeil's cryptographic module is FIPS 140-2 validated in the NIST CMVP labs.  To view the PreVeil FIPS 140-2 certification, please click here. 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.9
+Terminate network connections associated with communications sessions at the end of the sessions or after a defined period of inactivity.
+Control Summary
+Deepwave Digital has configured all applicable systems to terminate network and communication connections at the end of the session or after a defined period of inactivity. For additional information regarding Deepwave Digital roles and personnel responsible for managing network termination connections, please see [insert location where up-to-date list of all roles and personnel for updating/maintaining network termination connections is maintained]. For all system specific network terminations settings and implementation, please see below:
+System	Mechanisms, Settings, and Procedures Used to Manage Network Termination Connections
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmissions. The Deepwave Digital PreVeil customer's instance does not use traditional identifiers based on the security infrastructure of the PreVeil system. PreVeil uses user key and device key authentication, not traditional username and password logins, to authenticate sessions into the customer's instance of the PreVeil system. Device keys are automatically regenerated with a new encryption key every 24 hours. In addition, PreVeil grants the customer's instance of PreVeil administrators the ability to manually remove user access to PreVeil either ad hoc or through setting a time limit for access to information on the system (i.e., user will only have access through a certain date).
+System 1	[insert mechanisms, settings, and procedures used to manage network termination connections]
+System 2	[insert mechanisms, settings, and procedures used to manage network termination connections]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.10
+Establish and manage cryptographic keys for cryptography employed in organizational systems.
+Control Summary
+Deepwave Digital establishes and manages cryptographic keys to encrypt and authenticate user traffic. Cryptography may be employed in a variety of ways, i.e., digital signature, authentication, authorization, transport, or other cryptographic mechanisms. Likewise, cryptographic keys may be maintained in a variety of ways, i.e., key storage, backup, recovery, revocation, destruction, etc. 
+
+A list of all personnel with access to any Deepwave Digital related cryptographic keys, may be found here [insert location of the maintained and up-to-date list of all personnel with access to Deepwave Digital cryptographic keys]. For additional information regarding Deepwave Digital cryptographic key protection, usage, distribution procedures, and when they are recovered, please see below:
+System/Hardware/Software	Cryptographic Key Protection/Usage	Cryptographic Key Distribution 	Location of Cryptographic Keys	Roles with Access to Location of Cryptographic Keys	Cryptographic Maintenance Procedures
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmissions. PreVeil employs cryptographic keys that are established and maintained within the secure PreVeil environment. Key management requirements are in accordance with applicable federal laws, Executive Orders, directives, policies, standards, and customer standards. (Cryptographic protection is FIPS 140-2 compliant. To vie PreVeil’s FIPS 140-2 certification, please click here.)   
+	Deepwave Digital only permits those Deepwave Digital personnel that have been authorized and have a “need-to-know” access to PreVeil and assignment of subsequent PreVeil cryptographic device keys.	PreVeil employs cryptographic keys that are established and maintained within the secure PreVeil environment.	PreVeil cryptographic keys are maintained within the PreVeil system.  Deepwave Digital personnel do not have access to these keys, nor does PreVeil.	PreVeil keys are cycled through every 24 hours and are not stored or backed up.  Approval Groups within PreVeil allow for the recreation of PreVeil cryptographic device keys, as necessary. 
+[insert any additional maintenance procedures related to cryptographic keys, i.e., how are the keys stored, backed up, recovered, revoked, destroyed]
+System/Hardware/Software 1	[insert mechanisms, for cryptographic key protection and usage]	[insert how cryptographic keys are distributed, i.e., a cryptographic key for a device may be given to the owner of that device, as well as the system administrator]	[insert the location of the cryptographic keys]	[insert roles that have access to the location of cryptographic keys, i.e., a spreadsheet with all BitLocker keys]	[insert maintenance procedures related to cryptographic keys, i.e., how are the keys stored, backed up, recovered, revoked, destroyed]
+System/Hardware/Software 2	[insert mechanisms, for cryptographic key protection and usage]	[insert how cryptographic keys are distributed, i.e., a cryptographic key for a device may be given to the owner of that device, as well as the system administrator]	[insert the location of the cryptographic keys]	[insert roles that have access to the location of cryptographic keys, i.e., a spreadsheet with all BitLocker keys]	[insert maintenance procedures related to cryptographic keys, i.e., how are the keys stored, backed up, recovered, revoked, destroyed]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.11
+Employ FIPS-validated cryptography when used to protect the confidentiality of CUI.
+Control Summary
+Deepwave Digital utilizes FIPS 140-2 validated cryptography on all applicable systems throughout the corporate environment. Deepwave Digital uses PreVeil for all digital CUI transmission and storage. PreVeil implements required FIPS-validated and NSA-approved cryptographic protections on the PreVeil environment. To view the PreVeil FIPS 140-2 certification, please click here. All data stored with the PreVeil environment is end-to-end encrypted. See PreVeil Security Whitepaper 
+[insert any other systems/applications, etc. that use FIPS 140-2 validated cryptography]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.12
+Prohibit remote activation of collaborative computing devices and provide indication of devices in use to users present at the device.
+Control Summary
+Deepwave Digital has ensured that remote activation of collaborative computing devices is prohibited and that indicators have been provided and implemented to show when a computing device is in use.  Deepwave Digital computing devices have indicator lights and/or audio tones to indicate when cameras and/or microphones are in use.  For secure areas where collaborative computing devices are being used [indicate how collaborative computing devices, in use, in secure spaces are identified to outside personnel entering these spaces, i.e., indicator light outside of the door, signage, door locking, etc.].  Deepwave Digital has disabled the ability to remotely activate computing devices without user interaction or consent [include the procedure and/or mechanisms in place to ensure that no device can be remotely activated without user interaction or consent].
+This control is not in scope for the PreVeil system.
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.13
+Control and monitor the use of mobile code.
+Control Summary
+Deepwave Digital documents, monitors, and controls the use of mobile code within the information system. This includes servers, as well as on individual devices (i.e., smartphones, mobile devices, etc.). Mobile code technologies include:
+•	Java
+•	JavaScript
+•	ActiveX
+•	Postscript
+•	PDF
+•	Flash animation
+•	VBScript
+Deepwave Digital does not allow for the downloading of mobile code on any Deepwave Digital device without prior authorization from [insert authority to approve installation of mobile code on Deepwave Digital devices]. Deepwave Digital will only approve the installation and use of mobile code that does not cause damage to the systems if used maliciously and is digitally signed by a trusted source.  To request the use of mobile code please, [insert the procedures for documenting a request to use mobile code, as well as the procedure for who will approval/disapproval the request and how the code will be implemented (and by whom) and with what guidelines and conditions in place]. The use of mobile code is monitored through boundary devices, i.e., firewalls, audit logs, security utilities (mobile device management, advanced endpoint protection, and implemented remediation activities, as needed [insert the procedures used regarding the monitoring of mobile code through boundary devices, including the specific devices and what they monitor for regarding mobile code and the procedure for capturing and reporting violations to the mobile code use policy].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. The Deepwave Digital customer's instance of the PreVeil system is controlled and monitored for the use of mobile code through the PreVeil system, thus the Deepwave Digital instance of the PreVeil system inherits this control from the PreVeil system for the Deepwave Digital instance of the PreVeil system.  PreVeil ensures that the use of mobile code is limited to only PreVeil CISO authorized business essential purposes. All data stored with the PreVeil environment is end-to-end encrypted. See PreVeil Security Whitepaper To view the PreVeil FIPS 140-2 certification, please click here.
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.14
+Control and monitor the use of Voice over Internet Protocol (VoIP) technologies.
+Control Summary
+Deepwave Digital controls and monitors the use of Voice over Internet Protocol (VoIP) technologies. Deepwave Digital  uses encrypted VoIP solutions [insert the encrypted VoIP solution used] to avoid security concerns surrounding VoIP including eavesdropping on calls and using ID spoofing to impersonate trusted individuals. Only authorized users may access VoIP solutions within Deepwave Digital. For a list of all personnel authorized to use Deepwave Digital VoIP solutions, please see [include location of maintained and up-to date list of personnel with access to use Deepwave Digital VoIP solutions]. 
+
+Deepwave Digital VoIP solutions are only accessible and only to be used by authorized individuals for authorized Deepwave Digital business.  No CUI will be discussed on non-secure and non-approved VoIP systems. Usage of VoIP solutions is monitored through [insert how VoIP is monitored and the procedures associated with said monitoring, including, how often it is monitored, by whom, how is that monitoring documented, etc.]. 
+
+This control is out of scope for the PreVeil system.
+
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+
+SC.L2-3.13.15
+Protect the authenticity of communications sessions.
+Control Summary
+Deepwave Digital protects the authenticity of communication sessions. This includes protecting against man-in-the-middle attacks, session hijacking, and the insertion of false information into communications sessions. No CUI will be discussed on non-secure and non-approved communications systems. 
+Deepwave Digital ensures protection of communications sessions on all communications systems:
+Communications System	Protection Mechanisms for Communications Systems
+PreVeil	Deepwave Digital uses PreVeil for all digital CUI storage and transmissions. PreVeil ensures the authenticity of communication sessions within the Deepwave Digital PreVeil instance involving CUI are protected through the utilization of device-to-device cryptographic authentication via intrinsically linked user and device keys. User actions are cryptographically signed with the user’s private key.  Cryptographic protection is FIPS 140-2 compliant. To view PreVeil’s FIPS 140-2 certification, please click here and see the PreVeil Security Whitepaper.
+
+Communications System 1	[insert mechanisms, for protecting communications systems, i.e., ensuring that all virtual conferences require user information to be submitted before said user is permitted to access the virtual conference, protocols used that ensure the sending and receiving parties does not change during a communication session, controls in place to validate the identities and information transmitted to protect against main-in-the-middle attacks, session hijacking, and insertion of false information into communications sessions]
+Communications System 2	[insert mechanisms, for protecting communications systems, i.e., ensuring that all virtual conferences require user information to be submitted before said user is permitted to access the virtual conference, protocols used that ensure the sending and receiving parties does not change during a communication session, controls in place to validate the identities and information transmitted to protect against main-in-the-middle attacks, session hijacking, and insertion of false information into communications sessions]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+SC.L2-3.13.16
+Protect the confidentiality of CUI at rest.
+Control Summary
+Deepwave Digital uses PreVeil for all CUI storage and transmissions.  In the Deepwave Digital instance of PreVeil, all files, communications, and data in the PreVeil system are protected with end-to-end encryption. Cryptographic protection is FIPS 140-2 compliant. To view PreVeil’s FIPS 140-2 certification, please click here. This means that CUI is always encrypted at rest, in transit, and while in use on the server. The keys to decrypt data are never stored centrally. Please see the PreVeil Security Whitepaper.
+Deepwave Digital also ensures that all Deepwave Digital endpoints accessing PreVeil are encrypted using [insert reference to encryption of storage and computing device procedures]. 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Communications Protection Control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12.14	SYSTEM AND INFORMATION INTEGRITY (SI)
+SI.L1-3.14.1
+Identify, report, and correct system flaws in a timely manner.
+Control Summary
+Deepwave Digital monitors, reports, and corrects software system flaws and potential vulnerabilities. Deepwave Digital protects the integrity of the information systems and performs flaw remediation. Deepwave Digital address security-relevant updates including patches, service packs, hot fixes, and anti-virus signatures, as well as security flaws discovered during security assessments, continuous monitoring, incident response activities, and system error handling in a timely manner.  Deepwave Digital system flaw procedures are listed below:
+Criticality of Update to System Flaw	Description of Criticality	Timeframe for Updating Security-Relevant Software and Firmware Flaws	Stakeholders System Flaw Reported To	Time to Correct	Location of Documentation Regarding System Flaw
+Critical	[insert what factors determine this criticality level]	Within [insert cadence for time this type of system update must be addressed]
+	[identify roles of those stakeholders that will be identified upon the identification of the system flaw]	Within [insert cadence for time this type of system update must be corrected]
+	[insert location where all system flaw documentation and reporting information resides]
+High	[insert what factors determine this criticality level]	Within [insert cadence for time this type of system update must be addressed]
+	[identify roles of those stakeholders that will be identified upon the identification of the system flaw]	Within [insert cadence for time this type of system update must be corrected]
+	[insert location where all system flaw documentation and reporting information resides]
+Medium	[insert what factors determine this criticality level]	Within [insert cadence for time this type of system update must be addressed]
+	[identify roles of those stakeholders that will be identified upon the identification of the system flaw]	Within [insert cadence for time this type of system update must be corrected]
+	[insert location where all system flaw documentation and reporting information resides]
+Low	[insert what factors determine this criticality level]	Within [insert cadence for time this type of system update must be addressed]
+	[identify roles of those stakeholders that will be identified upon the identification of the system flaw]	Within [insert cadence for time this type of system update must be corrected]
+	[insert location where all system flaw documentation and reporting information resides]
+Deepwave Digital uses PreVeil for all digital CUI storage and transmissions. PreVeil ensures that the PreVeil system and subsequently the Deepwave Digital instance of the PreVeil system, identifies, reports, and corrects information and information system flaws in a timely manner as they pertain to the PreVeil system. PreVeil has established and maintains a plan that provides oversight for achieving any vulnerability remediation activities and patching requirements, in accordance with risk assessments and FedRAMP Moderate controls. Please see the PreVeil Security Whitepaper.
+[insert any additional information regarding system flaws remediation, i.e., vulnerability scanning mechanisms used, SIEM solutions, etc.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Information Control
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SI.L1-3.14.2
+Provide protection from malicious code at appropriate locations within organizational information systems.
+Control Summary
+Deepwave Digital has identified the following system entry and exit point locations for malicious code protection and protections at these locations is provided [remove any in the list below that do not apply to Deepwave Digital]:
+•	Firewalls
+•	Remote access servers
+•	Workstations
+•	Email Servers
+•	Web Servers
+•	Proxy Servers
+•	Notebook computers
+•	Mobile Devices
+For a list of all system entry and exit points, please see [insert location of all system entry and exit points, with specifications and asset inventory related information]. 
+
+Malicious code can be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using techniques such as steganography. Malicious code can be inserted into systems in a variety of ways including web access, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of system vulnerabilities. Malicious code protection for system entry and exit points is provided by [insert the malicious code protection used, i.e., anti-virus, signature definitions, and reputation-based technologies - NIST SP 800-83 provides guidance on malware incident prevention].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmissions. PreVeil ensures that the PreVeil system and subsequently the Deepwave Digital instance of the PreVeil system provides protection from malicious code at appropriate locations within the PreVeil system, thus the customer's instance of PreVeil inherits this control from the PreVeil system. PreVeil limits exposure to malicious code through an end-to-end encryption model that assures the authenticity between both ends of a communication session using complex cryptographic user keys. Only authorized users in Deepwave Digital PreVeil system can be validated. For external partiers, cryptographic user keys are also employed along with a Trusted Community capability that restricts information sharing only to those third parties that have been whitelisted by Deepwave Digital PreVeil administrators. 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Information Control
+
+SI.L1-3.14.4
+Update malicious code protection mechanisms when new releases are available.
+Control Summary
+Deepwave Digital configures malicious code protection mechanisms to update (including signature definitions) accordingly as new releases or patches become available according to company-wide configuration management policy, procedures, and standards. To view information regarding all updates to malicious code, please see [insert location for all documentation and information regarding updates to malicious code protection mechanisms and roles responsible for administering said updates]. For additional information regarding malicious code protections, per Deepwave Digital system, please see below:
+System 	Malicious Code Protections	Frequency by which Malicious Code Protection Mechanisms Must Be Updated
+PreVeil	PreVeil systems have malicious code protections mechanisms that are maintained and kept up to date when new releases become available. PreVeil ensures that the PreVeil system and subsequently the customer's instance of the PreVeil system updates malicious code protection mechanisms when new releases are available, as it pertains to the PreVeil system.
+[Note: The customer is responsible for updating malicious code protection mechanisms when new releases are available (outside of the customer's instance of the PreVeil system) for all systems and endpoints within the organization]	PreVeil systems have malicious code protections mechanisms that are maintained and kept up to date when new releases become available. 
+
+System 1	[insert malicious code protections applied to system]	[insert frequency by which malicious code protection mechanisms must be updated] 
+System 2	[insert malicious code protections applied to system]	[insert frequency by which malicious code protection mechanisms must be updated] 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Information Control
+
+SI.L1-3.14.5
+Perform periodic scans of the information system and real-time scans of files from external sources as files are downloaded, opened, or executed.
+Control Summary
+Deepwave Digital performs real-time malicious code scans of files from external sources (including media, i.e., USB drives, CD-ROM) as files are downloaded, opened, or executed at defined frequencies. Deepwave Digital performs periodic [insert frequency] deep scans of organizational information systems and blocks or quarantines any detected malicious code. Deepwave Digital uses [insert malicious code mechanisms] to perform real-time malicious code scans [insert any additional information regarding Deepwave Digital malicious code scanning procedures].
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that the PreVeil system and subsequently the Deepwave Digital instance of the PreVeil system perform periodic scans of the PreVeil system and real time scans of files from external sources as files are downloaded, opened, or executed, as it pertains to the PreVeil system. PreVeil does not scan files that are downloaded or opened from the customer's instance of the PreVeil system to the customer's endpoints. PreVeil works with existing Deepwave Digital malicious code scans by limiting exposure to malicious code through an end-to-end encryption model that assures the authenticity between both ends of a communication session using complex cryptographic user keys. Only authorized users in Deepwave Digital PreVeil system can be validated. For external partiers, cryptographic user keys are also employed along with a Trusted Community capability that restricts information sharing only to those third parties that have been whitelisted by Deepwave Digital PreVeil administrators. 
+[Note: The customer is responsible for perform periodic scans of the information system and real time scans of files from external sources as files are downloaded, opened, or executed (outside of the customer's instance of the PreVeil system) for all systems and endpoints within the organization.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Information Control
+
+SI.L2-3.14.3
+Monitor system security alerts and advisories and take action in response.
+Control Summary
+Deepwave Digital's system administrators monitor and respond to system security alerts and advisories. Deepwave Digital receives information system security alerts and advisories on a regular basis, issues those alerts and advisories to appropriate personnel, and takes appropriate actions in response. For a complete list of system security alerts and advisories that are reviewed by Deepwave Digital, please see [insert location of the list of all security alerts and advisories reviewed by Deepwave Digital,  the roles who are responsible for reviewing and acting on those alerts and advisories, actions in response to security alerts and advisories,].
+[There are many publicly available sources of system security alerts and advisories. The United States Computer Emergency Readiness Team (US-CERT) generates security alerts and advisories to maintain situational awareness across the federal government and in nonfederal organizations. Software vendors, subscription services, and relevant industry information sharing, and analysis centers (ISACs) may also provide security alerts and advisories. Examples of response actions include notifying relevant external organizations, for example, external mission/business partners, supply chain partners, external service providers, and peer or supporting organizations.
+
+Solicit and receive security alerts, advisories, and directives from reputable external organizations. Identify sources relevant to the industry and technology used by your company. Methods to receive alerts and advisories may include: 
+•	Signing up for email distributions
+•	Subscribing to RSS feeds
+•	Attending meetings
+Review alerts and advisories for applicability as they are received. The frequency of the reviews should be based on the frequency of the alerts and advisories to ensure you have the most up-to-date information.
+
+NIST SP 800-161 provides guidance on supply chain risk management.]
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that the PreVeil system monitors system security alerts and advisories and acts in response, as it pertains to the PreVeil system. PreVeil provides system security alerts and advisors, monthly, to all registered PreVeil users that may be used to help satisfy this control. 
+[Note: It is the responsibility of the customer to take those system security alerts and advisories under consideration and act, as necessary, for all systems and endpoints within the organization.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Information Control
+
+
+
+SI.L2-3.14.6
+Monitor organizational systems, including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks.
+Control Summary
+Deepwave Digital monitors the system to detect attacks and indicators of potential attacks on inbound and outbound communication traffic. Deepwave Digital has created a methodology for determining attacks and indicators of an attack here [insert the location where the methodology for determining attacks and indicators of attacks resides, these can include:
+•	Internal traffic that indicates the presence of malicious code
+•	Anomalous activity detected during non-business hours.
+•	Unauthorized data leaving the organization.
+•	Communicating to external information systems]. 
+Deepwave Digital has created a checklist of items that are reviewed [insert cadence here, i.e., weekly] to review various places on the Deepwave Digital network.  The checklist of locations is found [insert the location of where this checklist of areas on the system that must be checked for inbound and outbound communications traffic to detect attacks and possible indicators of attacks, i.e., firewall logs, audit logs of a file server where CUI is stored, connection logs for Deepwave Digital VPN gateway, etc.].
+[insert any additional information regarding the communication traffic flow and deployed capabilities of reviewing said traffic]
+Deepwave Digital uses PreVeil for all digital CUI storage and transmission. PreVeil ensures that the PreVeil system monitors PreVeil organizational systems, including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks, as it pertains to the PreVeil system. 
+[Note: It is the responsibility of the customer to monitor customer organizational systems (outside of the customer's instance of the PreVeil system), including inbound and outbound communications traffic, to detect attacks and indicators of potential attacks, for all systems and endpoints within the organization.]
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Information Control
+
+SI.L2-3.14.7
+Identify unauthorized use of organizational systems.
+Control Summary
+Deepwave Digital limits communication by source and destination port, IP, and MAC addresses; is protocol aware and, can detect both authorized and unauthorized use of the system. Deepwave Digital monitors systems through [insert tools, techniques, mechanisms, and procedures for monitoring system use, i.e., intrusion detection systems, intrusion prevention systems, malicious code protection software, scanning tolls, audit record monitoring software, network monitoring software, etc.]. 
+All Deepwave Digital system users must review, sign, and adhere to all of the rules and guidelines mapped out in the Deepwave Digital Acceptable Use Policy document [insert link or location of the Deepwave Digital Acceptable Use Policy documentation]. The Deepwave Digital Acceptable Use Policy document includes policies that establish the baseline for how users access devices, internal network services, and the internet, as well as authorized and unauthorized use of Deepwave Digital systems. 
+Deepwave Digital has defined specific roles that are authorized for specific use of the system, as well as unauthorized use of Deepwave Digital systems based on roles.  The list of role-based authorized access is found here [insert link to up-to-date list of all role based access on the system including current personnel currently in each role]. 
+Deepwave Digital  uses PreVeil for all digital CUI transmission and storage. PreVeil utilizes user logs to monitor user access and capabilities in the event of an unauthorized user intrusion. All logins and user activity within PreVeil are digitally signed and logged cryptographically.  In the event an attacker compromises a user's account and can gain unauthorized use of the system, this activity would be logged and enable administrators to identify, respond to, and analyze the incident. 
+For additional information, please see the Deepwave Digital Customer Responsibility Matrix.
+Referenced Policy
+Deepwave Digital System and Information Control
+
+ 
+13.	Acronyms
+
+Acronym	Definition
+CDI	Covered Defense Information
+CMMC	Cybersecurity Maturity Model Certification
+CUI	Controlled Unclassified Information 
+DFARS	Defense Federal Acquisition Regulation Supplement
+FIPS	Federal Information Processing Standard
+HR	Human Resources
+IA	Identification and Authentication
+ID	Identification
+IP	Internet Protocol
+IT	Information Technology
+NIST	National Institute of Standards and Technology
+POAM or POA&M	Plan of Action & Milestones
+SAN	Storage Area Network
+SQL	Structured Query Language
+VLAN	Virtual Local Area Network
+DSS	Decision Support System
+SSP	System Security Plan
+WDE	Whole Disc Encryption
+USC	United States Code
+VPN	Virtual Private Network
+WPA	Wi-Fi Protected Access 
+USB	Universal Serial Bus
+IDS	Intrusion Detection System
+
+ 
+14.	Document References Table
+
+Document Name	Description	Location
+Deepwave_Training_POCs_and_Users_Training_logs
+	CMMC_Materials Onedrive
+PreVeil_Security_Whitepaper-v1.5
+	CMMC_Materials Onedrive
+Deepwave Digital Access Control Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Audit and Accountability Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Awareness and Training Control Policy
+	CMMC_Materials Onedrive
+Deepwave Configuration Management Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Identification and Authentication Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Incident Response Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Maintenance Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Media Protection Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Personnel Security Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Physical Protection Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Risk Assessment Policy
+	CMMC_Materials Onedrive
+Deepwave Digital Security Assessment Policy
+	CMMC_Materials Onedrive
+Deepwave Digital System and Communication Protection Policy
+	CMMC_Materials Onedrive
+Deepwave Digital System and Information Integrity Policy
+	CMMC_Materials Onedrive
+Deepwave Digital CustomerResponsibilityMatrix
+	CMMC_Materials Onedrive
+3.03_Audit_and_Accountability_SOP		CMMC_Materials Onedrive
+Asset Inventory List
+	CMMC_Materials Onedrive
+SOP - Audit and Accountability
+	CMMC_Materials Onedrive
+ChangeRequestLog
+	CMMC_Materials Onedrive
+Change Request Log Management Process
+	CMMC_Materials Onedrive
+		
+		
+
+ 
+15.	Appendix A – PreVeil: Supplemental Technical Information – Auditor’s Guide
+
+** Attached **
+
+ 
+16.	Appendix B – PreVeil: Email Gateway 
+
+** Attached **
+
+
+ 
+17.	Appendix C – PreVeil 
+
+** Attached **
+
+
